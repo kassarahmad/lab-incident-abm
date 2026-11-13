@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab Incident Response · Adaptive Multi-Agent Model</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <span class="dot" id="alarmDot"></span>
+    <div>
+      <h1>Lab Incident Response</h1>
+      <p>Adaptive multi-agent model · Python / Mesa engine</p>
+    </div>
+  </div>
+  <div class="controls">
+    <label>Scenario <select id="preset"></select></label>
+    <label>Seed <input id="seed" type="number" min="0" step="1"></label>
+    <button id="play" class="primary">Start</button>
+    <button id="stepBtn">Step</button>
+    <button id="reset">Reset</button>
+    <label class="speed">Speed <input id="speed" type="range" min="1" max="20" value="6"></label>
+  </div>
+</header>
+
+<main>
+  <section class="floor">
+    <div class="status">
+      <span id="stepLabel">step 0</span>
+      <span id="alarmLabel" class="pill">no alarm</span>
+      <span id="modeLabel" class="pill muted"></span>
+    </div>
+    <canvas id="grid" width="800" height="400"></canvas>
+    <div class="legend">
+      <span><i class="sw occ"></i>Occupant</span>
+      <span><i class="sw resp"></i>Responder</span>
+      <span><i class="sw fire"></i>Fire</span>
+      <span><i class="sw smoke"></i>Smoke</span>
+      <span><i class="sw burnt"></i>Burned</span>
+      <span><i class="sw det"></i>Detector (pink = triggered)</span>
+      <span><i class="sw task"></i>Contract target</span>
+    </div>
+  </section>
+
+  <aside>
+    <div class="cards">
+      <div class="card"><b id="kBurning">0</b><span>burning cells</span></div>
+      <div class="card"><b id="kBurned">0</b><span>burned area</span></div>
+      <div class="card"><b id="kEvac">0</b><span>evacuated</span></div>
+      <div class="card"><b id="kMsg">0</b><span>messages</span></div>
+    </div>
+    <h2>Fire over time</h2>
+    <canvas id="chartFire" width="360" height="120"></canvas>
+    <h2>Evacuation &amp; exposure</h2>
+    <canvas id="chartEvac" width="360" height="120"></canvas>
+    <h2>Responders</h2>
+    <table id="responders"><thead><tr><th>id</th><th>charges</th><th>intention</th><th>task</th></tr></thead><tbody></tbody></table>
+    <h2>Message bus</h2>
+    <ol id="log"></ol>
+    <p id="error" class="error"></p>
+  </aside>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

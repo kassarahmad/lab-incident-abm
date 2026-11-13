@@ -1,0 +1,781 @@
+experiment,config,seed,steps,alarm_step,contained,response_time,contained_step,burned_area,evacuated,evacuation_time,exposure,injured,incapacitated,shots,messages,messages_dropped,team_reward,contain_time
+E1_coordination,No communication | 1 fire,1000,215,8.0,True,48.0,215.0,76,40,54.0,0.0099,0,0,146,0,0,-227.25,215
+E1_coordination,No communication | 1 fire,1001,200,3.0,True,30.0,200.0,125,40,47.0,0.0617,0,0,130,0,0,-385.6,200
+E1_coordination,No communication | 1 fire,1002,114,3.0,True,48.0,114.0,22,40,53.0,0.135,0,0,37,0,0,-51.85,114
+E1_coordination,No communication | 1 fire,1003,240,7.0,True,33.0,240.0,126,40,47.0,0.0421,0,0,153,0,0,-397.85,240
+E1_coordination,No communication | 1 fire,1004,137,9.0,True,40.0,137.0,47,40,49.0,0.1124,0,0,59,0,0,-123.3,137
+E1_coordination,No communication | 1 fire,1005,58,5.0,True,33.0,49.0,9,40,58.0,0.0076,0,0,13,0,0,-18.25,49
+E1_coordination,No communication | 1 fire,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1002,0,0,5,0,0,-3.7,27
+E1_coordination,No communication | 1 fire,1007,242,3.0,True,46.0,242.0,145,40,46.0,0.8648,1,0,152,0,0,-442.55,242
+E1_coordination,No communication | 1 fire,1008,119,3.0,True,45.0,119.0,23,40,47.0,0.0159,0,0,50,0,0,-48.05,119
+E1_coordination,No communication | 1 fire,1009,52,3.0,True,26.0,49.0,7,40,52.0,0.0931,0,0,17,0,0,-13.4,49
+E1_coordination,No communication | 1 fire,1010,289,3.0,True,41.0,289.0,130,40,51.0,0.0136,0,0,199,0,0,-396.8,289
+E1_coordination,No communication | 1 fire,1011,41,3.0,True,17.0,31.0,9,40,41.0,0.04,0,0,21,0,0,-15.8,31
+E1_coordination,No communication | 1 fire,1012,53,10.0,True,9.0,34.0,7,40,53.0,0.0597,0,0,18,0,0,-12.05,34
+E1_coordination,No communication | 1 fire,1013,74,22.0,True,29.0,74.0,16,40,73.0,0.0694,0,0,36,0,0,-33.55,74
+E1_coordination,No communication | 1 fire,1014,65,3.0,True,42.0,65.0,11,40,56.0,0.2396,0,0,18,0,0,-24.0,65
+E1_coordination,No communication | 1 fire,1015,178,3.0,True,52.0,178.0,127,40,50.0,0.1261,0,0,84,0,0,-400.35,178
+E1_coordination,No communication | 1 fire,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0295,0,0,18,0,0,-13.9,37
+E1_coordination,No communication | 1 fire,1017,284,27.0,True,38.0,284.0,125,40,75.0,0.0639,0,0,153,0,0,-395.65,284
+E1_coordination,No communication | 1 fire,1018,122,15.0,True,31.0,122.0,25,40,53.0,0.0168,0,0,40,0,0,-57.8,122
+E1_coordination,No communication | 1 fire,1019,63,3.0,True,45.0,63.0,11,40,48.0,0.0185,0,0,19,0,0,-20.7,63
+E1_coordination,No communication | 1 fire,1020,188,3.0,True,44.0,188.0,125,40,46.0,0.01,0,0,93,0,0,-387.65,188
+E1_coordination,No communication | 1 fire,1021,298,3.0,True,51.0,298.0,123,40,52.0,0.0037,0,0,223,0,0,-387.7,298
+E1_coordination,No communication | 1 fire,1022,198,3.0,True,25.0,198.0,123,40,50.0,0.0793,0,0,108,0,0,-384.05,198
+E1_coordination,No communication | 1 fire,1023,205,15.0,True,31.0,205.0,63,40,58.0,0.0152,0,0,139,0,0,-182.0,205
+E1_coordination,No communication | 1 fire,1024,209,3.0,True,61.0,209.0,125,40,49.0,0.0372,0,0,119,0,0,-387.6,209
+E1_coordination,No communication | 1 fire,1025,200,3.0,True,45.0,200.0,126,40,45.0,0.0641,0,0,115,0,0,-388.8,200
+E1_coordination,No communication | 1 fire,1026,223,3.0,True,36.0,223.0,125,40,50.0,0.035,0,0,130,0,0,-395.3,223
+E1_coordination,No communication | 1 fire,1027,210,3.0,True,52.0,210.0,124,40,50.0,0.0267,0,0,119,0,0,-380.95,210
+E1_coordination,No communication | 1 fire,1028,65,11.0,True,32.0,65.0,9,40,63.0,0.0108,0,0,15,0,0,-19.9,65
+E1_coordination,No communication | 1 fire,1029,108,3.0,True,25.0,108.0,29,40,44.0,0.0008,0,0,53,0,0,-65.65,108
+E1_coordination,Peer-to-peer | 1 fire,1000,294,8.0,True,46.0,294.0,113,40,54.0,0.01,0,0,210,2427,0,-336.7,294
+E1_coordination,Peer-to-peer | 1 fire,1001,204,3.0,True,30.0,204.0,124,40,47.0,0.0627,0,0,135,1794,0,-390.3,204
+E1_coordination,Peer-to-peer | 1 fire,1002,74,3.0,True,48.0,74.0,16,40,53.0,0.135,0,0,18,168,0,-34.45,74
+E1_coordination,Peer-to-peer | 1 fire,1003,250,7.0,True,31.0,250.0,127,40,47.0,0.0418,0,0,171,2406,0,-403.25,250
+E1_coordination,Peer-to-peer | 1 fire,1004,298,9.0,True,40.0,298.0,124,40,49.0,0.1124,0,0,222,2715,0,-383.25,298
+E1_coordination,Peer-to-peer | 1 fire,1005,59,5.0,True,33.0,47.0,9,40,59.0,0.0085,0,0,11,96,0,-17.9,47
+E1_coordination,Peer-to-peer | 1 fire,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1002,0,0,5,159,0,-3.7,27
+E1_coordination,Peer-to-peer | 1 fire,1007,233,3.0,True,46.0,233.0,126,40,46.0,0.8648,1,0,170,1899,0,-381.45,233
+E1_coordination,Peer-to-peer | 1 fire,1008,70,3.0,True,45.0,70.0,16,40,47.0,0.0159,0,0,26,213,0,-27.4,70
+E1_coordination,Peer-to-peer | 1 fire,1009,52,3.0,True,26.0,42.0,6,40,52.0,0.0941,0,0,14,105,0,-11.55,42
+E1_coordination,Peer-to-peer | 1 fire,1010,77,3.0,True,41.0,77.0,21,40,51.0,0.0136,0,0,30,276,0,-45.65,77
+E1_coordination,Peer-to-peer | 1 fire,1011,41,3.0,True,17.0,31.0,9,40,41.0,0.04,0,0,21,270,0,-15.8,31
+E1_coordination,Peer-to-peer | 1 fire,1012,53,10.0,True,9.0,34.0,7,40,53.0,0.0597,0,0,18,333,0,-12.05,34
+E1_coordination,Peer-to-peer | 1 fire,1013,73,22.0,True,29.0,71.0,16,40,73.0,0.0688,0,0,35,282,0,-33.55,71
+E1_coordination,Peer-to-peer | 1 fire,1014,60,3.0,True,42.0,60.0,11,40,56.0,0.2396,0,0,18,126,0,-23.35,60
+E1_coordination,Peer-to-peer | 1 fire,1015,173,3.0,True,52.0,173.0,126,40,50.0,0.1261,0,0,104,1320,0,-397.85,173
+E1_coordination,Peer-to-peer | 1 fire,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0295,0,0,18,288,0,-13.9,37
+E1_coordination,Peer-to-peer | 1 fire,1017,125,27.0,True,37.0,125.0,26,40,75.0,0.0645,0,0,46,693,0,-62.85,125
+E1_coordination,Peer-to-peer | 1 fire,1018,67,15.0,True,31.0,67.0,9,40,53.0,0.017,0,0,14,138,0,-18.85,67
+E1_coordination,Peer-to-peer | 1 fire,1019,60,3.0,True,45.0,60.0,11,40,48.0,0.0185,0,0,22,210,0,-20.05,60
+E1_coordination,Peer-to-peer | 1 fire,1020,186,3.0,True,44.0,186.0,126,40,46.0,0.01,0,0,119,1512,0,-391.2,186
+E1_coordination,Peer-to-peer | 1 fire,1021,235,3.0,True,51.0,235.0,63,40,52.0,0.0037,0,0,158,1404,0,-178.8,235
+E1_coordination,Peer-to-peer | 1 fire,1022,206,3.0,True,25.0,206.0,120,40,50.0,0.0835,0,0,148,1806,0,-356.9,206
+E1_coordination,Peer-to-peer | 1 fire,1023,107,15.0,True,31.0,107.0,32,40,58.0,0.015,0,0,47,723,0,-71.4,107
+E1_coordination,Peer-to-peer | 1 fire,1024,204,3.0,True,61.0,204.0,125,40,49.0,0.0372,0,0,117,1587,0,-384.5,204
+E1_coordination,Peer-to-peer | 1 fire,1025,195,3.0,True,45.0,195.0,120,40,45.0,0.0641,0,0,125,1554,0,-352.7,195
+E1_coordination,Peer-to-peer | 1 fire,1026,209,3.0,True,36.0,209.0,124,40,50.0,0.038,0,0,146,1794,0,-377.55,209
+E1_coordination,Peer-to-peer | 1 fire,1027,211,3.0,True,52.0,211.0,124,40,50.0,0.0267,0,0,126,1647,0,-393.85,211
+E1_coordination,Peer-to-peer | 1 fire,1028,63,11.0,True,32.0,60.0,9,40,63.0,0.0101,0,0,14,120,0,-19.6,60
+E1_coordination,Peer-to-peer | 1 fire,1029,50,3.0,True,25.0,50.0,13,40,44.0,0.0008,0,0,27,177,0,-25.4,50
+E1_coordination,Greedy dispatcher | 1 fire,1000,53,8.0,True,21.0,43.0,10,40,53.0,0.0098,0,0,20,241,0,-17.9,43
+E1_coordination,Greedy dispatcher | 1 fire,1001,47,3.0,True,20.0,39.0,14,40,47.0,0.049,0,0,27,304,0,-24.45,39
+E1_coordination,Greedy dispatcher | 1 fire,1002,53,3.0,True,16.0,23.0,2,40,53.0,0.0991,0,0,5,171,0,-3.45,23
+E1_coordination,Greedy dispatcher | 1 fire,1003,51,7.0,True,21.0,51.0,18,40,48.0,0.0404,0,0,35,265,0,-35.15,51
+E1_coordination,Greedy dispatcher | 1 fire,1004,49,9.0,True,26.0,47.0,9,40,49.0,0.1006,0,0,16,224,0,-20.35,47
+E1_coordination,Greedy dispatcher | 1 fire,1005,58,5.0,True,23.0,35.0,6,40,58.0,0.0076,0,0,10,239,0,-11.3,35
+E1_coordination,Greedy dispatcher | 1 fire,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1003,0,0,5,102,0,-3.7,27
+E1_coordination,Greedy dispatcher | 1 fire,1007,46,3.0,True,21.0,32.0,7,40,46.0,0.8656,1,0,16,254,0,-10.75,32
+E1_coordination,Greedy dispatcher | 1 fire,1008,52,3.0,True,19.0,25.0,2,40,52.0,0.0175,0,0,4,155,0,-3.25,25
+E1_coordination,Greedy dispatcher | 1 fire,1009,46,3.0,True,18.0,29.0,5,40,46.0,0.0793,0,0,10,206,0,-7.5,29
+E1_coordination,Greedy dispatcher | 1 fire,1010,53,3.0,True,20.0,36.0,9,40,53.0,0.0137,0,0,21,301,0,-14.7,36
+E1_coordination,Greedy dispatcher | 1 fire,1011,40,3.0,True,17.0,31.0,9,40,40.0,0.04,0,0,21,208,0,-15.8,31
+E1_coordination,Greedy dispatcher | 1 fire,1012,54,10.0,True,9.0,34.0,7,40,54.0,0.0611,0,0,18,261,0,-12.05,34
+E1_coordination,Greedy dispatcher | 1 fire,1013,73,22.0,True,22.0,59.0,12,40,73.0,0.0705,0,0,23,295,0,-22.6,59
+E1_coordination,Greedy dispatcher | 1 fire,1014,54,3.0,True,19.0,33.0,5,40,54.0,0.2386,0,0,11,331,0,-9.25,33
+E1_coordination,Greedy dispatcher | 1 fire,1015,81,3.0,True,22.0,81.0,21,40,50.0,0.088,0,0,43,628,0,-42.55,81
+E1_coordination,Greedy dispatcher | 1 fire,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0293,0,0,18,245,0,-13.9,37
+E1_coordination,Greedy dispatcher | 1 fire,1017,73,27.0,True,24.0,65.0,11,40,73.0,0.0638,0,0,26,248,0,-22.4,65
+E1_coordination,Greedy dispatcher | 1 fire,1018,53,15.0,True,22.0,46.0,5,40,53.0,0.0196,0,0,11,193,0,-10.45,46
+E1_coordination,Greedy dispatcher | 1 fire,1019,46,3.0,True,23.0,30.0,2,40,46.0,0.0176,0,0,5,155,0,-3.7,30
+E1_coordination,Greedy dispatcher | 1 fire,1020,46,3.0,True,22.0,34.0,6,40,46.0,0.0084,0,0,12,225,0,-9.35,34
+E1_coordination,Greedy dispatcher | 1 fire,1021,52,3.0,True,19.0,29.0,5,40,52.0,0.0045,0,0,10,228,0,-7.7,29
+E1_coordination,Greedy dispatcher | 1 fire,1022,53,3.0,True,16.0,41.0,10,40,53.0,0.063,0,0,25,325,0,-17.55,41
+E1_coordination,Greedy dispatcher | 1 fire,1023,62,15.0,True,20.0,62.0,17,40,58.0,0.0142,0,0,37,262,0,-33.75,62
+E1_coordination,Greedy dispatcher | 1 fire,1024,48,3.0,True,20.0,43.0,14,40,48.0,0.0342,0,0,30,315,0,-25.1,43
+E1_coordination,Greedy dispatcher | 1 fire,1025,43,3.0,True,18.0,31.0,6,40,43.0,0.0452,0,0,13,210,0,-9.9,31
+E1_coordination,Greedy dispatcher | 1 fire,1026,49,3.0,True,20.0,38.0,10,40,49.0,0.0275,0,0,24,303,0,-17.15,38
+E1_coordination,Greedy dispatcher | 1 fire,1027,48,3.0,True,21.0,34.0,9,40,48.0,0.0197,0,0,17,248,0,-13.95,34
+E1_coordination,Greedy dispatcher | 1 fire,1028,63,11.0,True,22.0,43.0,6,40,63.0,0.01,0,0,13,240,0,-11.95,43
+E1_coordination,Greedy dispatcher | 1 fire,1029,45,3.0,True,15.0,32.0,6,40,45.0,0.0008,0,0,17,274,0,-10.55,32
+E1_coordination,Contract Net | 1 fire,1000,56,8.0,True,22.0,44.0,10,40,56.0,0.0104,0,0,20,240,0,-18.5,44
+E1_coordination,Contract Net | 1 fire,1001,200,3.0,True,23.0,200.0,123,40,47.0,0.0468,0,0,149,2203,0,-372.3,200
+E1_coordination,Contract Net | 1 fire,1002,54,3.0,True,26.0,36.0,5,40,54.0,0.1371,0,0,11,283,0,-8.45,36
+E1_coordination,Contract Net | 1 fire,1003,104,7.0,True,26.0,104.0,29,40,49.0,0.0419,0,0,53,733,0,-63.1,104
+E1_coordination,Contract Net | 1 fire,1004,49,9.0,True,24.0,49.0,9,40,48.0,0.1124,0,0,19,200,0,-20.3,49
+E1_coordination,Contract Net | 1 fire,1005,57,5.0,True,24.0,37.0,7,40,57.0,0.0075,0,0,10,264,0,-12.7,37
+E1_coordination,Contract Net | 1 fire,1006,78,27.0,True,-3.0,27.0,2,40,78.0,0.1002,0,0,5,120,0,-3.7,27
+E1_coordination,Contract Net | 1 fire,1007,47,3.0,True,23.0,35.0,7,40,47.0,0.8678,1,0,17,246,0,-11.65,35
+E1_coordination,Contract Net | 1 fire,1008,49,3.0,True,22.0,28.0,2,40,49.0,0.0162,0,0,4,177,0,-3.45,28
+E1_coordination,Contract Net | 1 fire,1009,50,3.0,True,24.0,40.0,6,40,50.0,0.0958,0,0,13,246,0,-10.95,40
+E1_coordination,Contract Net | 1 fire,1010,51,3.0,True,22.0,36.0,7,40,51.0,0.014,0,0,19,281,0,-12.75,36
+E1_coordination,Contract Net | 1 fire,1011,41,3.0,True,17.0,31.0,9,40,41.0,0.04,0,0,21,217,0,-15.8,31
+E1_coordination,Contract Net | 1 fire,1012,53,10.0,True,9.0,34.0,7,40,53.0,0.0598,0,0,18,217,0,-12.05,34
+E1_coordination,Contract Net | 1 fire,1013,72,22.0,True,26.0,65.0,16,40,72.0,0.0689,0,0,31,283,0,-30.5,65
+E1_coordination,Contract Net | 1 fire,1014,55,3.0,True,20.0,31.0,5,40,55.0,0.2395,0,0,12,321,0,-9.05,31
+E1_coordination,Contract Net | 1 fire,1015,178,3.0,True,23.0,178.0,126,40,50.0,0.0917,0,0,135,1946,0,-395.2,178
+E1_coordination,Contract Net | 1 fire,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0296,0,0,18,266,0,-13.9,37
+E1_coordination,Contract Net | 1 fire,1017,73,27.0,True,25.0,67.0,11,40,73.0,0.064,0,0,25,249,0,-22.8,67
+E1_coordination,Contract Net | 1 fire,1018,53,15.0,True,25.0,48.0,6,40,53.0,0.0166,0,0,13,175,0,-12.1,48
+E1_coordination,Contract Net | 1 fire,1019,48,3.0,True,24.0,31.0,2,40,48.0,0.0204,0,0,5,206,0,-3.9,31
+E1_coordination,Contract Net | 1 fire,1020,53,3.0,True,26.0,38.0,7,40,53.0,0.0129,0,0,17,279,0,-11.75,38
+E1_coordination,Contract Net | 1 fire,1021,51,3.0,True,21.0,31.0,6,40,51.0,0.0037,0,0,11,276,0,-8.85,31
+E1_coordination,Contract Net | 1 fire,1022,206,3.0,True,21.0,206.0,124,40,49.0,0.0765,0,0,157,2191,0,-382.5,206
+E1_coordination,Contract Net | 1 fire,1023,216,15.0,True,25.0,216.0,123,40,59.0,0.0158,0,0,159,2105,0,-374.5,216
+E1_coordination,Contract Net | 1 fire,1024,282,3.0,True,24.0,282.0,120,40,47.0,0.0382,0,0,217,3055,0,-348.75,282
+E1_coordination,Contract Net | 1 fire,1025,52,3.0,True,18.0,34.0,7,40,52.0,0.0514,0,0,14,254,0,-11.2,34
+E1_coordination,Contract Net | 1 fire,1026,48,3.0,True,23.0,47.0,13,40,48.0,0.0323,0,0,29,294,0,-23.8,47
+E1_coordination,Contract Net | 1 fire,1027,197,3.0,True,27.0,197.0,125,40,51.0,0.0177,0,0,145,2131,0,-384.1,197
+E1_coordination,Contract Net | 1 fire,1028,63,11.0,True,29.0,50.0,9,40,63.0,0.0099,0,0,16,259,0,-16.95,50
+E1_coordination,Contract Net | 1 fire,1029,42,3.0,True,19.0,35.0,9,40,42.0,0.0007,0,0,18,230,0,-15.4,35
+E1_coordination,No communication | 2 fires,1000,233,3.0,True,36.0,233.0,272,40,49.0,0.0889,0,0,150,0,0,-862.55,233
+E1_coordination,No communication | 2 fires,1001,202,3.0,True,25.0,202.0,129,40,48.0,0.1372,0,0,131,0,0,-391.3,202
+E1_coordination,No communication | 2 fires,1002,300,3.0,False,40.0,,265,40,48.0,0.0095,0,0,252,0,0,-838.7,300
+E1_coordination,No communication | 2 fires,1003,289,3.0,True,31.0,289.0,187,40,45.0,0.0421,0,0,118,0,0,-541.85,289
+E1_coordination,No communication | 2 fires,1004,232,3.0,True,34.0,232.0,256,40,41.0,0.1609,0,0,142,0,0,-814.15,232
+E1_coordination,No communication | 2 fires,1005,229,3.0,True,38.0,229.0,74,40,52.0,0.0164,0,0,159,0,0,-219.35,229
+E1_coordination,No communication | 2 fires,1006,227,3.0,True,20.0,227.0,127,40,57.0,0.0502,0,0,140,0,0,-388.45,227
+E1_coordination,No communication | 2 fires,1007,245,3.0,True,36.0,245.0,131,40,48.0,0.869,1,0,149,0,0,-402.65,245
+E1_coordination,No communication | 2 fires,1008,300,3.0,False,34.0,,292,40,49.0,0.1082,0,0,179,0,0,-814.4,300
+E1_coordination,No communication | 2 fires,1009,254,3.0,True,22.0,254.0,251,40,45.0,0.0943,0,0,159,0,0,-786.2,254
+E1_coordination,No communication | 2 fires,1010,284,3.0,True,30.0,284.0,274,40,52.0,0.036,0,0,284,0,0,-868.4,284
+E1_coordination,No communication | 2 fires,1011,257,3.0,True,18.0,257.0,143,40,47.0,0.0405,0,0,107,0,0,-434.2,257
+E1_coordination,No communication | 2 fires,1012,195,3.0,True,18.0,195.0,138,40,50.0,0.0421,0,0,85,0,0,-423.9,195
+E1_coordination,No communication | 2 fires,1013,236,22.0,True,0.0,236.0,125,40,66.0,0.0497,0,0,112,0,0,-387.3,236
+E1_coordination,No communication | 2 fires,1014,271,3.0,True,27.0,271.0,254,40,50.0,0.0654,0,0,208,0,0,-791.4,271
+E1_coordination,No communication | 2 fires,1015,155,3.0,True,18.0,155.0,125,40,50.0,0.0736,0,0,118,0,0,-396.5,155
+E1_coordination,No communication | 2 fires,1016,224,7.0,True,22.0,224.0,132,40,59.0,0.0582,0,0,111,0,0,-395.9,224
+E1_coordination,No communication | 2 fires,1017,268,3.0,True,43.0,268.0,133,40,46.0,0.0054,0,0,161,0,0,-423.65,268
+E1_coordination,No communication | 2 fires,1018,271,3.0,True,39.0,271.0,257,40,44.0,0.0055,0,0,207,0,0,-807.5,271
+E1_coordination,No communication | 2 fires,1019,233,3.0,True,16.0,233.0,119,40,50.0,0.1666,0,0,163,0,0,-361.15,233
+E1_coordination,No communication | 2 fires,1020,300,3.0,False,44.0,,347,40,49.0,0.0183,0,0,201,0,0,-1022.0,300
+E1_coordination,No communication | 2 fires,1021,252,3.0,True,34.0,252.0,264,40,51.0,0.0207,0,0,216,0,0,-826.9,252
+E1_coordination,No communication | 2 fires,1022,173,3.0,True,27.0,173.0,127,40,45.0,0.1224,0,0,113,0,0,-409.25,173
+E1_coordination,No communication | 2 fires,1023,300,3.0,False,30.0,,282,40,55.0,0.0117,0,0,254,0,0,-894.2,300
+E1_coordination,No communication | 2 fires,1024,257,3.0,True,38.0,257.0,253,40,47.0,0.0424,0,0,133,0,0,-806.1,257
+E1_coordination,No communication | 2 fires,1025,296,3.0,True,25.0,296.0,253,40,53.0,0.1125,0,0,155,0,0,-813.45,296
+E1_coordination,No communication | 2 fires,1026,199,3.0,True,40.0,199.0,256,40,49.0,0.0544,0,0,150,0,0,-820.25,199
+E1_coordination,No communication | 2 fires,1027,215,3.0,True,42.0,215.0,138,40,49.0,0.032,0,0,68,0,0,-433.1,215
+E1_coordination,No communication | 2 fires,1028,272,3.0,True,46.0,272.0,130,40,51.0,0.0171,0,0,116,0,0,-406.1,272
+E1_coordination,No communication | 2 fires,1029,211,3.0,True,21.0,211.0,153,40,47.0,0.0562,0,0,40,0,0,-465.7,211
+E1_coordination,Peer-to-peer | 2 fires,1000,239,3.0,True,34.0,239.0,255,40,49.0,0.0907,0,0,177,2310,0,-811.7,239
+E1_coordination,Peer-to-peer | 2 fires,1001,203,3.0,True,25.0,203.0,127,40,47.0,0.136,0,0,138,1764,0,-393.8,203
+E1_coordination,Peer-to-peer | 2 fires,1002,230,3.0,True,40.0,230.0,146,40,48.0,0.0095,0,0,57,615,0,-440.75,230
+E1_coordination,Peer-to-peer | 2 fires,1003,252,3.0,True,31.0,252.0,184,40,45.0,0.0417,0,0,89,1149,0,-534.35,252
+E1_coordination,Peer-to-peer | 2 fires,1004,239,3.0,True,34.0,239.0,257,40,41.0,0.1609,0,0,157,2295,0,-821.55,239
+E1_coordination,Peer-to-peer | 2 fires,1005,300,3.0,False,38.0,,253,40,51.0,0.0157,0,0,111,1578,0,-700.9,300
+E1_coordination,Peer-to-peer | 2 fires,1006,240,3.0,True,20.0,240.0,127,40,57.0,0.0502,0,0,136,2049,0,-403.6,240
+E1_coordination,Peer-to-peer | 2 fires,1007,298,3.0,True,36.0,298.0,279,40,48.0,0.8675,1,0,144,2301,0,-864.95,298
+E1_coordination,Peer-to-peer | 2 fires,1008,300,3.0,False,34.0,,285,40,49.0,0.1077,0,0,148,2100,0,-783.2,300
+E1_coordination,Peer-to-peer | 2 fires,1009,250,3.0,True,22.0,250.0,129,40,46.0,0.0967,0,0,181,2187,0,-385.8,250
+E1_coordination,Peer-to-peer | 2 fires,1010,241,3.0,True,30.0,241.0,145,40,52.0,0.036,0,0,195,1986,0,-422.1,241
+E1_coordination,Peer-to-peer | 2 fires,1011,299,3.0,True,18.0,299.0,117,40,47.0,0.0405,0,0,234,2256,0,-316.35,299
+E1_coordination,Peer-to-peer | 2 fires,1012,197,3.0,True,18.0,197.0,138,40,50.0,0.0421,0,0,87,1458,0,-422.1,197
+E1_coordination,Peer-to-peer | 2 fires,1013,243,22.0,True,0.0,243.0,125,40,66.0,0.0497,0,0,124,1530,0,-392.05,243
+E1_coordination,Peer-to-peer | 2 fires,1014,300,3.0,False,27.0,,433,40,50.0,0.0686,0,0,257,2760,0,-1299.05,300
+E1_coordination,Peer-to-peer | 2 fires,1015,155,3.0,True,18.0,155.0,125,40,50.0,0.0736,0,0,118,1773,0,-396.5,155
+E1_coordination,Peer-to-peer | 2 fires,1016,253,7.0,True,22.0,253.0,134,40,59.0,0.0582,0,0,163,2103,0,-408.65,253
+E1_coordination,Peer-to-peer | 2 fires,1017,300,3.0,False,43.0,,277,40,46.0,0.0054,0,0,140,1506,0,-787.45,300
+E1_coordination,Peer-to-peer | 2 fires,1018,227,3.0,True,39.0,227.0,136,40,44.0,0.0055,0,0,144,1764,0,-417.75,227
+E1_coordination,Peer-to-peer | 2 fires,1019,234,3.0,True,16.0,234.0,118,40,50.0,0.1665,0,0,174,2157,0,-347.0,234
+E1_coordination,Peer-to-peer | 2 fires,1020,241,3.0,True,44.0,241.0,258,40,49.0,0.0184,0,0,157,1980,0,-812.2,241
+E1_coordination,Peer-to-peer | 2 fires,1021,239,3.0,True,34.0,239.0,147,40,51.0,0.0207,0,0,215,1908,0,-430.5,239
+E1_coordination,Peer-to-peer | 2 fires,1022,174,3.0,True,27.0,174.0,125,40,45.0,0.1174,0,0,134,1620,0,-390.85,174
+E1_coordination,Peer-to-peer | 2 fires,1023,209,3.0,True,30.0,209.0,140,40,55.0,0.0115,0,0,124,1431,0,-414.65,209
+E1_coordination,Peer-to-peer | 2 fires,1024,295,3.0,True,38.0,295.0,247,40,47.0,0.0395,0,0,174,2658,0,-786.45,295
+E1_coordination,Peer-to-peer | 2 fires,1025,251,3.0,True,25.0,251.0,253,40,53.0,0.1168,0,0,180,2208,0,-807.75,251
+E1_coordination,Peer-to-peer | 2 fires,1026,230,3.0,True,40.0,230.0,258,40,49.0,0.0568,0,0,142,2157,0,-829.7,230
+E1_coordination,Peer-to-peer | 2 fires,1027,203,3.0,True,42.0,203.0,142,40,49.0,0.032,0,0,103,1314,0,-429.3,203
+E1_coordination,Peer-to-peer | 2 fires,1028,105,3.0,True,46.0,105.0,20,40,51.0,0.0171,0,0,32,258,0,-47.55,105
+E1_coordination,Peer-to-peer | 2 fires,1029,207,3.0,True,21.0,207.0,150,40,47.0,0.0562,0,0,41,528,0,-459.5,207
+E1_coordination,Greedy dispatcher | 2 fires,1000,47,3.0,True,24.0,39.0,17,40,47.0,0.0816,0,0,28,351,0,-29.65,39
+E1_coordination,Greedy dispatcher | 2 fires,1001,197,3.0,True,17.0,197.0,124,40,47.0,0.1181,0,0,155,2201,0,-373.55,197
+E1_coordination,Greedy dispatcher | 2 fires,1002,46,3.0,True,20.0,34.0,5,40,46.0,0.0098,0,0,12,254,0,-9.6,34
+E1_coordination,Greedy dispatcher | 2 fires,1003,246,3.0,True,18.0,246.0,126,40,44.0,0.0445,0,0,189,2630,0,-393.0,246
+E1_coordination,Greedy dispatcher | 2 fires,1004,231,3.0,True,21.0,231.0,251,40,41.0,0.1787,0,0,182,3551,0,-796.5,231
+E1_coordination,Greedy dispatcher | 2 fires,1005,53,3.0,True,19.0,34.0,9,40,53.0,0.0172,0,0,18,299,0,-16.0,34
+E1_coordination,Greedy dispatcher | 2 fires,1006,57,3.0,True,19.0,29.0,5,40,57.0,0.045,0,0,11,240,0,-8.45,29
+E1_coordination,Greedy dispatcher | 2 fires,1007,48,3.0,True,23.0,36.0,9,40,48.0,0.8743,1,0,22,314,0,-16.2,36
+E1_coordination,Greedy dispatcher | 2 fires,1008,228,3.0,True,21.0,228.0,128,40,47.0,0.0975,0,0,165,2442,0,-403.75,228
+E1_coordination,Greedy dispatcher | 2 fires,1009,45,3.0,True,18.0,30.0,11,40,45.0,0.1022,0,0,20,290,0,-16.55,30
+E1_coordination,Greedy dispatcher | 2 fires,1010,196,3.0,True,20.0,196.0,73,40,54.0,0.0371,0,0,153,2009,0,-199.75,196
+E1_coordination,Greedy dispatcher | 2 fires,1011,288,3.0,True,18.0,288.0,128,40,47.0,0.0405,0,0,236,3170,0,-363.45,288
+E1_coordination,Greedy dispatcher | 2 fires,1012,53,3.0,True,16.0,34.0,8,40,53.0,0.0367,0,0,20,288,0,-13.95,34
+E1_coordination,Greedy dispatcher | 2 fires,1013,102,22.0,True,0.0,102.0,24,40,67.0,0.0487,0,0,44,496,0,-57.05,102
+E1_coordination,Greedy dispatcher | 2 fires,1014,228,3.0,True,19.0,228.0,127,40,50.0,0.0695,0,0,142,2581,0,-384.05,228
+E1_coordination,Greedy dispatcher | 2 fires,1015,156,3.0,True,18.0,156.0,126,40,50.0,0.0794,0,0,129,1777,0,-391.0,156
+E1_coordination,Greedy dispatcher | 2 fires,1016,64,7.0,True,16.0,38.0,14,40,64.0,0.0612,0,0,29,393,0,-28.15,38
+E1_coordination,Greedy dispatcher | 2 fires,1017,132,3.0,True,18.0,132.0,31,40,46.0,0.0046,0,0,43,873,0,-73.55,132
+E1_coordination,Greedy dispatcher | 2 fires,1018,52,3.0,True,21.0,52.0,10,40,44.0,0.0073,0,0,17,277,0,-18.95,52
+E1_coordination,Greedy dispatcher | 2 fires,1019,49,3.0,True,19.0,49.0,18,40,49.0,0.1665,0,0,38,367,0,-34.3,49
+E1_coordination,Greedy dispatcher | 2 fires,1020,51,3.0,True,16.0,35.0,9,40,51.0,0.0133,0,0,20,299,0,-14.35,35
+E1_coordination,Greedy dispatcher | 2 fires,1021,51,3.0,True,20.0,40.0,12,40,51.0,0.0206,0,0,29,409,0,-23.0,40
+E1_coordination,Greedy dispatcher | 2 fires,1022,182,3.0,True,21.0,182.0,124,40,47.0,0.1216,0,0,144,1965,0,-384.4,182
+E1_coordination,Greedy dispatcher | 2 fires,1023,216,3.0,True,17.0,216.0,133,40,49.0,0.0115,0,0,171,2325,0,-408.25,216
+E1_coordination,Greedy dispatcher | 2 fires,1024,277,3.0,True,18.0,277.0,128,40,46.0,0.0378,0,0,207,3051,0,-354.4,277
+E1_coordination,Greedy dispatcher | 2 fires,1025,53,3.0,True,18.0,39.0,11,40,53.0,0.1022,0,0,24,298,0,-17.15,39
+E1_coordination,Greedy dispatcher | 2 fires,1026,218,3.0,True,21.0,218.0,154,40,46.0,0.0517,0,0,170,2919,0,-458.1,218
+E1_coordination,Greedy dispatcher | 2 fires,1027,200,3.0,True,22.0,200.0,129,40,47.0,0.0221,0,0,117,2182,0,-392.45,200
+E1_coordination,Greedy dispatcher | 2 fires,1028,48,3.0,True,22.0,46.0,8,40,48.0,0.0163,0,0,18,236,0,-16.4,46
+E1_coordination,Greedy dispatcher | 2 fires,1029,138,3.0,True,19.0,138.0,63,40,46.0,0.0587,0,0,84,1208,0,-172.05,138
+E1_coordination,Contract Net | 2 fires,1000,152,3.0,True,24.0,152.0,83,40,48.0,0.0826,0,0,88,1637,0,-229.75,152
+E1_coordination,Contract Net | 2 fires,1001,215,3.0,True,18.0,215.0,128,40,46.0,0.1274,0,0,145,2410,0,-403.5,215
+E1_coordination,Contract Net | 2 fires,1002,49,3.0,True,23.0,41.0,9,40,49.0,0.0099,0,0,23,335,0,-16.05,41
+E1_coordination,Contract Net | 2 fires,1003,262,3.0,True,19.0,262.0,122,40,52.0,0.0458,0,0,169,2848,0,-362.55,262
+E1_coordination,Contract Net | 2 fires,1004,232,3.0,True,23.0,232.0,256,40,42.0,0.1664,0,0,169,3656,0,-821.7,232
+E1_coordination,Contract Net | 2 fires,1005,237,3.0,True,23.0,237.0,128,40,52.0,0.0166,0,0,157,2416,0,-399.9,237
+E1_coordination,Contract Net | 2 fires,1006,57,3.0,True,22.0,33.0,7,40,57.0,0.0446,0,0,13,281,0,-11.0,33
+E1_coordination,Contract Net | 2 fires,1007,47,3.0,True,22.0,36.0,9,40,47.0,0.8679,1,0,22,298,0,-16.0,36
+E1_coordination,Contract Net | 2 fires,1008,177,3.0,True,23.0,177.0,128,40,47.0,0.096,0,0,107,1812,0,-400.05,177
+E1_coordination,Contract Net | 2 fires,1009,251,3.0,True,18.0,251.0,133,40,45.0,0.1025,0,0,189,2737,0,-417.05,251
+E1_coordination,Contract Net | 2 fires,1010,192,3.0,True,26.0,192.0,78,40,50.0,0.0361,0,0,146,2321,0,-228.65,192
+E1_coordination,Contract Net | 2 fires,1011,300,3.0,False,18.0,,136,40,48.0,0.0424,0,0,210,3395,0,-421.0,300
+E1_coordination,Contract Net | 2 fires,1012,53,3.0,True,16.0,35.0,8,40,53.0,0.0404,0,0,21,304,0,-13.9,35
+E1_coordination,Contract Net | 2 fires,1013,105,22.0,True,0.0,105.0,21,40,66.0,0.049,0,0,45,572,0,-48.3,105
+E1_coordination,Contract Net | 2 fires,1014,211,3.0,True,21.0,211.0,130,40,55.0,0.0788,0,0,139,2439,0,-401.0,211
+E1_coordination,Contract Net | 2 fires,1015,176,3.0,True,18.0,176.0,126,40,48.0,0.1055,0,0,128,2055,0,-389.45,176
+E1_coordination,Contract Net | 2 fires,1016,61,7.0,True,20.0,46.0,15,40,61.0,0.0635,0,0,33,413,0,-31.7,46
+E1_coordination,Contract Net | 2 fires,1017,300,3.0,False,21.0,,124,40,50.0,0.0056,0,0,199,2970,0,-370.6,300
+E1_coordination,Contract Net | 2 fires,1018,243,3.0,True,20.0,243.0,129,40,44.0,0.0051,0,0,159,2470,0,-405.0,243
+E1_coordination,Contract Net | 2 fires,1019,83,3.0,True,16.0,83.0,24,40,49.0,0.1687,0,0,52,638,0,-50.1,83
+E1_coordination,Contract Net | 2 fires,1020,53,3.0,True,22.0,41.0,11,40,53.0,0.0213,0,0,27,363,0,-19.6,41
+E1_coordination,Contract Net | 2 fires,1021,51,3.0,True,24.0,39.0,14,40,51.0,0.0206,0,0,31,407,0,-26.65,39
+E1_coordination,Contract Net | 2 fires,1022,289,3.0,True,20.0,289.0,125,40,49.0,0.1301,0,0,214,3203,0,-399.65,289
+E1_coordination,Contract Net | 2 fires,1023,230,3.0,True,23.0,230.0,139,40,48.0,0.0088,0,0,149,2602,0,-423.35,230
+E1_coordination,Contract Net | 2 fires,1024,244,3.0,True,24.0,244.0,254,40,48.0,0.0398,0,0,204,3705,0,-807.25,244
+E1_coordination,Contract Net | 2 fires,1025,210,3.0,True,20.0,210.0,136,40,49.0,0.0841,0,0,136,2303,0,-421.15,210
+E1_coordination,Contract Net | 2 fires,1026,206,3.0,True,22.0,206.0,253,40,47.0,0.0502,0,0,155,3164,0,-814.95,206
+E1_coordination,Contract Net | 2 fires,1027,202,3.0,True,21.0,202.0,128,40,49.0,0.0282,0,0,136,2270,0,-386.8,202
+E1_coordination,Contract Net | 2 fires,1028,291,3.0,True,22.0,291.0,125,40,51.0,0.0166,0,0,203,2916,0,-387.45,291
+E1_coordination,Contract Net | 2 fires,1029,127,3.0,True,21.0,127.0,40,40,48.0,0.0561,0,0,63,1014,0,-90.25,127
+E2_communication,Greedy dispatcher | loss 0%,1000,53,8.0,True,21.0,43.0,10,40,53.0,0.0098,0,0,20,241,0,-17.9,43
+E2_communication,Greedy dispatcher | loss 0%,1001,47,3.0,True,20.0,39.0,14,40,47.0,0.049,0,0,27,304,0,-24.45,39
+E2_communication,Greedy dispatcher | loss 0%,1002,53,3.0,True,16.0,23.0,2,40,53.0,0.0991,0,0,5,171,0,-3.45,23
+E2_communication,Greedy dispatcher | loss 0%,1003,51,7.0,True,21.0,51.0,18,40,48.0,0.0404,0,0,35,265,0,-35.15,51
+E2_communication,Greedy dispatcher | loss 0%,1004,49,9.0,True,26.0,47.0,9,40,49.0,0.1006,0,0,16,224,0,-20.35,47
+E2_communication,Greedy dispatcher | loss 0%,1005,58,5.0,True,23.0,35.0,6,40,58.0,0.0076,0,0,10,239,0,-11.3,35
+E2_communication,Greedy dispatcher | loss 0%,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1003,0,0,5,102,0,-3.7,27
+E2_communication,Greedy dispatcher | loss 0%,1007,46,3.0,True,21.0,32.0,7,40,46.0,0.8656,1,0,16,254,0,-10.75,32
+E2_communication,Greedy dispatcher | loss 0%,1008,52,3.0,True,19.0,25.0,2,40,52.0,0.0175,0,0,4,155,0,-3.25,25
+E2_communication,Greedy dispatcher | loss 0%,1009,46,3.0,True,18.0,29.0,5,40,46.0,0.0793,0,0,10,206,0,-7.5,29
+E2_communication,Greedy dispatcher | loss 0%,1010,53,3.0,True,20.0,36.0,9,40,53.0,0.0137,0,0,21,301,0,-14.7,36
+E2_communication,Greedy dispatcher | loss 0%,1011,40,3.0,True,17.0,31.0,9,40,40.0,0.04,0,0,21,208,0,-15.8,31
+E2_communication,Greedy dispatcher | loss 0%,1012,54,10.0,True,9.0,34.0,7,40,54.0,0.0611,0,0,18,261,0,-12.05,34
+E2_communication,Greedy dispatcher | loss 0%,1013,73,22.0,True,22.0,59.0,12,40,73.0,0.0705,0,0,23,295,0,-22.6,59
+E2_communication,Greedy dispatcher | loss 0%,1014,54,3.0,True,19.0,33.0,5,40,54.0,0.2386,0,0,11,331,0,-9.25,33
+E2_communication,Greedy dispatcher | loss 0%,1015,81,3.0,True,22.0,81.0,21,40,50.0,0.088,0,0,43,628,0,-42.55,81
+E2_communication,Greedy dispatcher | loss 0%,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0293,0,0,18,245,0,-13.9,37
+E2_communication,Greedy dispatcher | loss 0%,1017,73,27.0,True,24.0,65.0,11,40,73.0,0.0638,0,0,26,248,0,-22.4,65
+E2_communication,Greedy dispatcher | loss 0%,1018,53,15.0,True,22.0,46.0,5,40,53.0,0.0196,0,0,11,193,0,-10.45,46
+E2_communication,Greedy dispatcher | loss 0%,1019,46,3.0,True,23.0,30.0,2,40,46.0,0.0176,0,0,5,155,0,-3.7,30
+E2_communication,Greedy dispatcher | loss 0%,1020,46,3.0,True,22.0,34.0,6,40,46.0,0.0084,0,0,12,225,0,-9.35,34
+E2_communication,Greedy dispatcher | loss 0%,1021,52,3.0,True,19.0,29.0,5,40,52.0,0.0045,0,0,10,228,0,-7.7,29
+E2_communication,Greedy dispatcher | loss 0%,1022,53,3.0,True,16.0,41.0,10,40,53.0,0.063,0,0,25,325,0,-17.55,41
+E2_communication,Greedy dispatcher | loss 0%,1023,62,15.0,True,20.0,62.0,17,40,58.0,0.0142,0,0,37,262,0,-33.75,62
+E2_communication,Greedy dispatcher | loss 0%,1024,48,3.0,True,20.0,43.0,14,40,48.0,0.0342,0,0,30,315,0,-25.1,43
+E2_communication,Greedy dispatcher | loss 0%,1025,43,3.0,True,18.0,31.0,6,40,43.0,0.0452,0,0,13,210,0,-9.9,31
+E2_communication,Greedy dispatcher | loss 0%,1026,49,3.0,True,20.0,38.0,10,40,49.0,0.0275,0,0,24,303,0,-17.15,38
+E2_communication,Greedy dispatcher | loss 0%,1027,48,3.0,True,21.0,34.0,9,40,48.0,0.0197,0,0,17,248,0,-13.95,34
+E2_communication,Greedy dispatcher | loss 0%,1028,63,11.0,True,22.0,43.0,6,40,63.0,0.01,0,0,13,240,0,-11.95,43
+E2_communication,Greedy dispatcher | loss 0%,1029,45,3.0,True,15.0,32.0,6,40,45.0,0.0008,0,0,17,274,0,-10.55,32
+E2_communication,Greedy dispatcher | loss 20%,1000,108,8.0,True,28.0,108.0,21,40,52.0,0.0088,0,0,48,650,126,-48.2,108
+E2_communication,Greedy dispatcher | loss 20%,1001,202,3.0,True,20.0,202.0,123,40,47.0,0.0488,0,0,147,2194,484,-367.8,202
+E2_communication,Greedy dispatcher | loss 20%,1002,54,3.0,True,21.0,31.0,5,40,54.0,0.0422,0,0,9,276,60,-7.45,31
+E2_communication,Greedy dispatcher | loss 20%,1003,99,7.0,True,21.0,99.0,26,40,54.0,0.0704,0,0,50,687,140,-58.9,99
+E2_communication,Greedy dispatcher | loss 20%,1004,50,9.0,True,21.0,44.0,9,40,50.0,0.109,0,0,19,227,49,-19.1,44
+E2_communication,Greedy dispatcher | loss 20%,1005,55,5.0,True,21.0,34.0,6,40,55.0,0.0097,0,0,11,228,43,-11.15,34
+E2_communication,Greedy dispatcher | loss 20%,1006,91,27.0,True,-3.0,27.0,2,40,91.0,0.1003,0,0,5,121,33,-3.7,27
+E2_communication,Greedy dispatcher | loss 20%,1007,49,3.0,True,23.0,37.0,7,40,49.0,0.0236,0,0,17,280,61,-12.2,37
+E2_communication,Greedy dispatcher | loss 20%,1008,51,3.0,True,22.0,28.0,2,40,51.0,0.0157,0,0,4,172,31,-3.45,28
+E2_communication,Greedy dispatcher | loss 20%,1009,50,3.0,True,18.0,30.0,5,40,50.0,0.1178,0,0,11,195,45,-7.6,30
+E2_communication,Greedy dispatcher | loss 20%,1010,52,3.0,True,23.0,36.0,9,40,52.0,0.0059,0,0,22,300,56,-15.35,36
+E2_communication,Greedy dispatcher | loss 20%,1011,48,3.0,True,16.0,35.0,11,40,48.0,0.0394,0,0,24,262,49,-18.35,35
+E2_communication,Greedy dispatcher | loss 20%,1012,61,10.0,True,8.0,37.0,7,40,61.0,0.0525,0,0,20,266,49,-12.5,37
+E2_communication,Greedy dispatcher | loss 20%,1013,73,22.0,True,22.0,67.0,14,40,73.0,0.0668,0,0,27,297,64,-27.05,67
+E2_communication,Greedy dispatcher | loss 20%,1014,51,3.0,True,20.0,29.0,5,40,51.0,0.1394,0,0,12,283,48,-8.8,29
+E2_communication,Greedy dispatcher | loss 20%,1015,184,3.0,True,22.0,184.0,126,40,50.0,0.0959,0,0,133,1987,408,-392.2,184
+E2_communication,Greedy dispatcher | loss 20%,1016,58,10.0,True,15.0,41.0,9,40,58.0,0.0309,0,0,18,226,51,-17.8,41
+E2_communication,Greedy dispatcher | loss 20%,1017,75,27.0,True,25.0,64.0,11,40,75.0,0.0587,0,0,23,274,47,-21.8,64
+E2_communication,Greedy dispatcher | loss 20%,1018,53,15.0,True,23.0,49.0,6,40,53.0,0.0192,0,0,11,177,33,-12.3,49
+E2_communication,Greedy dispatcher | loss 20%,1019,50,3.0,True,24.0,30.0,2,40,50.0,0.0238,0,0,5,180,37,-3.8,30
+E2_communication,Greedy dispatcher | loss 20%,1020,52,3.0,True,22.0,35.0,6,40,52.0,0.0073,0,0,13,258,58,-9.6,35
+E2_communication,Greedy dispatcher | loss 20%,1021,48,3.0,True,20.0,30.0,5,40,48.0,0.0105,0,0,10,248,48,-7.85,30
+E2_communication,Greedy dispatcher | loss 20%,1022,53,3.0,True,17.0,53.0,13,40,51.0,0.0647,0,0,36,335,69,-25.15,53
+E2_communication,Greedy dispatcher | loss 20%,1023,62,15.0,True,22.0,54.0,18,40,62.0,0.0238,0,0,37,294,55,-33.7,54
+E2_communication,Greedy dispatcher | loss 20%,1024,47,3.0,True,18.0,40.0,11,40,47.0,0.03,0,0,28,300,63,-20.35,40
+E2_communication,Greedy dispatcher | loss 20%,1025,50,3.0,True,15.0,24.0,4,40,50.0,0.0877,0,0,8,227,57,-6.2,24
+E2_communication,Greedy dispatcher | loss 20%,1026,49,3.0,True,24.0,43.0,12,40,49.0,0.0315,0,0,28,315,66,-22.35,43
+E2_communication,Greedy dispatcher | loss 20%,1027,231,3.0,True,19.0,231.0,125,40,46.0,0.0154,0,0,154,2431,447,-383.25,231
+E2_communication,Greedy dispatcher | loss 20%,1028,52,11.0,True,20.0,42.0,5,40,52.0,0.0105,0,0,14,186,33,-10.65,42
+E2_communication,Greedy dispatcher | loss 20%,1029,44,3.0,True,21.0,44.0,11,40,43.0,0.0007,0,0,26,279,55,-21.45,44
+E2_communication,Greedy dispatcher | loss 50%,1000,257,8.0,True,28.0,257.0,122,40,56.0,0.009,0,0,186,2458,1201,-382.6,257
+E2_communication,Greedy dispatcher | loss 50%,1001,227,3.0,True,20.0,227.0,123,40,47.0,0.0397,0,0,180,2375,1246,-378.35,227
+E2_communication,Greedy dispatcher | loss 50%,1002,49,3.0,True,17.0,23.0,2,40,49.0,0.0466,0,0,5,185,85,-3.45,23
+E2_communication,Greedy dispatcher | loss 50%,1003,55,7.0,True,21.0,55.0,19,40,54.0,0.0701,0,0,34,296,148,-36.5,55
+E2_communication,Greedy dispatcher | loss 50%,1004,51,9.0,True,25.0,51.0,9,40,49.0,0.1002,0,0,17,225,116,-21.0,51
+E2_communication,Greedy dispatcher | loss 50%,1005,58,5.0,True,22.0,34.0,6,40,58.0,0.0073,0,0,10,216,95,-11.1,34
+E2_communication,Greedy dispatcher | loss 50%,1006,92,27.0,True,-3.0,27.0,2,40,92.0,0.1005,0,0,5,122,63,-3.7,27
+E2_communication,Greedy dispatcher | loss 50%,1007,49,3.0,True,23.0,38.0,7,40,49.0,0.0225,0,0,17,239,135,-12.25,38
+E2_communication,Greedy dispatcher | loss 50%,1008,50,3.0,True,20.0,26.0,2,40,50.0,0.0151,0,0,4,143,70,-3.35,26
+E2_communication,Greedy dispatcher | loss 50%,1009,45,3.0,True,17.0,28.0,5,40,45.0,0.1054,0,0,10,182,98,-7.5,28
+E2_communication,Greedy dispatcher | loss 50%,1010,47,3.0,True,22.0,41.0,9,40,47.0,0.0056,0,0,23,276,134,-16.4,41
+E2_communication,Greedy dispatcher | loss 50%,1011,48,3.0,True,16.0,35.0,11,40,48.0,0.0391,0,0,24,247,110,-18.85,35
+E2_communication,Greedy dispatcher | loss 50%,1012,59,10.0,True,8.0,35.0,7,40,59.0,0.0483,0,0,20,258,132,-12.2,35
+E2_communication,Greedy dispatcher | loss 50%,1013,71,22.0,True,26.0,64.0,15,40,71.0,0.066,0,0,30,297,157,-28.85,64
+E2_communication,Greedy dispatcher | loss 50%,1014,51,3.0,True,19.0,32.0,5,40,51.0,0.1365,0,0,12,318,160,-9.05,32
+E2_communication,Greedy dispatcher | loss 50%,1015,212,3.0,True,22.0,212.0,124,40,49.0,0.1022,0,0,167,2251,1155,-396.1,212
+E2_communication,Greedy dispatcher | loss 50%,1016,61,10.0,True,12.0,41.0,9,40,61.0,0.0309,0,0,19,290,153,-17.8,41
+E2_communication,Greedy dispatcher | loss 50%,1017,74,27.0,True,25.0,65.0,11,40,74.0,0.0566,0,0,24,263,124,-22.2,65
+E2_communication,Greedy dispatcher | loss 50%,1018,53,15.0,True,23.0,46.0,5,40,53.0,0.0183,0,0,12,155,73,-10.5,46
+E2_communication,Greedy dispatcher | loss 50%,1019,49,3.0,True,24.0,30.0,2,40,49.0,0.0226,0,0,4,186,90,-3.75,30
+E2_communication,Greedy dispatcher | loss 50%,1020,51,3.0,True,31.0,48.0,10,40,51.0,0.0106,0,0,21,262,130,-18.25,48
+E2_communication,Greedy dispatcher | loss 50%,1021,46,3.0,True,23.0,46.0,6,40,46.0,0.0104,0,0,15,195,103,-11.25,46
+E2_communication,Greedy dispatcher | loss 50%,1022,215,3.0,True,22.0,215.0,125,40,47.0,0.108,0,0,172,2204,1081,-390.6,215
+E2_communication,Greedy dispatcher | loss 50%,1023,245,15.0,True,22.0,245.0,120,40,62.0,0.0244,0,0,181,2405,1191,-362.55,245
+E2_communication,Greedy dispatcher | loss 50%,1024,55,3.0,True,20.0,46.0,12,40,55.0,0.0475,0,0,30,319,165,-23.05,46
+E2_communication,Greedy dispatcher | loss 50%,1025,50,3.0,True,15.0,25.0,4,40,50.0,0.093,0,0,9,221,108,-6.35,25
+E2_communication,Greedy dispatcher | loss 50%,1026,48,3.0,True,23.0,46.0,14,40,48.0,0.032,0,0,30,301,154,-25.65,46
+E2_communication,Greedy dispatcher | loss 50%,1027,49,3.0,True,21.0,32.0,7,40,49.0,0.0168,0,0,14,245,114,-11.3,32
+E2_communication,Greedy dispatcher | loss 50%,1028,52,11.0,True,20.0,41.0,5,40,52.0,0.0103,0,0,15,156,84,-10.45,41
+E2_communication,Greedy dispatcher | loss 50%,1029,44,3.0,True,18.0,38.0,8,40,44.0,0.0007,0,0,18,231,119,-14.45,38
+E2_communication,Contract Net | loss 0%,1000,56,8.0,True,22.0,44.0,10,40,56.0,0.0104,0,0,20,240,0,-18.5,44
+E2_communication,Contract Net | loss 0%,1001,200,3.0,True,23.0,200.0,123,40,47.0,0.0468,0,0,149,2203,0,-372.3,200
+E2_communication,Contract Net | loss 0%,1002,54,3.0,True,26.0,36.0,5,40,54.0,0.1371,0,0,11,283,0,-8.45,36
+E2_communication,Contract Net | loss 0%,1003,104,7.0,True,26.0,104.0,29,40,49.0,0.0419,0,0,53,733,0,-63.1,104
+E2_communication,Contract Net | loss 0%,1004,49,9.0,True,24.0,49.0,9,40,48.0,0.1124,0,0,19,200,0,-20.3,49
+E2_communication,Contract Net | loss 0%,1005,57,5.0,True,24.0,37.0,7,40,57.0,0.0075,0,0,10,264,0,-12.7,37
+E2_communication,Contract Net | loss 0%,1006,78,27.0,True,-3.0,27.0,2,40,78.0,0.1002,0,0,5,120,0,-3.7,27
+E2_communication,Contract Net | loss 0%,1007,47,3.0,True,23.0,35.0,7,40,47.0,0.8678,1,0,17,246,0,-11.65,35
+E2_communication,Contract Net | loss 0%,1008,49,3.0,True,22.0,28.0,2,40,49.0,0.0162,0,0,4,177,0,-3.45,28
+E2_communication,Contract Net | loss 0%,1009,50,3.0,True,24.0,40.0,6,40,50.0,0.0958,0,0,13,246,0,-10.95,40
+E2_communication,Contract Net | loss 0%,1010,51,3.0,True,22.0,36.0,7,40,51.0,0.014,0,0,19,281,0,-12.75,36
+E2_communication,Contract Net | loss 0%,1011,41,3.0,True,17.0,31.0,9,40,41.0,0.04,0,0,21,217,0,-15.8,31
+E2_communication,Contract Net | loss 0%,1012,53,10.0,True,9.0,34.0,7,40,53.0,0.0598,0,0,18,217,0,-12.05,34
+E2_communication,Contract Net | loss 0%,1013,72,22.0,True,26.0,65.0,16,40,72.0,0.0689,0,0,31,283,0,-30.5,65
+E2_communication,Contract Net | loss 0%,1014,55,3.0,True,20.0,31.0,5,40,55.0,0.2395,0,0,12,321,0,-9.05,31
+E2_communication,Contract Net | loss 0%,1015,178,3.0,True,23.0,178.0,126,40,50.0,0.0917,0,0,135,1946,0,-395.2,178
+E2_communication,Contract Net | loss 0%,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0296,0,0,18,266,0,-13.9,37
+E2_communication,Contract Net | loss 0%,1017,73,27.0,True,25.0,67.0,11,40,73.0,0.064,0,0,25,249,0,-22.8,67
+E2_communication,Contract Net | loss 0%,1018,53,15.0,True,25.0,48.0,6,40,53.0,0.0166,0,0,13,175,0,-12.1,48
+E2_communication,Contract Net | loss 0%,1019,48,3.0,True,24.0,31.0,2,40,48.0,0.0204,0,0,5,206,0,-3.9,31
+E2_communication,Contract Net | loss 0%,1020,53,3.0,True,26.0,38.0,7,40,53.0,0.0129,0,0,17,279,0,-11.75,38
+E2_communication,Contract Net | loss 0%,1021,51,3.0,True,21.0,31.0,6,40,51.0,0.0037,0,0,11,276,0,-8.85,31
+E2_communication,Contract Net | loss 0%,1022,206,3.0,True,21.0,206.0,124,40,49.0,0.0765,0,0,157,2191,0,-382.5,206
+E2_communication,Contract Net | loss 0%,1023,216,15.0,True,25.0,216.0,123,40,59.0,0.0158,0,0,159,2105,0,-374.5,216
+E2_communication,Contract Net | loss 0%,1024,282,3.0,True,24.0,282.0,120,40,47.0,0.0382,0,0,217,3055,0,-348.75,282
+E2_communication,Contract Net | loss 0%,1025,52,3.0,True,18.0,34.0,7,40,52.0,0.0514,0,0,14,254,0,-11.2,34
+E2_communication,Contract Net | loss 0%,1026,48,3.0,True,23.0,47.0,13,40,48.0,0.0323,0,0,29,294,0,-23.8,47
+E2_communication,Contract Net | loss 0%,1027,197,3.0,True,27.0,197.0,125,40,51.0,0.0177,0,0,145,2131,0,-384.1,197
+E2_communication,Contract Net | loss 0%,1028,63,11.0,True,29.0,50.0,9,40,63.0,0.0099,0,0,16,259,0,-16.95,50
+E2_communication,Contract Net | loss 0%,1029,42,3.0,True,19.0,35.0,9,40,42.0,0.0007,0,0,18,230,0,-15.4,35
+E2_communication,Contract Net | loss 20%,1000,59,8.0,True,27.0,52.0,14,40,59.0,0.0109,0,0,23,261,55,-25.55,52
+E2_communication,Contract Net | loss 20%,1001,198,3.0,True,27.0,198.0,125,40,47.0,0.0466,0,0,109,1919,392,-396.95,198
+E2_communication,Contract Net | loss 20%,1002,49,3.0,True,24.0,33.0,5,40,49.0,0.0418,0,0,10,214,35,-7.95,33
+E2_communication,Contract Net | loss 20%,1003,104,7.0,True,21.0,104.0,32,40,53.0,0.0795,0,0,55,730,161,-68.55,104
+E2_communication,Contract Net | loss 20%,1004,49,9.0,True,23.0,49.0,9,40,48.0,0.1141,0,0,19,173,31,-20.05,49
+E2_communication,Contract Net | loss 20%,1005,51,5.0,True,24.0,39.0,7,40,51.0,0.0073,0,0,12,196,38,-13.35,39
+E2_communication,Contract Net | loss 20%,1006,92,27.0,True,-3.0,27.0,2,40,92.0,0.1005,0,0,5,127,28,-3.7,27
+E2_communication,Contract Net | loss 20%,1007,227,3.0,True,39.0,227.0,146,40,47.0,0.0262,0,0,144,2353,480,-447.8,227
+E2_communication,Contract Net | loss 20%,1008,48,3.0,True,21.0,27.0,2,40,48.0,0.0166,0,0,5,170,24,-3.45,27
+E2_communication,Contract Net | loss 20%,1009,45,3.0,True,19.0,34.0,6,40,45.0,0.1089,0,0,13,196,31,-9.4,34
+E2_communication,Contract Net | loss 20%,1010,52,3.0,True,30.0,52.0,15,40,50.0,0.0052,0,0,23,255,53,-27.6,52
+E2_communication,Contract Net | loss 20%,1011,45,3.0,True,16.0,32.0,9,40,45.0,0.0432,0,0,22,202,43,-16.1,32
+E2_communication,Contract Net | loss 20%,1012,58,10.0,True,8.0,35.0,7,40,58.0,0.0486,0,0,20,247,69,-12.1,35
+E2_communication,Contract Net | loss 20%,1013,72,22.0,True,28.0,67.0,16,40,72.0,0.0653,0,0,30,274,69,-31.2,67
+E2_communication,Contract Net | loss 20%,1014,55,3.0,True,27.0,43.0,6,40,55.0,0.1385,0,0,11,249,43,-12.95,43
+E2_communication,Contract Net | loss 20%,1015,180,3.0,True,24.0,180.0,125,40,49.0,0.1227,0,0,124,1879,384,-390.3,180
+E2_communication,Contract Net | loss 20%,1016,59,10.0,True,12.0,33.0,7,40,59.0,0.0306,0,0,16,222,50,-12.7,33
+E2_communication,Contract Net | loss 20%,1017,74,27.0,True,29.0,70.0,12,40,74.0,0.055,0,0,22,242,49,-25.65,70
+E2_communication,Contract Net | loss 20%,1018,54,15.0,True,26.0,54.0,6,40,52.0,0.0181,0,0,12,149,31,-13.3,54
+E2_communication,Contract Net | loss 20%,1019,48,3.0,True,25.0,33.0,3,40,48.0,0.0261,0,0,7,190,35,-5.15,33
+E2_communication,Contract Net | loss 20%,1020,53,3.0,True,24.0,52.0,10,40,53.0,0.0106,0,0,28,253,48,-18.6,52
+E2_communication,Contract Net | loss 20%,1021,235,3.0,True,40.0,235.0,73,40,46.0,0.0088,0,0,163,2019,408,-213.7,235
+E2_communication,Contract Net | loss 20%,1022,197,3.0,True,21.0,197.0,127,40,47.0,0.1179,0,0,144,1930,399,-392.0,197
+E2_communication,Contract Net | loss 20%,1023,233,15.0,True,22.0,233.0,124,40,63.0,0.0245,0,0,174,2218,477,-392.45,233
+E2_communication,Contract Net | loss 20%,1024,197,3.0,True,21.0,197.0,123,40,49.0,0.0398,0,0,151,1940,361,-365.55,197
+E2_communication,Contract Net | loss 20%,1025,49,3.0,True,21.0,44.0,11,40,49.0,0.1406,0,0,25,234,60,-18.7,44
+E2_communication,Contract Net | loss 20%,1026,265,3.0,True,24.0,265.0,121,40,49.0,0.0387,0,0,210,2742,546,-363.65,265
+E2_communication,Contract Net | loss 20%,1027,205,3.0,True,25.0,205.0,127,40,50.0,0.0207,0,0,120,2020,400,-386.1,205
+E2_communication,Contract Net | loss 20%,1028,59,11.0,True,25.0,59.0,7,40,54.0,0.0108,0,0,16,184,34,-15.5,59
+E2_communication,Contract Net | loss 20%,1029,63,3.0,True,25.0,63.0,13,40,46.0,0.0006,0,0,34,344,75,-28.55,63
+E2_communication,Contract Net | loss 50%,1000,108,8.0,True,29.0,108.0,24,40,56.0,0.0095,0,0,48,664,324,-55.15,108
+E2_communication,Contract Net | loss 50%,1001,199,3.0,True,28.0,199.0,123,40,48.0,0.0437,0,0,129,1926,1011,-385.8,199
+E2_communication,Contract Net | loss 50%,1002,63,3.0,True,44.0,63.0,11,40,49.0,0.0428,0,0,21,323,168,-24.9,63
+E2_communication,Contract Net | loss 50%,1003,114,7.0,True,29.0,114.0,32,40,53.0,0.078,0,0,43,776,373,-73.85,114
+E2_communication,Contract Net | loss 50%,1004,175,9.0,True,31.0,175.0,69,40,50.0,0.1005,0,0,111,1520,763,-206.75,175
+E2_communication,Contract Net | loss 50%,1005,56,5.0,True,25.0,40.0,7,40,56.0,0.0079,0,0,10,181,91,-14.0,40
+E2_communication,Contract Net | loss 50%,1006,92,27.0,True,-3.0,27.0,2,40,92.0,0.1004,0,0,5,117,66,-3.7,27
+E2_communication,Contract Net | loss 50%,1007,282,3.0,True,35.0,282.0,274,40,48.0,0.0247,0,0,174,3579,1719,-855.4,282
+E2_communication,Contract Net | loss 50%,1008,50,3.0,True,29.0,42.0,3,40,50.0,0.0167,0,0,10,182,87,-5.95,42
+E2_communication,Contract Net | loss 50%,1009,63,3.0,True,26.0,63.0,12,40,52.0,0.1093,0,0,26,292,155,-21.05,63
+E2_communication,Contract Net | loss 50%,1010,56,3.0,True,29.0,56.0,14,40,51.0,0.0054,0,0,30,296,155,-27.7,56
+E2_communication,Contract Net | loss 50%,1011,46,3.0,True,19.0,39.0,13,40,46.0,0.0439,0,0,26,227,109,-22.65,39
+E2_communication,Contract Net | loss 50%,1012,57,10.0,True,9.0,32.0,7,40,57.0,0.0496,0,0,16,241,124,-11.65,32
+E2_communication,Contract Net | loss 50%,1013,73,22.0,True,28.0,65.0,16,40,73.0,0.0676,0,0,33,291,136,-30.65,65
+E2_communication,Contract Net | loss 50%,1014,50,3.0,True,23.0,37.0,6,40,50.0,0.1352,0,0,11,238,121,-11.6,37
+E2_communication,Contract Net | loss 50%,1015,222,3.0,True,31.0,222.0,125,40,53.0,0.1293,0,0,164,2300,1142,-393.4,222
+E2_communication,Contract Net | loss 50%,1016,59,10.0,True,12.0,32.0,7,40,59.0,0.0308,0,0,15,246,145,-12.45,32
+E2_communication,Contract Net | loss 50%,1017,127,27.0,True,32.0,127.0,27,40,74.0,0.0565,0,0,60,611,306,-59.6,127
+E2_communication,Contract Net | loss 50%,1018,53,15.0,True,27.0,50.0,6,40,53.0,0.0188,0,0,11,148,76,-12.7,50
+E2_communication,Contract Net | loss 50%,1019,47,3.0,True,28.0,37.0,4,40,47.0,0.0245,0,0,7,166,89,-6.55,37
+E2_communication,Contract Net | loss 50%,1020,194,3.0,True,28.0,194.0,141,40,56.0,0.0098,0,0,113,1841,918,-434.55,194
+E2_communication,Contract Net | loss 50%,1021,60,3.0,True,22.0,60.0,8,40,47.0,0.0103,0,0,20,282,141,-15.0,60
+E2_communication,Contract Net | loss 50%,1022,205,3.0,True,27.0,205.0,126,40,58.0,0.1264,0,0,143,1966,1026,-392.9,205
+E2_communication,Contract Net | loss 50%,1023,107,15.0,True,19.0,107.0,28,40,62.0,0.0254,0,0,55,646,309,-62.85,107
+E2_communication,Contract Net | loss 50%,1024,214,3.0,True,28.0,214.0,126,40,49.0,0.0397,0,0,121,2006,1001,-393.1,214
+E2_communication,Contract Net | loss 50%,1025,223,3.0,True,20.0,223.0,126,40,51.0,0.1139,0,0,168,2075,1080,-379.7,223
+E2_communication,Contract Net | loss 50%,1026,223,3.0,True,24.0,223.0,125,40,50.0,0.0398,0,0,173,2196,1131,-389.95,223
+E2_communication,Contract Net | loss 50%,1027,199,3.0,True,36.0,199.0,125,40,50.0,0.0231,0,0,124,1874,927,-382.7,199
+E2_communication,Contract Net | loss 50%,1028,71,11.0,True,27.0,71.0,8,40,53.0,0.0108,0,0,18,246,121,-19.05,71
+E2_communication,Contract Net | loss 50%,1029,68,3.0,True,26.0,68.0,15,40,48.0,0.0007,0,0,36,377,169,-29.45,68
+E3_learning,Rule | No communication,1000,233,3.0,True,36.0,233.0,272,40,49.0,0.0889,0,0,150,0,0,-862.55,233
+E3_learning,Rule | No communication,1001,202,3.0,True,25.0,202.0,129,40,48.0,0.1372,0,0,131,0,0,-391.3,202
+E3_learning,Rule | No communication,1002,300,3.0,False,40.0,,265,40,48.0,0.0095,0,0,252,0,0,-838.7,300
+E3_learning,Rule | No communication,1003,289,3.0,True,31.0,289.0,187,40,45.0,0.0421,0,0,118,0,0,-541.85,289
+E3_learning,Rule | No communication,1004,232,3.0,True,34.0,232.0,256,40,41.0,0.1609,0,0,142,0,0,-814.15,232
+E3_learning,Rule | No communication,1005,229,3.0,True,38.0,229.0,74,40,52.0,0.0164,0,0,159,0,0,-219.35,229
+E3_learning,Rule | No communication,1006,227,3.0,True,20.0,227.0,127,40,57.0,0.0502,0,0,140,0,0,-388.45,227
+E3_learning,Rule | No communication,1007,245,3.0,True,36.0,245.0,131,40,48.0,0.869,1,0,149,0,0,-402.65,245
+E3_learning,Rule | No communication,1008,300,3.0,False,34.0,,292,40,49.0,0.1082,0,0,179,0,0,-814.4,300
+E3_learning,Rule | No communication,1009,254,3.0,True,22.0,254.0,251,40,45.0,0.0943,0,0,159,0,0,-786.2,254
+E3_learning,Rule | No communication,1010,284,3.0,True,30.0,284.0,274,40,52.0,0.036,0,0,284,0,0,-868.4,284
+E3_learning,Rule | No communication,1011,257,3.0,True,18.0,257.0,143,40,47.0,0.0405,0,0,107,0,0,-434.2,257
+E3_learning,Rule | No communication,1012,195,3.0,True,18.0,195.0,138,40,50.0,0.0421,0,0,85,0,0,-423.9,195
+E3_learning,Rule | No communication,1013,236,22.0,True,0.0,236.0,125,40,66.0,0.0497,0,0,112,0,0,-387.3,236
+E3_learning,Rule | No communication,1014,271,3.0,True,27.0,271.0,254,40,50.0,0.0654,0,0,208,0,0,-791.4,271
+E3_learning,Rule | No communication,1015,155,3.0,True,18.0,155.0,125,40,50.0,0.0736,0,0,118,0,0,-396.5,155
+E3_learning,Rule | No communication,1016,224,7.0,True,22.0,224.0,132,40,59.0,0.0582,0,0,111,0,0,-395.9,224
+E3_learning,Rule | No communication,1017,268,3.0,True,43.0,268.0,133,40,46.0,0.0054,0,0,161,0,0,-423.65,268
+E3_learning,Rule | No communication,1018,271,3.0,True,39.0,271.0,257,40,44.0,0.0055,0,0,207,0,0,-807.5,271
+E3_learning,Rule | No communication,1019,233,3.0,True,16.0,233.0,119,40,50.0,0.1666,0,0,163,0,0,-361.15,233
+E3_learning,Rule | No communication,1020,300,3.0,False,44.0,,347,40,49.0,0.0183,0,0,201,0,0,-1022.0,300
+E3_learning,Rule | No communication,1021,252,3.0,True,34.0,252.0,264,40,51.0,0.0207,0,0,216,0,0,-826.9,252
+E3_learning,Rule | No communication,1022,173,3.0,True,27.0,173.0,127,40,45.0,0.1224,0,0,113,0,0,-409.25,173
+E3_learning,Rule | No communication,1023,300,3.0,False,30.0,,282,40,55.0,0.0117,0,0,254,0,0,-894.2,300
+E3_learning,Rule | No communication,1024,257,3.0,True,38.0,257.0,253,40,47.0,0.0424,0,0,133,0,0,-806.1,257
+E3_learning,Rule | No communication,1025,296,3.0,True,25.0,296.0,253,40,53.0,0.1125,0,0,155,0,0,-813.45,296
+E3_learning,Rule | No communication,1026,199,3.0,True,40.0,199.0,256,40,49.0,0.0544,0,0,150,0,0,-820.25,199
+E3_learning,Rule | No communication,1027,215,3.0,True,42.0,215.0,138,40,49.0,0.032,0,0,68,0,0,-433.1,215
+E3_learning,Rule | No communication,1028,272,3.0,True,46.0,272.0,130,40,51.0,0.0171,0,0,116,0,0,-406.1,272
+E3_learning,Rule | No communication,1029,211,3.0,True,21.0,211.0,153,40,47.0,0.0562,0,0,40,0,0,-465.7,211
+E3_learning,Learned | No communication,1000,221,3.0,True,29.0,221.0,254,40,47.0,0.1876,0,0,120,0,0,-806.95,221
+E3_learning,Learned | No communication,1001,208,3.0,True,35.0,208.0,126,40,47.0,0.1183,0,0,113,0,0,-376.7,208
+E3_learning,Learned | No communication,1002,300,3.0,False,41.0,,128,40,46.0,0.0359,0,0,203,0,0,-384.9,300
+E3_learning,Learned | No communication,1003,287,3.0,True,36.0,287.0,265,40,54.0,0.0484,0,0,193,0,0,-852.65,287
+E3_learning,Learned | No communication,1004,231,3.0,True,28.0,231.0,255,40,40.0,0.0996,0,0,159,0,0,-826.15,231
+E3_learning,Learned | No communication,1005,225,3.0,True,40.0,225.0,136,40,57.0,0.0148,0,0,144,0,0,-417.35,225
+E3_learning,Learned | No communication,1006,104,3.0,True,26.0,104.0,29,40,50.0,0.051,0,0,59,0,0,-60.8,104
+E3_learning,Learned | No communication,1007,243,3.0,True,38.0,243.0,136,40,48.0,0.0357,0,0,161,0,0,-402.55,243
+E3_learning,Learned | No communication,1008,236,3.0,True,40.0,236.0,167,40,50.0,0.3656,1,0,148,0,0,-482.4,236
+E3_learning,Learned | No communication,1009,221,3.0,True,25.0,221.0,130,40,46.0,0.0972,0,0,159,0,0,-380.25,221
+E3_learning,Learned | No communication,1010,228,3.0,True,34.0,228.0,259,40,49.0,0.0882,0,0,213,0,0,-820.65,228
+E3_learning,Learned | No communication,1011,215,3.0,True,21.0,215.0,145,40,53.0,0.0555,0,0,121,0,0,-431.15,215
+E3_learning,Learned | No communication,1012,50,3.0,True,18.0,38.0,10,40,50.0,0.1125,0,0,27,0,0,-18.4,38
+E3_learning,Learned | No communication,1013,227,22.0,True,4.0,227.0,128,40,67.0,0.0551,0,0,137,0,0,-389.35,227
+E3_learning,Learned | No communication,1014,229,3.0,True,30.0,229.0,258,40,52.0,0.0659,0,0,187,0,0,-825.9,229
+E3_learning,Learned | No communication,1015,214,3.0,True,26.0,214.0,125,40,53.0,0.0961,0,0,170,0,0,-391.65,214
+E3_learning,Learned | No communication,1016,279,7.0,True,19.0,279.0,130,40,59.0,0.0815,0,0,171,0,0,-392.1,279
+E3_learning,Learned | No communication,1017,252,3.0,True,36.0,252.0,130,40,48.0,0.0072,0,0,129,0,0,-406.85,252
+E3_learning,Learned | No communication,1018,246,3.0,True,26.0,246.0,137,40,51.0,0.0227,0,0,167,0,0,-426.05,246
+E3_learning,Learned | No communication,1019,211,3.0,True,19.0,211.0,121,40,49.0,0.0603,0,0,155,0,0,-373.6,211
+E3_learning,Learned | No communication,1020,274,3.0,True,29.0,274.0,252,40,46.0,0.0118,0,0,200,0,0,-798.5,274
+E3_learning,Learned | No communication,1021,265,3.0,True,29.0,265.0,261,40,47.0,0.0092,0,0,261,0,0,-833.1,265
+E3_learning,Learned | No communication,1022,166,3.0,True,29.0,166.0,127,40,46.0,0.1049,0,0,79,0,0,-411.35,166
+E3_learning,Learned | No communication,1023,300,3.0,False,26.0,,311,40,49.0,0.0209,0,0,216,0,0,-942.45,300
+E3_learning,Learned | No communication,1024,234,3.0,True,37.0,234.0,255,40,47.0,0.036,0,0,150,0,0,-814.25,234
+E3_learning,Learned | No communication,1025,288,3.0,True,25.0,288.0,251,40,53.0,0.1184,0,0,166,0,0,-795.25,288
+E3_learning,Learned | No communication,1026,195,3.0,True,33.0,195.0,252,40,46.0,0.0335,0,0,147,0,0,-811.25,195
+E3_learning,Learned | No communication,1027,211,3.0,True,30.0,211.0,148,40,49.0,0.0262,0,0,118,0,0,-445.9,211
+E3_learning,Learned | No communication,1028,300,3.0,False,39.0,,252,40,53.0,0.0158,0,0,151,0,0,-802.2,300
+E3_learning,Learned | No communication,1029,273,3.0,True,24.0,273.0,136,40,49.0,0.2671,0,0,198,0,0,-418.25,273
+E3_learning,Rule | Peer-to-peer,1000,239,3.0,True,34.0,239.0,255,40,49.0,0.0907,0,0,177,2310,0,-811.7,239
+E3_learning,Rule | Peer-to-peer,1001,203,3.0,True,25.0,203.0,127,40,47.0,0.136,0,0,138,1764,0,-393.8,203
+E3_learning,Rule | Peer-to-peer,1002,230,3.0,True,40.0,230.0,146,40,48.0,0.0095,0,0,57,615,0,-440.75,230
+E3_learning,Rule | Peer-to-peer,1003,252,3.0,True,31.0,252.0,184,40,45.0,0.0417,0,0,89,1149,0,-534.35,252
+E3_learning,Rule | Peer-to-peer,1004,239,3.0,True,34.0,239.0,257,40,41.0,0.1609,0,0,157,2295,0,-821.55,239
+E3_learning,Rule | Peer-to-peer,1005,300,3.0,False,38.0,,253,40,51.0,0.0157,0,0,111,1578,0,-700.9,300
+E3_learning,Rule | Peer-to-peer,1006,240,3.0,True,20.0,240.0,127,40,57.0,0.0502,0,0,136,2049,0,-403.6,240
+E3_learning,Rule | Peer-to-peer,1007,298,3.0,True,36.0,298.0,279,40,48.0,0.8675,1,0,144,2301,0,-864.95,298
+E3_learning,Rule | Peer-to-peer,1008,300,3.0,False,34.0,,285,40,49.0,0.1077,0,0,148,2100,0,-783.2,300
+E3_learning,Rule | Peer-to-peer,1009,250,3.0,True,22.0,250.0,129,40,46.0,0.0967,0,0,181,2187,0,-385.8,250
+E3_learning,Rule | Peer-to-peer,1010,241,3.0,True,30.0,241.0,145,40,52.0,0.036,0,0,195,1986,0,-422.1,241
+E3_learning,Rule | Peer-to-peer,1011,299,3.0,True,18.0,299.0,117,40,47.0,0.0405,0,0,234,2256,0,-316.35,299
+E3_learning,Rule | Peer-to-peer,1012,197,3.0,True,18.0,197.0,138,40,50.0,0.0421,0,0,87,1458,0,-422.1,197
+E3_learning,Rule | Peer-to-peer,1013,243,22.0,True,0.0,243.0,125,40,66.0,0.0497,0,0,124,1530,0,-392.05,243
+E3_learning,Rule | Peer-to-peer,1014,300,3.0,False,27.0,,433,40,50.0,0.0686,0,0,257,2760,0,-1299.05,300
+E3_learning,Rule | Peer-to-peer,1015,155,3.0,True,18.0,155.0,125,40,50.0,0.0736,0,0,118,1773,0,-396.5,155
+E3_learning,Rule | Peer-to-peer,1016,253,7.0,True,22.0,253.0,134,40,59.0,0.0582,0,0,163,2103,0,-408.65,253
+E3_learning,Rule | Peer-to-peer,1017,300,3.0,False,43.0,,277,40,46.0,0.0054,0,0,140,1506,0,-787.45,300
+E3_learning,Rule | Peer-to-peer,1018,227,3.0,True,39.0,227.0,136,40,44.0,0.0055,0,0,144,1764,0,-417.75,227
+E3_learning,Rule | Peer-to-peer,1019,234,3.0,True,16.0,234.0,118,40,50.0,0.1665,0,0,174,2157,0,-347.0,234
+E3_learning,Rule | Peer-to-peer,1020,241,3.0,True,44.0,241.0,258,40,49.0,0.0184,0,0,157,1980,0,-812.2,241
+E3_learning,Rule | Peer-to-peer,1021,239,3.0,True,34.0,239.0,147,40,51.0,0.0207,0,0,215,1908,0,-430.5,239
+E3_learning,Rule | Peer-to-peer,1022,174,3.0,True,27.0,174.0,125,40,45.0,0.1174,0,0,134,1620,0,-390.85,174
+E3_learning,Rule | Peer-to-peer,1023,209,3.0,True,30.0,209.0,140,40,55.0,0.0115,0,0,124,1431,0,-414.65,209
+E3_learning,Rule | Peer-to-peer,1024,295,3.0,True,38.0,295.0,247,40,47.0,0.0395,0,0,174,2658,0,-786.45,295
+E3_learning,Rule | Peer-to-peer,1025,251,3.0,True,25.0,251.0,253,40,53.0,0.1168,0,0,180,2208,0,-807.75,251
+E3_learning,Rule | Peer-to-peer,1026,230,3.0,True,40.0,230.0,258,40,49.0,0.0568,0,0,142,2157,0,-829.7,230
+E3_learning,Rule | Peer-to-peer,1027,203,3.0,True,42.0,203.0,142,40,49.0,0.032,0,0,103,1314,0,-429.3,203
+E3_learning,Rule | Peer-to-peer,1028,105,3.0,True,46.0,105.0,20,40,51.0,0.0171,0,0,32,258,0,-47.55,105
+E3_learning,Rule | Peer-to-peer,1029,207,3.0,True,21.0,207.0,150,40,47.0,0.0562,0,0,41,528,0,-459.5,207
+E3_learning,Learned | Peer-to-peer,1000,243,3.0,True,29.0,243.0,262,40,47.0,0.1859,0,0,163,2331,0,-820.5,243
+E3_learning,Learned | Peer-to-peer,1001,199,3.0,True,35.0,199.0,127,40,47.0,0.1182,0,0,148,1698,0,-404.05,199
+E3_learning,Learned | Peer-to-peer,1002,300,3.0,False,41.0,,127,40,46.0,0.0359,0,0,241,2172,0,-377.5,300
+E3_learning,Learned | Peer-to-peer,1003,241,3.0,True,39.0,241.0,263,40,52.0,0.0481,0,0,173,2487,0,-843.4,241
+E3_learning,Learned | Peer-to-peer,1004,247,3.0,True,28.0,247.0,255,40,40.0,0.0999,0,0,181,2370,0,-823.4,247
+E3_learning,Learned | Peer-to-peer,1005,234,3.0,True,40.0,234.0,134,40,57.0,0.0144,0,0,159,1935,0,-414.0,234
+E3_learning,Learned | Peer-to-peer,1006,142,3.0,True,26.0,142.0,42,40,50.0,0.049,0,0,80,1266,0,-92.75,142
+E3_learning,Learned | Peer-to-peer,1007,251,3.0,True,38.0,251.0,132,40,48.0,0.0357,0,0,180,1947,0,-376.7,251
+E3_learning,Learned | Peer-to-peer,1008,218,3.0,True,41.0,218.0,172,40,50.0,0.3667,1,0,134,1782,0,-493.5,218
+E3_learning,Learned | Peer-to-peer,1009,237,3.0,True,26.0,237.0,127,40,46.0,0.0971,0,0,175,2055,0,-371.75,237
+E3_learning,Learned | Peer-to-peer,1010,287,3.0,True,34.0,287.0,266,40,49.0,0.0882,0,0,279,2640,0,-838.4,287
+E3_learning,Learned | Peer-to-peer,1011,229,3.0,True,19.0,229.0,93,40,50.0,0.0591,0,0,165,1587,0,-235.65,229
+E3_learning,Learned | Peer-to-peer,1012,229,3.0,True,18.0,229.0,134,40,51.0,0.1143,0,0,165,2178,0,-410.3,229
+E3_learning,Learned | Peer-to-peer,1013,261,22.0,True,4.0,261.0,127,40,68.0,0.0595,0,0,172,2235,0,-391.85,261
+E3_learning,Learned | Peer-to-peer,1014,300,3.0,False,29.0,,418,40,52.0,0.0703,0,0,253,2724,0,-1262.15,300
+E3_learning,Learned | Peer-to-peer,1015,157,3.0,True,27.0,157.0,126,40,53.0,0.1023,0,0,119,1773,0,-401.5,157
+E3_learning,Learned | Peer-to-peer,1016,231,7.0,True,19.0,231.0,131,40,58.0,0.0792,0,0,162,1929,0,-401.35,231
+E3_learning,Learned | Peer-to-peer,1017,221,3.0,True,36.0,221.0,130,40,48.0,0.0072,0,0,140,1758,0,-399.2,221
+E3_learning,Learned | Peer-to-peer,1018,205,3.0,True,26.0,205.0,112,40,51.0,0.0226,0,0,126,1077,0,-325.75,205
+E3_learning,Learned | Peer-to-peer,1019,224,3.0,True,19.0,224.0,118,40,49.0,0.0603,0,0,167,2115,0,-360.25,224
+E3_learning,Learned | Peer-to-peer,1020,285,3.0,True,29.0,285.0,280,40,46.0,0.0111,0,0,206,2448,0,-864.8,285
+E3_learning,Learned | Peer-to-peer,1021,266,3.0,True,29.0,266.0,129,40,46.0,0.0092,0,0,210,1974,0,-377.7,266
+E3_learning,Learned | Peer-to-peer,1022,173,3.0,True,29.0,173.0,126,40,46.0,0.1005,0,0,130,1524,0,-401.1,173
+E3_learning,Learned | Peer-to-peer,1023,300,3.0,False,26.0,,304,40,49.0,0.021,0,0,226,2778,0,-927.45,300
+E3_learning,Learned | Peer-to-peer,1024,234,3.0,True,37.0,234.0,252,40,47.0,0.036,0,0,168,2211,0,-808.5,234
+E3_learning,Learned | Peer-to-peer,1025,291,3.0,True,25.0,291.0,271,40,51.0,0.1187,0,0,178,2406,0,-863.65,291
+E3_learning,Learned | Peer-to-peer,1026,222,3.0,True,33.0,222.0,254,40,46.0,0.0356,0,0,163,2118,0,-811.7,222
+E3_learning,Learned | Peer-to-peer,1027,256,3.0,True,31.0,256.0,273,40,49.0,0.0255,0,0,194,2352,0,-865.6,256
+E3_learning,Learned | Peer-to-peer,1028,296,3.0,True,39.0,296.0,130,40,53.0,0.0158,0,0,188,2304,0,-396.0,296
+E3_learning,Learned | Peer-to-peer,1029,149,3.0,True,24.0,149.0,74,40,49.0,0.2671,0,0,82,849,0,-207.9,149
+E3_learning,Rule | Contract Net,1000,152,3.0,True,24.0,152.0,83,40,48.0,0.0826,0,0,88,1637,0,-229.75,152
+E3_learning,Rule | Contract Net,1001,215,3.0,True,18.0,215.0,128,40,46.0,0.1274,0,0,145,2410,0,-403.5,215
+E3_learning,Rule | Contract Net,1002,49,3.0,True,23.0,41.0,9,40,49.0,0.0099,0,0,23,335,0,-16.05,41
+E3_learning,Rule | Contract Net,1003,262,3.0,True,19.0,262.0,122,40,52.0,0.0458,0,0,169,2848,0,-362.55,262
+E3_learning,Rule | Contract Net,1004,232,3.0,True,23.0,232.0,256,40,42.0,0.1664,0,0,169,3656,0,-821.7,232
+E3_learning,Rule | Contract Net,1005,237,3.0,True,23.0,237.0,128,40,52.0,0.0166,0,0,157,2416,0,-399.9,237
+E3_learning,Rule | Contract Net,1006,57,3.0,True,22.0,33.0,7,40,57.0,0.0446,0,0,13,281,0,-11.0,33
+E3_learning,Rule | Contract Net,1007,47,3.0,True,22.0,36.0,9,40,47.0,0.8679,1,0,22,298,0,-16.0,36
+E3_learning,Rule | Contract Net,1008,177,3.0,True,23.0,177.0,128,40,47.0,0.096,0,0,107,1812,0,-400.05,177
+E3_learning,Rule | Contract Net,1009,251,3.0,True,18.0,251.0,133,40,45.0,0.1025,0,0,189,2737,0,-417.05,251
+E3_learning,Rule | Contract Net,1010,192,3.0,True,26.0,192.0,78,40,50.0,0.0361,0,0,146,2321,0,-228.65,192
+E3_learning,Rule | Contract Net,1011,300,3.0,False,18.0,,136,40,48.0,0.0424,0,0,210,3395,0,-421.0,300
+E3_learning,Rule | Contract Net,1012,53,3.0,True,16.0,35.0,8,40,53.0,0.0404,0,0,21,304,0,-13.9,35
+E3_learning,Rule | Contract Net,1013,105,22.0,True,0.0,105.0,21,40,66.0,0.049,0,0,45,572,0,-48.3,105
+E3_learning,Rule | Contract Net,1014,211,3.0,True,21.0,211.0,130,40,55.0,0.0788,0,0,139,2439,0,-401.0,211
+E3_learning,Rule | Contract Net,1015,176,3.0,True,18.0,176.0,126,40,48.0,0.1055,0,0,128,2055,0,-389.45,176
+E3_learning,Rule | Contract Net,1016,61,7.0,True,20.0,46.0,15,40,61.0,0.0635,0,0,33,413,0,-31.7,46
+E3_learning,Rule | Contract Net,1017,300,3.0,False,21.0,,124,40,50.0,0.0056,0,0,199,2970,0,-370.6,300
+E3_learning,Rule | Contract Net,1018,243,3.0,True,20.0,243.0,129,40,44.0,0.0051,0,0,159,2470,0,-405.0,243
+E3_learning,Rule | Contract Net,1019,83,3.0,True,16.0,83.0,24,40,49.0,0.1687,0,0,52,638,0,-50.1,83
+E3_learning,Rule | Contract Net,1020,53,3.0,True,22.0,41.0,11,40,53.0,0.0213,0,0,27,363,0,-19.6,41
+E3_learning,Rule | Contract Net,1021,51,3.0,True,24.0,39.0,14,40,51.0,0.0206,0,0,31,407,0,-26.65,39
+E3_learning,Rule | Contract Net,1022,289,3.0,True,20.0,289.0,125,40,49.0,0.1301,0,0,214,3203,0,-399.65,289
+E3_learning,Rule | Contract Net,1023,230,3.0,True,23.0,230.0,139,40,48.0,0.0088,0,0,149,2602,0,-423.35,230
+E3_learning,Rule | Contract Net,1024,244,3.0,True,24.0,244.0,254,40,48.0,0.0398,0,0,204,3705,0,-807.25,244
+E3_learning,Rule | Contract Net,1025,210,3.0,True,20.0,210.0,136,40,49.0,0.0841,0,0,136,2303,0,-421.15,210
+E3_learning,Rule | Contract Net,1026,206,3.0,True,22.0,206.0,253,40,47.0,0.0502,0,0,155,3164,0,-814.95,206
+E3_learning,Rule | Contract Net,1027,202,3.0,True,21.0,202.0,128,40,49.0,0.0282,0,0,136,2270,0,-386.8,202
+E3_learning,Rule | Contract Net,1028,291,3.0,True,22.0,291.0,125,40,51.0,0.0166,0,0,203,2916,0,-387.45,291
+E3_learning,Rule | Contract Net,1029,127,3.0,True,21.0,127.0,40,40,48.0,0.0561,0,0,63,1014,0,-90.25,127
+E3_learning,Learned | Contract Net,1000,300,3.0,False,24.0,,135,40,47.0,0.1856,0,0,219,3447,0,-403.5,300
+E3_learning,Learned | Contract Net,1001,201,3.0,True,23.0,201.0,125,40,47.0,0.1135,0,0,150,2310,0,-382.9,201
+E3_learning,Learned | Contract Net,1002,48,3.0,True,22.0,31.0,7,40,48.0,0.0369,0,0,15,306,0,-11.65,31
+E3_learning,Learned | Contract Net,1003,162,3.0,True,21.0,162.0,79,40,53.0,0.0475,0,0,94,1634,0,-230.05,162
+E3_learning,Learned | Contract Net,1004,271,3.0,True,22.0,271.0,254,40,41.0,0.089,0,0,183,4294,0,-807.1,271
+E3_learning,Learned | Contract Net,1005,146,3.0,True,20.0,146.0,44,40,51.0,0.0133,0,0,59,1192,0,-104.15,146
+E3_learning,Learned | Contract Net,1006,49,3.0,True,22.0,31.0,7,40,49.0,0.0467,0,0,14,238,0,-10.95,31
+E3_learning,Learned | Contract Net,1007,154,3.0,True,23.0,154.0,35,40,47.0,0.0342,0,0,95,1396,0,-89.55,154
+E3_learning,Learned | Contract Net,1008,181,3.0,True,27.0,181.0,129,40,46.0,0.4198,1,0,111,1885,0,-405.15,181
+E3_learning,Learned | Contract Net,1009,243,3.0,True,18.0,243.0,127,40,44.0,0.0922,0,0,191,2565,0,-392.0,243
+E3_learning,Learned | Contract Net,1010,143,3.0,True,26.0,143.0,36,40,53.0,0.0889,0,0,68,1575,0,-84.45,143
+E3_learning,Learned | Contract Net,1011,300,3.0,False,17.0,,122,40,53.0,0.0751,0,0,217,3260,0,-346.3,300
+E3_learning,Learned | Contract Net,1012,54,3.0,True,20.0,41.0,9,40,54.0,0.1133,0,0,22,292,0,-17.1,41
+E3_learning,Learned | Contract Net,1013,227,22.0,True,4.0,227.0,126,40,65.0,0.0541,0,0,134,2037,0,-387.15,227
+E3_learning,Learned | Contract Net,1014,198,3.0,True,20.0,198.0,136,40,52.0,0.0625,0,0,122,2346,0,-418.6,198
+E3_learning,Learned | Contract Net,1015,172,3.0,True,20.0,172.0,126,40,51.0,0.0964,0,0,143,1967,0,-404.35,172
+E3_learning,Learned | Contract Net,1016,300,7.0,False,19.0,,129,40,58.0,0.0781,0,0,234,3236,0,-403.8,300
+E3_learning,Learned | Contract Net,1017,300,3.0,False,22.0,,124,40,49.0,0.0075,0,0,184,2950,0,-386.25,300
+E3_learning,Learned | Contract Net,1018,238,3.0,True,22.0,238.0,130,40,51.0,0.0238,0,0,157,2377,0,-398.9,238
+E3_learning,Learned | Contract Net,1019,265,3.0,True,26.0,265.0,123,40,48.0,0.0602,0,0,198,3005,0,-391.65,265
+E3_learning,Learned | Contract Net,1020,51,3.0,True,24.0,39.0,12,40,51.0,0.0128,0,0,28,359,0,-20.45,39
+E3_learning,Learned | Contract Net,1021,46,3.0,True,17.0,36.0,11,40,46.0,0.0092,0,0,27,345,0,-20.0,36
+E3_learning,Learned | Contract Net,1022,168,3.0,True,21.0,168.0,123,40,48.0,0.1479,0,0,126,1830,0,-374.95,168
+E3_learning,Learned | Contract Net,1023,213,3.0,True,24.0,213.0,136,40,50.0,0.0223,0,0,136,2373,0,-403.85,213
+E3_learning,Learned | Contract Net,1024,257,3.0,True,25.0,257.0,251,40,46.0,0.0341,0,0,186,3941,0,-801.4,257
+E3_learning,Learned | Contract Net,1025,296,3.0,True,20.0,296.0,252,40,49.0,0.108,0,0,178,4542,0,-808.7,296
+E3_learning,Learned | Contract Net,1026,224,3.0,True,21.0,224.0,128,40,47.0,0.0439,0,0,167,2582,0,-375.65,224
+E3_learning,Learned | Contract Net,1027,203,3.0,True,23.0,203.0,129,40,46.0,0.0237,0,0,132,2210,0,-391.4,203
+E3_learning,Learned | Contract Net,1028,271,3.0,True,22.0,271.0,126,40,52.0,0.0155,0,0,184,2673,0,-387.5,271
+E3_learning,Learned | Contract Net,1029,157,3.0,True,26.0,157.0,74,40,51.0,0.2089,0,0,107,1537,0,-202.85,157
+E4_resources,2 responders | delay 0,1000,300,8.0,False,29.0,,274,40,57.0,0.0175,0,0,125,3042,0,-854.05,300
+E4_resources,2 responders | delay 0,1001,212,3.0,True,22.0,212.0,130,40,47.0,0.0523,0,0,82,1911,0,-419.0,212
+E4_resources,2 responders | delay 0,1002,53,3.0,True,24.0,43.0,5,40,53.0,0.0066,0,0,14,199,0,-9.25,43
+E4_resources,2 responders | delay 0,1003,256,7.0,True,25.0,256.0,128,40,52.0,0.1073,0,0,106,2141,0,-414.65,256
+E4_resources,2 responders | delay 0,1004,54,9.0,True,25.0,48.0,9,40,54.0,0.0401,0,0,18,169,0,-20.05,48
+E4_resources,2 responders | delay 0,1005,56,5.0,True,24.0,38.0,7,40,56.0,0.0099,0,0,12,162,0,-13.25,38
+E4_resources,2 responders | delay 0,1006,76,26.0,True,-1.0,28.0,2,40,76.0,0.0657,0,0,5,67,0,-3.75,28
+E4_resources,2 responders | delay 0,1007,55,3.0,True,23.0,47.0,7,40,55.0,0.0272,0,0,18,219,0,-13.6,47
+E4_resources,2 responders | delay 0,1008,54,3.0,True,29.0,37.0,3,40,54.0,0.0139,0,0,8,148,0,-5.5,37
+E4_resources,2 responders | delay 0,1009,42,3.0,True,19.0,31.0,5,40,42.0,0.08,0,0,10,131,0,-8.05,31
+E4_resources,2 responders | delay 0,1010,81,3.0,True,25.0,81.0,12,40,57.0,0.0291,0,0,23,370,0,-25.75,81
+E4_resources,2 responders | delay 0,1011,90,3.0,True,17.0,90.0,16,40,48.0,0.167,0,0,35,384,0,-38.3,90
+E4_resources,2 responders | delay 0,1012,58,10.0,True,8.0,33.0,7,40,58.0,0.0947,0,0,19,158,0,-11.6,33
+E4_resources,2 responders | delay 0,1013,281,22.0,True,26.0,281.0,128,40,71.0,0.031,0,0,109,2139,0,-418.3,281
+E4_resources,2 responders | delay 0,1014,48,3.0,True,20.0,31.0,5,40,48.0,0.1334,0,0,12,195,0,-9.05,31
+E4_resources,2 responders | delay 0,1015,217,4.0,True,21.0,217.0,145,40,50.0,0.1052,0,0,89,1997,0,-454.25,217
+E4_resources,2 responders | delay 0,1016,59,10.0,True,12.0,31.0,7,40,59.0,0.0301,0,0,15,169,0,-12.2,31
+E4_resources,2 responders | delay 0,1017,125,28.0,True,23.0,125.0,23,40,72.0,0.0863,0,0,39,483,0,-52.7,125
+E4_resources,2 responders | delay 0,1018,51,14.0,True,27.0,50.0,6,40,51.0,0.0404,0,0,12,112,0,-12.5,50
+E4_resources,2 responders | delay 0,1019,47,4.0,True,25.0,35.0,4,40,47.0,0.0578,0,0,8,134,0,-6.45,35
+E4_resources,2 responders | delay 0,1020,241,3.0,True,25.0,241.0,146,40,53.0,0.0105,0,0,88,2176,0,-463.35,241
+E4_resources,2 responders | delay 0,1021,47,3.0,True,25.0,41.0,6,40,47.0,0.0099,0,0,13,172,0,-11.3,41
+E4_resources,2 responders | delay 0,1022,224,3.0,True,20.0,224.0,127,40,48.0,0.0808,0,0,87,1918,0,-408.35,224
+E4_resources,2 responders | delay 0,1023,228,15.0,True,25.0,228.0,127,40,60.0,0.0254,0,0,97,1772,0,-412.35,228
+E4_resources,2 responders | delay 0,1024,209,4.0,True,22.0,209.0,128,40,54.0,0.0619,0,0,91,1776,0,-405.05,209
+E4_resources,2 responders | delay 0,1025,234,3.0,True,23.0,234.0,128,40,51.0,0.0693,0,0,83,1941,0,-413.0,234
+E4_resources,2 responders | delay 0,1026,216,3.0,True,25.0,216.0,130,40,44.0,0.0554,0,0,91,1821,0,-417.05,216
+E4_resources,2 responders | delay 0,1027,249,3.0,True,25.0,249.0,126,40,50.0,0.0191,0,0,86,2117,0,-399.75,249
+E4_resources,2 responders | delay 0,1028,55,12.0,True,29.0,54.0,9,40,55.0,0.0088,0,0,16,133,0,-17.75,54
+E4_resources,2 responders | delay 0,1029,92,3.0,True,24.0,92.0,20,40,51.0,0.0039,0,0,38,451,0,-42.75,92
+E4_resources,4 responders | delay 0,1000,56,8.0,True,22.0,44.0,10,40,56.0,0.0104,0,0,20,240,0,-18.5,44
+E4_resources,4 responders | delay 0,1001,200,3.0,True,23.0,200.0,123,40,47.0,0.0468,0,0,149,2203,0,-372.3,200
+E4_resources,4 responders | delay 0,1002,54,3.0,True,26.0,36.0,5,40,54.0,0.1371,0,0,11,283,0,-8.45,36
+E4_resources,4 responders | delay 0,1003,104,7.0,True,26.0,104.0,29,40,49.0,0.0419,0,0,53,733,0,-63.1,104
+E4_resources,4 responders | delay 0,1004,49,9.0,True,24.0,49.0,9,40,48.0,0.1124,0,0,19,200,0,-20.3,49
+E4_resources,4 responders | delay 0,1005,57,5.0,True,24.0,37.0,7,40,57.0,0.0075,0,0,10,264,0,-12.7,37
+E4_resources,4 responders | delay 0,1006,78,27.0,True,-3.0,27.0,2,40,78.0,0.1002,0,0,5,120,0,-3.7,27
+E4_resources,4 responders | delay 0,1007,47,3.0,True,23.0,35.0,7,40,47.0,0.8678,1,0,17,246,0,-11.65,35
+E4_resources,4 responders | delay 0,1008,49,3.0,True,22.0,28.0,2,40,49.0,0.0162,0,0,4,177,0,-3.45,28
+E4_resources,4 responders | delay 0,1009,50,3.0,True,24.0,40.0,6,40,50.0,0.0958,0,0,13,246,0,-10.95,40
+E4_resources,4 responders | delay 0,1010,51,3.0,True,22.0,36.0,7,40,51.0,0.014,0,0,19,281,0,-12.75,36
+E4_resources,4 responders | delay 0,1011,41,3.0,True,17.0,31.0,9,40,41.0,0.04,0,0,21,217,0,-15.8,31
+E4_resources,4 responders | delay 0,1012,53,10.0,True,9.0,34.0,7,40,53.0,0.0598,0,0,18,217,0,-12.05,34
+E4_resources,4 responders | delay 0,1013,72,22.0,True,26.0,65.0,16,40,72.0,0.0689,0,0,31,283,0,-30.5,65
+E4_resources,4 responders | delay 0,1014,55,3.0,True,20.0,31.0,5,40,55.0,0.2395,0,0,12,321,0,-9.05,31
+E4_resources,4 responders | delay 0,1015,178,3.0,True,23.0,178.0,126,40,50.0,0.0917,0,0,135,1946,0,-395.2,178
+E4_resources,4 responders | delay 0,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0296,0,0,18,266,0,-13.9,37
+E4_resources,4 responders | delay 0,1017,73,27.0,True,25.0,67.0,11,40,73.0,0.064,0,0,25,249,0,-22.8,67
+E4_resources,4 responders | delay 0,1018,53,15.0,True,25.0,48.0,6,40,53.0,0.0166,0,0,13,175,0,-12.1,48
+E4_resources,4 responders | delay 0,1019,48,3.0,True,24.0,31.0,2,40,48.0,0.0204,0,0,5,206,0,-3.9,31
+E4_resources,4 responders | delay 0,1020,53,3.0,True,26.0,38.0,7,40,53.0,0.0129,0,0,17,279,0,-11.75,38
+E4_resources,4 responders | delay 0,1021,51,3.0,True,21.0,31.0,6,40,51.0,0.0037,0,0,11,276,0,-8.85,31
+E4_resources,4 responders | delay 0,1022,206,3.0,True,21.0,206.0,124,40,49.0,0.0765,0,0,157,2191,0,-382.5,206
+E4_resources,4 responders | delay 0,1023,216,15.0,True,25.0,216.0,123,40,59.0,0.0158,0,0,159,2105,0,-374.5,216
+E4_resources,4 responders | delay 0,1024,282,3.0,True,24.0,282.0,120,40,47.0,0.0382,0,0,217,3055,0,-348.75,282
+E4_resources,4 responders | delay 0,1025,52,3.0,True,18.0,34.0,7,40,52.0,0.0514,0,0,14,254,0,-11.2,34
+E4_resources,4 responders | delay 0,1026,48,3.0,True,23.0,47.0,13,40,48.0,0.0323,0,0,29,294,0,-23.8,47
+E4_resources,4 responders | delay 0,1027,197,3.0,True,27.0,197.0,125,40,51.0,0.0177,0,0,145,2131,0,-384.1,197
+E4_resources,4 responders | delay 0,1028,63,11.0,True,29.0,50.0,9,40,63.0,0.0099,0,0,16,259,0,-16.95,50
+E4_resources,4 responders | delay 0,1029,42,3.0,True,19.0,35.0,9,40,42.0,0.0007,0,0,18,230,0,-15.4,35
+E4_resources,8 responders | delay 0,1000,61,8.0,True,21.0,44.0,10,40,61.0,0.0125,0,0,21,440,0,-18.05,44
+E4_resources,8 responders | delay 0,1001,60,3.0,True,22.0,38.0,14,40,60.0,0.0532,0,0,25,567,0,-24.6,38
+E4_resources,8 responders | delay 0,1002,61,3.0,True,23.0,33.0,5,40,61.0,0.0105,0,0,10,470,0,-7.75,33
+E4_resources,8 responders | delay 0,1003,69,7.0,True,26.0,69.0,27,40,51.0,0.0455,0,0,50,589,0,-54.15,69
+E4_resources,8 responders | delay 0,1004,53,9.0,True,20.0,40.0,8,40,53.0,0.4123,1,0,20,352,0,-16.75,40
+E4_resources,8 responders | delay 0,1005,55,5.0,True,23.0,36.0,6,40,55.0,0.0129,0,0,11,374,0,-11.8,36
+E4_resources,8 responders | delay 0,1006,300,,True,,23.0,2,4,,0.1937,0,0,3,0,0,-3.2,23
+E4_resources,8 responders | delay 0,1007,46,3.0,True,19.0,33.0,6,40,46.0,0.0287,0,0,13,377,0,-9.5,33
+E4_resources,8 responders | delay 0,1008,55,3.0,True,20.0,26.0,2,40,55.0,0.0164,0,0,4,355,0,-3.35,26
+E4_resources,8 responders | delay 0,1009,50,3.0,True,18.0,29.0,5,40,50.0,0.0577,0,0,10,367,0,-7.5,29
+E4_resources,8 responders | delay 0,1010,52,3.0,True,17.0,34.0,7,40,52.0,0.0104,0,0,16,451,0,-11.4,34
+E4_resources,8 responders | delay 0,1011,41,3.0,True,16.0,32.0,10,40,41.0,0.1001,0,0,23,356,0,-16.95,32
+E4_resources,8 responders | delay 0,1012,59,10.0,True,7.0,29.0,6,40,59.0,0.0584,0,0,15,398,0,-9.4,29
+E4_resources,8 responders | delay 0,1013,67,22.0,True,24.0,62.0,15,40,67.0,0.092,0,0,32,367,0,-27.55,62
+E4_resources,8 responders | delay 0,1014,50,3.0,True,20.0,33.0,5,40,50.0,0.0148,0,0,12,470,0,-9.2,33
+E4_resources,8 responders | delay 0,1015,48,3.0,True,24.0,48.0,19,40,48.0,0.1677,0,0,42,432,0,-38.4,48
+E4_resources,8 responders | delay 0,1016,59,10.0,True,11.0,32.0,7,40,59.0,0.2587,0,0,15,413,0,-12.2,32
+E4_resources,8 responders | delay 0,1017,75,28.0,True,22.0,65.0,11,40,75.0,0.0459,0,0,24,378,0,-21.65,65
+E4_resources,8 responders | delay 0,1018,63,14.0,True,27.0,52.0,6,40,63.0,0.0352,0,0,12,361,0,-12.95,52
+E4_resources,8 responders | delay 0,1019,49,3.0,True,24.0,29.0,2,40,49.0,0.0387,0,0,5,337,0,-3.7,29
+E4_resources,8 responders | delay 0,1020,57,3.0,True,23.0,35.0,7,40,57.0,0.0121,0,0,14,475,0,-10.45,35
+E4_resources,8 responders | delay 0,1021,44,3.0,True,22.0,31.0,6,40,44.0,0.0056,0,0,10,339,0,-8.95,31
+E4_resources,8 responders | delay 0,1022,50,3.0,True,18.0,43.0,12,40,50.0,0.0953,0,0,27,462,0,-21.25,43
+E4_resources,8 responders | delay 0,1023,59,15.0,True,22.0,52.0,15,40,59.0,0.0164,0,0,29,378,0,-29.3,52
+E4_resources,8 responders | delay 0,1024,45,3.0,True,20.0,40.0,12,40,45.0,0.0225,0,0,28,390,0,-21.55,40
+E4_resources,8 responders | delay 0,1025,51,3.0,True,19.0,43.0,11,40,51.0,0.0612,0,0,26,444,0,-17.85,43
+E4_resources,8 responders | delay 0,1026,50,4.0,True,21.0,36.0,10,40,50.0,0.0486,0,0,21,452,0,-17.55,36
+E4_resources,8 responders | delay 0,1027,127,3.0,True,25.0,127.0,40,40,50.0,0.0221,0,0,145,1602,0,-75.25,127
+E4_resources,8 responders | delay 0,1028,55,11.0,True,27.0,48.0,7,40,55.0,0.0159,0,0,14,315,0,-14.35,48
+E4_resources,8 responders | delay 0,1029,41,3.0,True,18.0,35.0,8,40,41.0,0.0018,0,0,17,337,0,-13.7,35
+E4_resources,4 responders | delay 10,1000,67,18.0,True,22.0,65.0,18,40,67.0,0.0419,0,0,33,302,0,-37.25,65
+E4_resources,4 responders | delay 10,1001,300,13.0,False,18.0,,270,40,54.0,0.275,0,0,209,4374,0,-841.2,300
+E4_resources,4 responders | delay 10,1002,58,13.0,True,20.0,50.0,10,40,58.0,0.0386,0,0,21,291,0,-18.3,50
+E4_resources,4 responders | delay 10,1003,115,17.0,True,20.0,115.0,36,40,55.0,0.2185,0,0,56,831,0,-80.0,115
+E4_resources,4 responders | delay 10,1004,58,19.0,True,20.0,58.0,16,40,58.0,0.1115,0,0,24,232,0,-31.2,58
+E4_resources,4 responders | delay 10,1005,63,15.0,True,22.0,49.0,9,40,63.0,0.0775,0,0,16,265,0,-19.05,49
+E4_resources,4 responders | delay 10,1006,87,37.0,True,-13.0,27.0,2,40,87.0,0.1014,0,0,5,92,0,-3.7,27
+E4_resources,4 responders | delay 10,1007,56,13.0,True,23.0,45.0,10,40,56.0,0.0841,0,0,24,274,0,-19.15,45
+E4_resources,4 responders | delay 10,1008,53,13.0,True,18.0,36.0,3,40,53.0,0.0539,0,0,7,194,0,-5.4,36
+E4_resources,4 responders | delay 10,1009,56,13.0,True,19.0,56.0,10,40,54.0,0.2004,0,0,21,270,0,-19.25,56
+E4_resources,4 responders | delay 10,1010,57,13.0,True,16.0,44.0,12,40,57.0,0.0675,0,0,30,319,0,-21.45,44
+E4_resources,4 responders | delay 10,1011,55,13.0,True,8.0,39.0,11,40,55.0,0.0852,0,0,26,235,0,-20.2,39
+E4_resources,4 responders | delay 10,1012,66,20.0,True,-2.0,35.0,7,40,66.0,0.1301,0,0,20,255,0,-12.1,35
+E4_resources,4 responders | delay 10,1013,77,32.0,True,24.0,74.0,17,40,77.0,0.0836,0,0,31,301,0,-38.35,74
+E4_resources,4 responders | delay 10,1014,59,13.0,True,17.0,38.0,6,40,59.0,0.0737,0,0,11,349,0,-12.3,38
+E4_resources,4 responders | delay 10,1015,209,13.0,True,17.0,209.0,125,40,59.0,0.3438,0,0,154,2277,0,-390.55,209
+E4_resources,4 responders | delay 10,1016,68,20.0,True,2.0,32.0,7,40,68.0,0.0392,0,0,15,251,0,-12.4,32
+E4_resources,4 responders | delay 10,1017,90,37.0,True,23.0,90.0,23,40,82.0,0.0829,0,0,40,362,0,-44.2,90
+E4_resources,4 responders | delay 10,1018,63,25.0,True,19.0,58.0,7,40,63.0,0.0664,0,0,12,201,0,-15.15,58
+E4_resources,4 responders | delay 10,1019,59,13.0,True,21.0,41.0,4,40,59.0,0.0885,0,0,10,244,0,-7.25,41
+E4_resources,4 responders | delay 10,1020,63,13.0,True,21.0,45.0,11,40,63.0,0.0376,0,0,25,319,0,-18.55,45
+E4_resources,4 responders | delay 10,1021,62,13.0,True,17.0,40.0,7,40,62.0,0.0503,0,0,14,334,0,-12.55,40
+E4_resources,4 responders | delay 10,1022,63,13.0,True,17.0,56.0,20,40,63.0,0.2487,0,0,39,386,0,-38.2,56
+E4_resources,4 responders | delay 10,1023,112,25.0,True,24.0,112.0,31,40,71.0,0.0875,0,0,47,722,0,-72.3,112
+E4_resources,4 responders | delay 10,1024,55,13.0,True,18.0,55.0,22,40,54.0,0.0896,0,0,34,310,0,-42.35,55
+E4_resources,4 responders | delay 10,1025,221,13.0,True,16.0,221.0,123,40,58.0,0.1574,0,0,146,2306,0,-376.45,221
+E4_resources,4 responders | delay 10,1026,286,13.0,True,21.0,286.0,121,40,59.0,0.1489,0,0,203,3094,0,-359.9,286
+E4_resources,4 responders | delay 10,1027,201,13.0,True,22.0,201.0,126,40,61.0,0.1175,0,0,135,2121,0,-390.35,201
+E4_resources,4 responders | delay 10,1028,65,21.0,True,24.0,56.0,9,40,65.0,0.0202,0,0,14,243,0,-19.55,56
+E4_resources,4 responders | delay 10,1029,52,13.0,True,19.0,49.0,14,40,52.0,0.0024,0,0,30,257,0,-27.65,49
+E4_resources,4 responders | delay 20,1000,132,28.0,True,21.0,132.0,37,40,81.0,0.1322,0,0,58,936,0,-87.25,132
+E4_resources,4 responders | delay 20,1001,203,23.0,True,18.0,203.0,125,40,65.0,0.6225,0,0,128,2133,0,-385.2,203
+E4_resources,4 responders | delay 20,1002,68,23.0,True,19.0,68.0,12,40,67.0,0.0365,0,0,28,317,0,-26.7,68
+E4_resources,4 responders | delay 20,1003,126,27.0,True,14.0,126.0,48,40,72.0,0.2312,0,0,76,1006,0,-113.5,126
+E4_resources,4 responders | delay 20,1004,111,29.0,True,16.0,111.0,27,40,68.0,0.1403,0,0,50,706,0,-61.75,111
+E4_resources,4 responders | delay 20,1005,92,25.0,True,26.0,92.0,20,40,70.0,0.1818,0,0,37,461,0,-42.7,92
+E4_resources,4 responders | delay 20,1006,96,47.0,True,-23.0,27.0,2,40,96.0,0.1015,0,0,5,76,0,-3.7,27
+E4_resources,4 responders | delay 20,1007,67,23.0,True,22.0,61.0,18,40,67.0,0.1542,0,0,36,358,0,-35.0,61
+E4_resources,4 responders | delay 20,1008,67,23.0,True,17.0,50.0,6,40,67.0,0.0747,0,0,13,322,0,-10.8,50
+E4_resources,4 responders | delay 20,1009,70,23.0,True,15.0,60.0,14,40,70.0,0.5093,0,0,28,369,0,-27.25,60
+E4_resources,4 responders | delay 20,1010,66,23.0,True,19.0,66.0,19,40,63.0,0.1276,0,0,27,321,0,-41.7,66
+E4_resources,4 responders | delay 20,1011,64,23.0,True,-3.0,41.0,12,40,64.0,0.1142,0,0,26,273,0,-20.35,41
+E4_resources,4 responders | delay 20,1012,73,30.0,True,-12.0,40.0,7,40,73.0,0.3299,0,0,20,273,0,-13.3,40
+E4_resources,4 responders | delay 20,1013,88,42.0,True,11.0,73.0,17,40,88.0,0.1093,0,0,32,371,0,-36.9,73
+E4_resources,4 responders | delay 20,1014,69,23.0,True,16.0,55.0,7,40,69.0,0.0765,0,0,11,372,0,-17.05,55
+E4_resources,4 responders | delay 20,1015,193,23.0,True,18.0,193.0,124,40,72.0,0.673,0,0,134,2030,0,-381.8,193
+E4_resources,4 responders | delay 20,1016,80,30.0,True,-8.0,33.0,7,40,80.0,0.0583,0,0,15,257,0,-12.8,33
+E4_resources,4 responders | delay 20,1017,128,47.0,True,17.0,128.0,27,40,96.0,0.2131,0,0,44,707,0,-60.05,128
+E4_resources,4 responders | delay 20,1018,87,35.0,True,21.0,87.0,20,40,73.0,0.1002,0,0,37,347,0,-42.45,87
+E4_resources,4 responders | delay 20,1019,68,23.0,True,20.0,51.0,8,40,68.0,0.1225,0,0,15,306,0,-13.65,51
+E4_resources,4 responders | delay 20,1020,221,23.0,True,19.0,221.0,125,40,72.0,0.1115,0,0,162,2228,0,-387.95,221
+E4_resources,4 responders | delay 20,1021,66,23.0,True,18.0,57.0,15,40,66.0,0.0768,0,0,27,316,0,-28.15,57
+E4_resources,4 responders | delay 20,1022,208,23.0,True,16.0,208.0,120,40,75.0,0.7669,0,0,149,2154,0,-350.8,208
+E4_resources,4 responders | delay 20,1023,210,35.0,True,12.0,210.0,124,40,80.0,0.1905,0,0,144,1977,0,-383.15,210
+E4_resources,4 responders | delay 20,1024,231,23.0,True,18.0,231.0,125,40,73.0,0.3865,0,0,159,2466,0,-381.85,231
+E4_resources,4 responders | delay 20,1025,202,23.0,True,14.0,202.0,122,40,73.0,0.3746,0,0,138,2019,0,-350.65,202
+E4_resources,4 responders | delay 20,1026,213,23.0,True,18.0,213.0,126,40,67.0,0.329,0,0,155,2214,0,-389.75,213
+E4_resources,4 responders | delay 20,1027,221,23.0,True,19.0,221.0,123,40,75.0,0.3253,0,0,158,2331,0,-384.95,221
+E4_resources,4 responders | delay 20,1028,77,31.0,True,20.0,65.0,10,40,77.0,0.0424,0,0,14,310,0,-23.3,65
+E4_resources,4 responders | delay 20,1029,276,23.0,True,18.0,276.0,123,40,63.0,0.0104,0,0,261,2848,0,-363.45,276
+E4_resources,4 responders | delay 30,1000,236,38.0,True,20.0,236.0,127,40,91.0,0.3734,0,0,166,2328,0,-385.5,236
+E4_resources,4 responders | delay 30,1001,233,33.0,True,13.0,233.0,122,40,73.0,1.0697,0,0,134,2430,0,-369.45,233
+E4_resources,4 responders | delay 30,1002,73,33.0,True,18.0,68.0,17,40,73.0,0.0373,0,0,25,328,0,-33.9,68
+E4_resources,4 responders | delay 30,1003,241,37.0,True,5.0,241.0,124,40,80.0,0.2794,0,0,181,2467,0,-393.75,241
+E4_resources,4 responders | delay 30,1004,247,39.0,True,21.0,247.0,122,40,84.0,0.2663,0,0,156,2495,0,-381.1,247
+E4_resources,4 responders | delay 30,1005,258,35.0,True,23.0,258.0,124,40,80.0,0.2982,0,0,169,2510,0,-379.2,258
+E4_resources,4 responders | delay 30,1006,110,57.0,True,-33.0,27.0,2,40,110.0,0.1006,0,0,5,80,0,-3.7,27
+E4_resources,4 responders | delay 30,1007,234,33.0,True,17.0,234.0,143,40,74.0,0.2923,0,0,157,2563,0,-430.35,234
+E4_resources,4 responders | delay 30,1008,77,33.0,True,19.0,70.0,16,40,77.0,0.0989,0,0,29,346,0,-28.5,70
+E4_resources,4 responders | delay 30,1009,263,33.0,True,14.0,263.0,109,40,74.0,0.9163,0,0,173,2671,0,-317.8,263
+E4_resources,4 responders | delay 30,1010,127,33.0,True,15.0,127.0,34,40,70.0,0.1161,0,0,57,924,0,-80.05,127
+E4_resources,4 responders | delay 30,1011,74,33.0,True,-13.0,33.0,9,40,74.0,0.236,0,0,21,219,0,-16.0,33
+E4_resources,4 responders | delay 30,1012,89,40.0,True,-22.0,39.0,7,40,89.0,0.4134,0,0,19,239,0,-13.4,39
+E4_resources,4 responders | delay 30,1013,99,52.0,True,1.0,73.0,19,40,99.0,0.1718,0,0,34,416,0,-36.8,73
+E4_resources,4 responders | delay 30,1014,74,33.0,True,15.0,60.0,11,40,74.0,0.0903,0,0,16,375,0,-23.65,60
+E4_resources,4 responders | delay 30,1015,176,33.0,True,12.0,176.0,127,40,79.0,1.0687,0,0,114,1808,0,-400.55,176
+E4_resources,4 responders | delay 30,1016,88,40.0,True,-18.0,33.0,7,40,88.0,0.0816,0,0,15,228,0,-12.8,33
+E4_resources,4 responders | delay 30,1017,126,57.0,True,6.0,126.0,29,40,104.0,0.2719,0,0,51,651,0,-62.2,126
+E4_resources,4 responders | delay 30,1018,277,45.0,True,18.0,277.0,122,40,88.0,0.1943,0,0,181,2635,0,-373.7,277
+E4_resources,4 responders | delay 30,1019,266,33.0,True,18.0,266.0,122,40,74.0,0.2104,0,0,173,2689,0,-368.05,266
+E4_resources,4 responders | delay 30,1020,218,33.0,True,18.0,218.0,126,40,82.0,0.3089,0,0,142,2189,0,-383.65,218
+E4_resources,4 responders | delay 30,1021,120,33.0,True,16.0,120.0,31,40,77.0,0.0761,0,0,60,790,0,-70.4,120
+E4_resources,4 responders | delay 30,1022,245,33.0,True,11.0,245.0,120,40,77.0,1.3617,0,0,176,2561,0,-374.65,245
+E4_resources,4 responders | delay 30,1023,101,45.0,True,1.0,101.0,25,40,95.0,0.2225,0,0,43,553,0,-54.0,101
+E4_resources,4 responders | delay 30,1024,228,33.0,True,14.0,228.0,129,40,82.0,0.6964,0,0,142,2412,0,-392.65,228
+E4_resources,4 responders | delay 30,1025,208,33.0,True,12.0,208.0,124,40,84.0,0.6997,0,0,137,2100,0,-383.85,208
+E4_resources,4 responders | delay 30,1026,191,33.0,True,17.0,191.0,126,40,78.0,0.4578,0,0,123,1956,0,-392.5,191
+E4_resources,4 responders | delay 30,1027,254,33.0,True,16.0,254.0,126,40,84.0,0.6318,0,0,172,2639,0,-388.2,254
+E4_resources,4 responders | delay 30,1028,86,41.0,True,22.0,76.0,15,40,86.0,0.1227,0,0,16,348,0,-33.15,76
+E4_resources,4 responders | delay 30,1029,282,33.0,True,13.0,282.0,119,40,71.0,0.0488,0,0,239,2836,0,-362.3,282
