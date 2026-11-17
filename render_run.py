@@ -27,6 +27,12 @@ def draw(ax, m, title):
     ax.imshow(base, cmap=CMAP, vmin=0, vmax=5, interpolation="nearest")
     ax.imshow(np.ma.masked_less(m.env.smoke.T, 0.02), cmap="Greys", alpha=0.55, vmin=0, vmax=0.6)
     ax.imshow(np.ma.masked_equal(m.env.fire.T, 0), cmap="autumn_r", vmin=0, vmax=1, alpha=0.95)
+    ax.imshow(np.ma.masked_equal(m.queue_wait.T, 0), cmap="summer", alpha=0.6, vmin=0, vmax=16)
+    if m.closed_cells:
+        ax.scatter(*zip(*m.closed_cells), marker="x", s=40, c="#343943", zorder=3)
+    if m.robots:
+        ax.scatter(*zip(*(r.location for r in m.robots)), marker="s", s=65,
+                   facecolors="none", edgecolors="#7158be", linewidths=1.5, zorder=4)
     det = [a.location for a in m.detectors]
     trig = [a.location for a in m.detectors if a.triggered]
     if det:

@@ -3,8 +3,11 @@
 SmokeDetector  fixed sensor, feeds the alarm panel and reports to the dispatcher
 Dispatcher     control room: sends each free responder to the nearest known fire
 Responder      safety officer with an extinguisher; acts on its own beliefs
+EvacuationRobot  fixed guide at a junction; directs waiting groups to an exit
 Occupant       evacuee with a reaction delay, herding and exit familiarity
 """
+
+from collections import Counter
 
 import mesa
 import numpy as np
@@ -296,6 +299,48 @@ class Responder(mesa.Agent):
 
 
 # ==========================================================================
+class EvacuationRobot(mesa.Agent):
+    """Direct a group to the exit with the lowest estimated travel and wait."""
+
+    def __init__(self, model, junction):
+        super().__init__(model)
+        self.location = junction[0]
+        self.junction = junction
+        self.field = None
+        # The assigned headcount falls as people leave the building or stop moving.
+        self.assigned = Counter()
+
+    def direct(self, occupants):
+        m = self.model
+        group = [a for a in occupants if a.state == "evacuating" and a.guided_exit is None
+                 and self.field[a.pos] == 0]
+        if not group:
+            return
+
+        if m.robot_guidance == "shared":
+            demand = sum((robot.assigned for robot in m.robots), Counter())
+        else:
+            demand = Counter(a.guided_exit for a in occupants
+                             if a.state == "evacuating" and a.guided_exit is not None
+                             and max(abs(a.pos[0] - self.location[0]),
+                                     abs(a.pos[1] - self.location[1])) <= m.vision)
+
+        costs = {}
+        for side, field in m.guided_exit_fields.items():
+            walking_time = max(field[a.pos] for a in group)
+            if np.isfinite(walking_time):
+                queue_time = (demand[side] + len(group) - 1) / len(m.exits_by_side[side])
+                costs[side] = walking_time + queue_time
+        if not costs:
+            return
+
+        side = min(costs, key=costs.get)
+        for a in group:
+            a.guide = self
+            a.guided_exit = side
+        self.assigned[side] += len(group)
+
+
 class Occupant(mesa.Agent):
     """Researcher. States: working -> alerted (pre-movement delay) -> evacuating.
 
@@ -310,6 +355,22 @@ class Occupant(mesa.Agent):
         self.injured = False
         self.delay = 0
         self.familiar = self.random.random() < model.familiarity
+        self.guide = None
+        self.guided_exit = None
+
+    def finish_guidance(self):
+        if self.guide is not None:
+            self.guide.assigned[self.guided_exit] -= 1
+
+    def evacuation_field(self):
+        m = self.model
+        if self.guided_exit is not None:
+            return m.guided_exit_fields[self.guided_exit]
+        if m.robots:
+            return min(m.robots, key=lambda robot: robot.field[self.pos]).field
+        if not self.familiar and np.isfinite(m.west_exit_field[self.pos]):
+            return m.west_exit_field
+        return m.exit_field
 
     def step(self):
         if self.pos is None or self.state == "incapacitated":
@@ -324,6 +385,7 @@ class Occupant(mesa.Agent):
         if self.health <= 0.0:
             self.state = "incapacitated"
             m.incapacitated += 1
+            self.finish_guidance()
             return
 
         if self.state == "working":
@@ -345,9 +407,12 @@ class Occupant(mesa.Agent):
                 return
             self.state = "evacuating"
 
-        field = m.exit_field if self.familiar else m.west_exit_field
-        if np.isinf(field[self.pos]):
-            field = m.exit_field
-        m.move_down_field(self, field)
-        if self.pos is not None and env.tiles[self.pos] == "E":
+        m.move_down_field(self, self.evacuation_field())
+        if self.guided_exit is not None:
+            exits = m.exits_by_side[self.guided_exit]
+        elif not m.robots:
+            exits = env.exits
+        else:
+            return
+        if self.pos in exits:
             m.evacuate(self)

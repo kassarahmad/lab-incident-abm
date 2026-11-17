@@ -4,7 +4,7 @@ import unittest
 import numpy as np
 
 from agents import Occupant, Responder
-from environment import FLOOR_PLAN, Environment
+from environment import FLOOR_PLAN, GUIDED_CORRIDOR_CLOSURE, Environment
 from messaging import INFORM, BeliefMap, MessageBus
 from model import COORDINATION_MODES, LabIncidentModel
 from options import EXPLORE, FOLLOW_TASK, NEAREST, choose_option
@@ -99,6 +99,50 @@ class ModelTests(unittest.TestCase):
     def test_invalid_coordination(self):
         with self.assertRaises(ValueError):
             LabIncidentModel(coordination="chaos")
+
+    def test_robot_guides_can_use_both_exits_after_closure(self):
+        m = LabIncidentModel(seed=1006, robot_guidance="local")
+        self.assertEqual(m.closed_cells, ())
+        while m.running:
+            m.step()
+        self.assertEqual(m.closed_cells, GUIDED_CORRIDOR_CLOSURE)
+        self.assertEqual(m.alarm_step, m.ignition_step)
+        self.assertTrue(all(not m.env.walkable[c] for c in m.closed_cells))
+        self.assertEqual(len(m.env.exits), 2)
+        for field in m.guided_exit_fields.values():
+            self.assertTrue(all(np.isfinite(field[r.location]) for r in m.robots))
+        self.assertEqual(m.evacuated, m.n_occupants)
+        self.assertIsNotNone(m.summary()["all_out_step"])
+        self.assertEqual(sum(sum(r.assigned.values()) for r in m.robots), 0)
+
+    def test_robot_uses_other_junctions_count_only_when_shared(self):
+        for mode, expected in (("local", "east"), ("shared", "west")):
+            with self.subTest(mode=mode):
+                m = LabIncidentModel(seed=1000, n_responders=0, n_occupants=1, robot_guidance=mode)
+                for _ in range(m.ignition_step):
+                    m.step()
+                west, east = m.robots
+                west.assigned["east"] = 20
+                occupant = m.occupants()[0]
+                m.grid.move_agent(occupant, east.location)
+                occupant.state = "evacuating"
+                east.direct([occupant])
+                self.assertEqual(occupant.guided_exit, expected)
+                self.assertEqual(east.assigned[expected], 1)
+
+    def test_waiting_is_recorded_only_when_other_people_block_progress(self):
+        m = LabIncidentModel(seed=1000, n_responders=0, n_occupants=2)
+        waiting, ahead = m.occupants()
+        m.grid.move_agent(waiting, (2, 9))
+        m.grid.move_agent(ahead, (1, 9))
+        field = np.full_like(m.exit_field, np.inf)
+        field[waiting.pos] = 2
+        self.assertFalse(m.move_down_field(waiting, field))
+        self.assertEqual(m.queueing, 0)
+        field[ahead.pos] = 1
+        self.assertFalse(m.move_down_field(waiting, field))
+        self.assertEqual(m.queueing, 1)
+        self.assertEqual(m.queue_wait[waiting.pos], 1)
 
 
 class DecisionAndStatsTests(unittest.TestCase):

@@ -36,9 +36,31 @@ FLOOR_PLAN = (
     "########################################",
 )
 CORRIDOR_ROWS = (9, 10)
+# East of the lab doors, so the west exits remain reachable from all labs.
+EAST_CORRIDOR_CLOSURE = tuple((32, y) for y in CORRIDOR_ROWS)
+GUIDED_CORRIDOR_CLOSURE = tuple((18, y) for y in CORRIDOR_ROWS)
+BYPASS_ENTRANCES = ((14, 15), (21, 22))
+GUIDE_JUNCTIONS = tuple(tuple((x, y) for x in entrance for y in CORRIDOR_ROWS)
+                        for entrance in BYPASS_ENTRANCES)
+BYPASS_CELLS = frozenset(
+    [(x, 12) for x in range(14, 23)]
+    + [(x, 11) for entrance in BYPASS_ENTRANCES for x in entrance]
+)
 FUEL_BY_TILE = {"#": 0.0, ".": 0.3, "B": 1.0, "C": 2.0, "E": 0.0, "S": 0.0}
 MOORE = ((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
 VON_NEUMANN = ((-1, 0), (1, 0), (0, -1), (0, 1))
+
+
+def guided_floor_plan():
+    """Two exits and a short passage around the central closure."""
+    rows = [list(row) for row in FLOOR_PLAN]
+    rows[10][0] = rows[10][-1] = "#"
+    for x in range(13, 24):
+        rows[13][x] = "#"
+    rows[12][13] = rows[12][23] = "#"
+    for x, y in BYPASS_CELLS:
+        rows[y][x] = "."
+    return tuple("".join(row) for row in rows)
 
 
 class Environment:
@@ -46,9 +68,10 @@ class Environment:
 
     def __init__(self, p_spread=0.25, fire_growth=0.08, burn_rate=0.015,
                  smoke_emission=0.25, smoke_diffusion=0.5, smoke_substeps=4,
-                 smoke_vent=0.03, floor_plan=FLOOR_PLAN):
+                 smoke_vent=0.03, floor_plan=FLOOR_PLAN, corridor_extension=()):
         assert all(len(r) == len(floor_plan[0]) for r in floor_plan), "ragged floor plan"
         self.floor_plan = floor_plan
+        self.corridor_extension = frozenset(corridor_extension)
         self.width, self.height = len(floor_plan[0]), len(floor_plan)
         self.tiles = np.array([list(r) for r in floor_plan]).T
         self.walkable = np.isin(self.tiles, [".", "E", "S"])
@@ -75,6 +98,12 @@ class Environment:
         self._static_cache = {}
 
     # ------------------------------------------------------------ geometry
+    def close_passage(self, cells):
+        """Close floor cells to movement while leaving fire and smoke dynamics intact."""
+        for cell in cells:
+            self.walkable[cell] = False
+        self._static_cache.clear()
+
     def in_bounds(self, x, y):
         return 0 <= x < self.width and 0 <= y < self.height
 
@@ -85,7 +114,7 @@ class Environment:
     def room_of(self, pos):
         """0-3 = labs (NW, NE, SW, SE), 4 = corridor. Used for state abstraction."""
         x, y = pos
-        if y in CORRIDOR_ROWS or (y in (8, 11)):
+        if y in CORRIDOR_ROWS or y in (8, 11) or (x, y) in self.corridor_extension:
             return 4
         return (0 if y < 9 else 2) + (0 if x < 19 else 1)
 
@@ -143,7 +172,7 @@ class Environment:
     def distance_field(self, sources, avoid_fire=False):
         """Multi-source BFS over walkable cells (8-neighbour). Sources may be
         non-walkable (e.g. a burning cabinet): agents then stop next to them.
-        Fields that ignore fire never change, so they are cached."""
+        Fields that ignore fire are cached until walkability changes."""
         if not avoid_fire:
             key = tuple(sorted(sources))
             if key not in self._static_cache:

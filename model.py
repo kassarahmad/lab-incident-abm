@@ -16,8 +16,11 @@ from typing import Optional
 import mesa
 import numpy as np
 
-from agents import Dispatcher, Occupant, Responder, SmokeDetector
-from environment import CORRIDOR_ROWS, MOORE, Environment
+from agents import Dispatcher, EvacuationRobot, Occupant, Responder, SmokeDetector
+from environment import (
+    BYPASS_CELLS, CORRIDOR_ROWS, EAST_CORRIDOR_CLOSURE, FLOOR_PLAN,
+    GUIDED_CORRIDOR_CLOSURE, GUIDE_JUNCTIONS, MOORE, Environment, guided_floor_plan,
+)
 from messaging import MessageBus
 
 COORDINATION_MODES = ("none", "dispatcher")
@@ -43,10 +46,14 @@ class LabIncidentModel(mesa.Model):
         ignition_step: int = 3,
         max_steps: int = 300,
         seed: Optional[int] = None,
+        block_corridor: bool = False,
+        robot_guidance: Optional[str] = None,
     ):
         super().__init__(rng=seed)
         if coordination not in COORDINATION_MODES:
             raise ValueError(f"coordination must be one of {COORDINATION_MODES}")
+        if robot_guidance not in (None, "local", "shared"):
+            raise ValueError("robot_guidance must be local, shared, or None")
 
         self.coordination = coordination
         self.alarm_delay = alarm_delay
@@ -56,6 +63,10 @@ class LabIncidentModel(mesa.Model):
         self.familiarity = familiarity
         self.ignition_step = ignition_step
         self.max_steps = max_steps
+        self.robot_guidance = robot_guidance
+        self.corridor_to_close = EAST_CORRIDOR_CLOSURE if block_corridor else ()
+        if robot_guidance:
+            self.corridor_to_close = GUIDED_CORRIDOR_CLOSURE
         # fixed behavioural constants (see ODD.md)
         self.smoke_threshold = 0.04
         self.extinguish_power = 0.5
@@ -66,7 +77,10 @@ class LabIncidentModel(mesa.Model):
         self.commit = 4                     # max steps an option is kept
         self.premovement_mu, self.premovement_sigma = 1.2, 0.6  # median ~3.3 steps
 
-        self.env = Environment(p_spread=p_spread)
+        self.env = Environment(
+            p_spread=p_spread, floor_plan=guided_floor_plan() if robot_guidance else FLOOR_PLAN,
+            corridor_extension=BYPASS_CELLS if robot_guidance else (),
+        )
         self.bus = MessageBus(self.random, latency=comm_latency, loss=comm_loss)
         self.grid = mesa.space.SingleGrid(self.env.width, self.env.height, torus=False)
         env = self.env
@@ -77,6 +91,10 @@ class LabIncidentModel(mesa.Model):
         self.first_detection = None
         self.contained_step = None
         self.evacuation_done_step = None
+        self.closed_cells = ()
+        self.queue_wait = np.zeros((env.width, env.height), dtype=int)
+        self.queueing = 0
+        self.peak_queueing = 0
         self.ignition_cells = self.random.sample(env.cabinets, n_ignitions)
         self.ignition_cell = self.ignition_cells[0]
         self.evacuated = 0
@@ -93,6 +111,7 @@ class LabIncidentModel(mesa.Model):
             for y in range(2, env.height - 1, 3):
                 if env.air[x, y]:
                     self.detectors.append(SmokeDetector(self, (x, y)))
+        self.robots = [EvacuationRobot(self, cells) for cells in GUIDE_JUNCTIONS] if robot_guidance else []
 
         # responders start at the base around the station
         sx, sy = env.stations[0]
@@ -108,8 +127,9 @@ class LabIncidentModel(mesa.Model):
             self.dispatcher.status = {r.unique_id: (r.pos, r.charges, False, 0) for r in self.responder_list}
 
         # occupants in the labs
-        lab_cells = [tuple(map(int, c)) for c in np.argwhere(env.tiles == ".")
-                     if c[1] not in CORRIDOR_ROWS and self.grid.is_cell_empty(tuple(map(int, c)))]
+        floor = (tuple(map(int, c)) for c in np.argwhere(env.tiles == "."))
+        lab_cells = [c for c in floor if c[1] not in CORRIDOR_ROWS
+                     and c not in env.corridor_extension and self.grid.is_cell_empty(c)]
         self.random.shuffle(lab_cells)
         for c in lab_cells[:n_occupants]:
             self.grid.place_agent(Occupant(self), c)
@@ -117,6 +137,7 @@ class LabIncidentModel(mesa.Model):
 
         self.station_field = env.distance_field(env.stations)
         self.west_exits = [e for e in env.exits if e[0] == 0]
+        self.exits_by_side = {"west": self.west_exits, "east": [e for e in env.exits if e[0] == env.width - 1]}
         self.update_exit_fields()
 
         self.datacollector = mesa.DataCollector(model_reporters={
@@ -139,16 +160,26 @@ class LabIncidentModel(mesa.Model):
         self.west_exit_field = self.env.distance_field(self.west_exits, avoid_fire=True)
         if np.isinf(self.exit_field).all():
             self.exit_field = self.env.distance_field(self.env.exits)
+        if self.robots:
+            self.guided_exit_fields = {
+                "west": self.west_exit_field,
+                "east": self.env.distance_field(self.exits_by_side["east"], avoid_fire=True),
+            }
+            for robot in self.robots:
+                available = [c for c in robot.junction if self.env.fire[c] <= 0.3]
+                robot.field = self.env.distance_field(available, avoid_fire=True)
 
     def near_station(self, pos):
         return any(max(abs(pos[0] - x), abs(pos[1] - y)) <= 1 for x, y in self.env.stations)
 
-    def free_neighbours(self, pos):
+    def walkable_neighbours(self, pos):
         x, y = pos
         env = self.env
         return [(x + dx, y + dy) for dx, dy in MOORE
-                if env.in_bounds(x + dx, y + dy) and env.walkable[x + dx, y + dy]
-                and self.grid.is_cell_empty((x + dx, y + dy))]
+                if env.in_bounds(x + dx, y + dy) and env.walkable[x + dx, y + dy]]
+
+    def free_neighbours(self, pos):
+        return [c for c in self.walkable_neighbours(pos) if self.grid.is_cell_empty(c)]
 
     def move_random(self, agent):
         options = self.free_neighbours(agent.pos)
@@ -157,34 +188,42 @@ class LabIncidentModel(mesa.Model):
 
     def move_down_field(self, agent, field):
         """Step to the free neighbour that most reduces the distance. False if
-        the agent cannot get closer (arrived, blocked, no path)."""
+        the agent cannot get closer (arrived, blocked, no path). An occupant
+        queues when all closer walkable cells are occupied."""
         here = field[agent.pos]
-        options = [c for c in self.free_neighbours(agent.pos) if field[c] < here]
-        if not options:
-            return self.try_swap(agent, field)
-        best = min(field[c] for c in options)
-        self.grid.move_agent(agent, self.random.choice([c for c in options if field[c] == best]))
-        return True
+        closer = [c for c in self.walkable_neighbours(agent.pos) if field[c] < here]
+        options = [c for c in closer if self.grid.is_cell_empty(c)]
+        if options:
+            best = min(field[c] for c in options)
+            self.grid.move_agent(agent, self.random.choice([c for c in options if field[c] == best]))
+            return True
+        if self._try_swap(agent, closer):
+            return True
+        if closer and isinstance(agent, Occupant):
+            self.queue_wait[agent.pos] += 1
+            self.queueing += 1
+        return False
 
-    def try_swap(self, agent, field):
-        """Counter-flow: anyone can squeeze past a responder (and a responder past
-        anyone); occupants queue behind other occupants."""
-        x, y = agent.pos
-        here = field[x, y]
-        for dx, dy in MOORE:
-            c = (x + dx, y + dy)
-            if not self.env.in_bounds(*c) or field[c] >= here or self.grid.is_cell_empty(c):
-                continue
+    def _try_swap(self, agent, occupied_neighbours):
+        """Pass a responder, or let guided evacuees pass in opposite directions."""
+        for c in occupied_neighbours:
             other = self.grid.get_cell_list_contents([c])[0]
             if (isinstance(other, Responder) or isinstance(agent, Responder)) \
                     and getattr(other, "state", "") != "incapacitated" and self.random.random() < 0.5:
                 self.grid.swap_pos(agent, other)
                 return True
+            if self.robots and isinstance(agent, Occupant) and isinstance(other, Occupant) \
+                    and other.state == "evacuating":
+                return_field = other.evacuation_field()
+                if return_field[agent.pos] < return_field[c]:
+                    self.grid.swap_pos(agent, other)
+                    return True
         return False
 
     def evacuate(self, agent):
         self.evacuated += 1
         self.injured_evacuated += agent.injured
+        agent.finish_guidance()
         self.grid.remove_agent(agent)
         agent.remove()
 
@@ -206,6 +245,12 @@ class LabIncidentModel(mesa.Model):
         if self.steps == self.ignition_step:
             for c in self.ignition_cells:
                 env.ignite(c)
+            if self.corridor_to_close:
+                self.closed_cells = self.corridor_to_close
+                env.close_passage(self.closed_cells)
+                self.station_field = env.distance_field(env.stations)
+                if self.robots:
+                    self.panel_detection(self.closed_cells[0])
         env.update(self.rng)
         self.update_exit_fields()
         self.bus.deliver(self.steps)
@@ -218,11 +263,17 @@ class LabIncidentModel(mesa.Model):
             self.alarm_on, self.alarm_step = True, self.steps
         if self.dispatcher is not None:
             self.dispatcher.step()
+        if self.robots:
+            occupants = self.occupants()
+            for robot in self.robots:
+                robot.direct(occupants)
 
         # 3. people act in random order
+        self.queueing = 0
         self.agents.select(lambda a: isinstance(a, (Responder, Occupant))).shuffle_do("step")
 
         # 4. record and stop
+        self.peak_queueing = max(self.peak_queueing, self.queueing)
         burning = int((env.fire > 0).sum())
         self.datacollector.collect(self)
         fire_out = self.steps > self.ignition_step and burning == 0
@@ -244,6 +295,9 @@ class LabIncidentModel(mesa.Model):
             "burned_area": int(self.env.ever_burned.sum()),
             "evacuated": self.evacuated,
             "evacuation_time": self.evacuation_done_step,
+            "all_out_step": self.evacuation_done_step if self.evacuated == self.n_occupants else None,
+            "queueing": self.queueing,
+            "peak_queueing": self.peak_queueing,
             "exposure": round(self.total_dose, 4),
             "injured": self.injured_count(),
             "incapacitated": self.incapacitated,

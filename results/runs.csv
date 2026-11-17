@@ -1,391 +1,451 @@
-experiment,config,seed,steps,alarm_step,contained,response_time,contained_step,burned_area,evacuated,evacuation_time,exposure,injured,incapacitated,shots,messages,messages_dropped,contain_time
-E1_coordination,No dispatcher | 1 fire,1000,215,8.0,True,48.0,215.0,76,40,54.0,0.0099,0,0,146,0,0,215
-E1_coordination,No dispatcher | 1 fire,1001,200,3.0,True,30.0,200.0,125,40,47.0,0.0617,0,0,130,0,0,200
-E1_coordination,No dispatcher | 1 fire,1002,114,3.0,True,48.0,114.0,22,40,53.0,0.135,0,0,37,0,0,114
-E1_coordination,No dispatcher | 1 fire,1003,240,7.0,True,33.0,240.0,126,40,47.0,0.0421,0,0,153,0,0,240
-E1_coordination,No dispatcher | 1 fire,1004,137,9.0,True,40.0,137.0,47,40,49.0,0.1124,0,0,59,0,0,137
-E1_coordination,No dispatcher | 1 fire,1005,58,5.0,True,33.0,49.0,9,40,58.0,0.0076,0,0,13,0,0,49
-E1_coordination,No dispatcher | 1 fire,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1002,0,0,5,0,0,27
-E1_coordination,No dispatcher | 1 fire,1007,242,3.0,True,46.0,242.0,145,40,46.0,0.8648,1,0,152,0,0,242
-E1_coordination,No dispatcher | 1 fire,1008,119,3.0,True,45.0,119.0,23,40,47.0,0.0159,0,0,50,0,0,119
-E1_coordination,No dispatcher | 1 fire,1009,52,3.0,True,26.0,49.0,7,40,52.0,0.0931,0,0,17,0,0,49
-E1_coordination,No dispatcher | 1 fire,1010,289,3.0,True,41.0,289.0,130,40,51.0,0.0136,0,0,199,0,0,289
-E1_coordination,No dispatcher | 1 fire,1011,41,3.0,True,17.0,31.0,9,40,41.0,0.04,0,0,21,0,0,31
-E1_coordination,No dispatcher | 1 fire,1012,53,10.0,True,9.0,34.0,7,40,53.0,0.0597,0,0,18,0,0,34
-E1_coordination,No dispatcher | 1 fire,1013,74,22.0,True,29.0,74.0,16,40,73.0,0.0694,0,0,36,0,0,74
-E1_coordination,No dispatcher | 1 fire,1014,65,3.0,True,42.0,65.0,11,40,56.0,0.2396,0,0,18,0,0,65
-E1_coordination,No dispatcher | 1 fire,1015,178,3.0,True,52.0,178.0,127,40,50.0,0.1261,0,0,84,0,0,178
-E1_coordination,No dispatcher | 1 fire,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0295,0,0,18,0,0,37
-E1_coordination,No dispatcher | 1 fire,1017,284,27.0,True,38.0,284.0,125,40,75.0,0.0639,0,0,153,0,0,284
-E1_coordination,No dispatcher | 1 fire,1018,122,15.0,True,31.0,122.0,25,40,53.0,0.0168,0,0,40,0,0,122
-E1_coordination,No dispatcher | 1 fire,1019,63,3.0,True,45.0,63.0,11,40,48.0,0.0185,0,0,19,0,0,63
-E1_coordination,No dispatcher | 1 fire,1020,188,3.0,True,44.0,188.0,125,40,46.0,0.01,0,0,93,0,0,188
-E1_coordination,No dispatcher | 1 fire,1021,298,3.0,True,51.0,298.0,123,40,52.0,0.0037,0,0,223,0,0,298
-E1_coordination,No dispatcher | 1 fire,1022,198,3.0,True,25.0,198.0,123,40,50.0,0.0793,0,0,108,0,0,198
-E1_coordination,No dispatcher | 1 fire,1023,205,15.0,True,31.0,205.0,63,40,58.0,0.0152,0,0,139,0,0,205
-E1_coordination,No dispatcher | 1 fire,1024,209,3.0,True,61.0,209.0,125,40,49.0,0.0372,0,0,119,0,0,209
-E1_coordination,No dispatcher | 1 fire,1025,200,3.0,True,45.0,200.0,126,40,45.0,0.0641,0,0,115,0,0,200
-E1_coordination,No dispatcher | 1 fire,1026,223,3.0,True,36.0,223.0,125,40,50.0,0.035,0,0,130,0,0,223
-E1_coordination,No dispatcher | 1 fire,1027,210,3.0,True,52.0,210.0,124,40,50.0,0.0267,0,0,119,0,0,210
-E1_coordination,No dispatcher | 1 fire,1028,65,11.0,True,32.0,65.0,9,40,63.0,0.0108,0,0,15,0,0,65
-E1_coordination,No dispatcher | 1 fire,1029,108,3.0,True,25.0,108.0,29,40,44.0,0.0008,0,0,53,0,0,108
-E1_coordination,Dispatcher | 1 fire,1000,53,8.0,True,21.0,43.0,10,40,53.0,0.0098,0,0,20,241,0,43
-E1_coordination,Dispatcher | 1 fire,1001,47,3.0,True,20.0,39.0,14,40,47.0,0.049,0,0,27,304,0,39
-E1_coordination,Dispatcher | 1 fire,1002,53,3.0,True,16.0,23.0,2,40,53.0,0.0991,0,0,5,171,0,23
-E1_coordination,Dispatcher | 1 fire,1003,51,7.0,True,21.0,51.0,18,40,48.0,0.0404,0,0,35,265,0,51
-E1_coordination,Dispatcher | 1 fire,1004,49,9.0,True,26.0,47.0,9,40,49.0,0.1006,0,0,16,224,0,47
-E1_coordination,Dispatcher | 1 fire,1005,58,5.0,True,23.0,35.0,6,40,58.0,0.0076,0,0,10,239,0,35
-E1_coordination,Dispatcher | 1 fire,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1003,0,0,5,102,0,27
-E1_coordination,Dispatcher | 1 fire,1007,46,3.0,True,21.0,32.0,7,40,46.0,0.8656,1,0,16,254,0,32
-E1_coordination,Dispatcher | 1 fire,1008,52,3.0,True,19.0,25.0,2,40,52.0,0.0175,0,0,4,155,0,25
-E1_coordination,Dispatcher | 1 fire,1009,46,3.0,True,18.0,29.0,5,40,46.0,0.0793,0,0,10,206,0,29
-E1_coordination,Dispatcher | 1 fire,1010,53,3.0,True,20.0,36.0,9,40,53.0,0.0137,0,0,21,301,0,36
-E1_coordination,Dispatcher | 1 fire,1011,40,3.0,True,17.0,31.0,9,40,40.0,0.04,0,0,21,208,0,31
-E1_coordination,Dispatcher | 1 fire,1012,54,10.0,True,9.0,34.0,7,40,54.0,0.0611,0,0,18,261,0,34
-E1_coordination,Dispatcher | 1 fire,1013,73,22.0,True,22.0,59.0,12,40,73.0,0.0705,0,0,23,295,0,59
-E1_coordination,Dispatcher | 1 fire,1014,54,3.0,True,19.0,33.0,5,40,54.0,0.2386,0,0,11,331,0,33
-E1_coordination,Dispatcher | 1 fire,1015,81,3.0,True,22.0,81.0,21,40,50.0,0.088,0,0,43,628,0,81
-E1_coordination,Dispatcher | 1 fire,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0293,0,0,18,245,0,37
-E1_coordination,Dispatcher | 1 fire,1017,73,27.0,True,24.0,65.0,11,40,73.0,0.0638,0,0,26,248,0,65
-E1_coordination,Dispatcher | 1 fire,1018,53,15.0,True,22.0,46.0,5,40,53.0,0.0196,0,0,11,193,0,46
-E1_coordination,Dispatcher | 1 fire,1019,46,3.0,True,23.0,30.0,2,40,46.0,0.0176,0,0,5,155,0,30
-E1_coordination,Dispatcher | 1 fire,1020,46,3.0,True,22.0,34.0,6,40,46.0,0.0084,0,0,12,225,0,34
-E1_coordination,Dispatcher | 1 fire,1021,52,3.0,True,19.0,29.0,5,40,52.0,0.0045,0,0,10,228,0,29
-E1_coordination,Dispatcher | 1 fire,1022,53,3.0,True,16.0,41.0,10,40,53.0,0.063,0,0,25,325,0,41
-E1_coordination,Dispatcher | 1 fire,1023,62,15.0,True,20.0,62.0,17,40,58.0,0.0142,0,0,37,262,0,62
-E1_coordination,Dispatcher | 1 fire,1024,48,3.0,True,20.0,43.0,14,40,48.0,0.0342,0,0,30,315,0,43
-E1_coordination,Dispatcher | 1 fire,1025,43,3.0,True,18.0,31.0,6,40,43.0,0.0452,0,0,13,210,0,31
-E1_coordination,Dispatcher | 1 fire,1026,49,3.0,True,20.0,38.0,10,40,49.0,0.0275,0,0,24,303,0,38
-E1_coordination,Dispatcher | 1 fire,1027,48,3.0,True,21.0,34.0,9,40,48.0,0.0197,0,0,17,248,0,34
-E1_coordination,Dispatcher | 1 fire,1028,63,11.0,True,22.0,43.0,6,40,63.0,0.01,0,0,13,240,0,43
-E1_coordination,Dispatcher | 1 fire,1029,45,3.0,True,15.0,32.0,6,40,45.0,0.0008,0,0,17,274,0,32
-E1_coordination,No dispatcher | 2 fires,1000,233,3.0,True,36.0,233.0,272,40,49.0,0.0889,0,0,150,0,0,233
-E1_coordination,No dispatcher | 2 fires,1001,202,3.0,True,25.0,202.0,129,40,48.0,0.1372,0,0,131,0,0,202
-E1_coordination,No dispatcher | 2 fires,1002,300,3.0,False,40.0,,265,40,48.0,0.0095,0,0,252,0,0,300
-E1_coordination,No dispatcher | 2 fires,1003,289,3.0,True,31.0,289.0,187,40,45.0,0.0421,0,0,118,0,0,289
-E1_coordination,No dispatcher | 2 fires,1004,232,3.0,True,34.0,232.0,256,40,41.0,0.1609,0,0,142,0,0,232
-E1_coordination,No dispatcher | 2 fires,1005,229,3.0,True,38.0,229.0,74,40,52.0,0.0164,0,0,159,0,0,229
-E1_coordination,No dispatcher | 2 fires,1006,227,3.0,True,20.0,227.0,127,40,57.0,0.0502,0,0,140,0,0,227
-E1_coordination,No dispatcher | 2 fires,1007,245,3.0,True,36.0,245.0,131,40,48.0,0.869,1,0,149,0,0,245
-E1_coordination,No dispatcher | 2 fires,1008,300,3.0,False,34.0,,292,40,49.0,0.1082,0,0,179,0,0,300
-E1_coordination,No dispatcher | 2 fires,1009,254,3.0,True,22.0,254.0,251,40,45.0,0.0943,0,0,159,0,0,254
-E1_coordination,No dispatcher | 2 fires,1010,284,3.0,True,30.0,284.0,274,40,52.0,0.036,0,0,284,0,0,284
-E1_coordination,No dispatcher | 2 fires,1011,257,3.0,True,18.0,257.0,143,40,47.0,0.0405,0,0,107,0,0,257
-E1_coordination,No dispatcher | 2 fires,1012,195,3.0,True,18.0,195.0,138,40,50.0,0.0421,0,0,85,0,0,195
-E1_coordination,No dispatcher | 2 fires,1013,236,22.0,True,0.0,236.0,125,40,66.0,0.0497,0,0,112,0,0,236
-E1_coordination,No dispatcher | 2 fires,1014,271,3.0,True,27.0,271.0,254,40,50.0,0.0654,0,0,208,0,0,271
-E1_coordination,No dispatcher | 2 fires,1015,155,3.0,True,18.0,155.0,125,40,50.0,0.0736,0,0,118,0,0,155
-E1_coordination,No dispatcher | 2 fires,1016,224,7.0,True,22.0,224.0,132,40,59.0,0.0582,0,0,111,0,0,224
-E1_coordination,No dispatcher | 2 fires,1017,268,3.0,True,43.0,268.0,133,40,46.0,0.0054,0,0,161,0,0,268
-E1_coordination,No dispatcher | 2 fires,1018,271,3.0,True,39.0,271.0,257,40,44.0,0.0055,0,0,207,0,0,271
-E1_coordination,No dispatcher | 2 fires,1019,233,3.0,True,16.0,233.0,119,40,50.0,0.1666,0,0,163,0,0,233
-E1_coordination,No dispatcher | 2 fires,1020,300,3.0,False,44.0,,347,40,49.0,0.0183,0,0,201,0,0,300
-E1_coordination,No dispatcher | 2 fires,1021,252,3.0,True,34.0,252.0,264,40,51.0,0.0207,0,0,216,0,0,252
-E1_coordination,No dispatcher | 2 fires,1022,173,3.0,True,27.0,173.0,127,40,45.0,0.1224,0,0,113,0,0,173
-E1_coordination,No dispatcher | 2 fires,1023,300,3.0,False,30.0,,282,40,55.0,0.0117,0,0,254,0,0,300
-E1_coordination,No dispatcher | 2 fires,1024,257,3.0,True,38.0,257.0,253,40,47.0,0.0424,0,0,133,0,0,257
-E1_coordination,No dispatcher | 2 fires,1025,296,3.0,True,25.0,296.0,253,40,53.0,0.1125,0,0,155,0,0,296
-E1_coordination,No dispatcher | 2 fires,1026,199,3.0,True,40.0,199.0,256,40,49.0,0.0544,0,0,150,0,0,199
-E1_coordination,No dispatcher | 2 fires,1027,215,3.0,True,42.0,215.0,138,40,49.0,0.032,0,0,68,0,0,215
-E1_coordination,No dispatcher | 2 fires,1028,272,3.0,True,46.0,272.0,130,40,51.0,0.0171,0,0,116,0,0,272
-E1_coordination,No dispatcher | 2 fires,1029,211,3.0,True,21.0,211.0,153,40,47.0,0.0562,0,0,40,0,0,211
-E1_coordination,Dispatcher | 2 fires,1000,47,3.0,True,24.0,39.0,17,40,47.0,0.0816,0,0,28,351,0,39
-E1_coordination,Dispatcher | 2 fires,1001,197,3.0,True,17.0,197.0,124,40,47.0,0.1181,0,0,155,2201,0,197
-E1_coordination,Dispatcher | 2 fires,1002,46,3.0,True,20.0,34.0,5,40,46.0,0.0098,0,0,12,254,0,34
-E1_coordination,Dispatcher | 2 fires,1003,246,3.0,True,18.0,246.0,126,40,44.0,0.0445,0,0,189,2630,0,246
-E1_coordination,Dispatcher | 2 fires,1004,231,3.0,True,21.0,231.0,251,40,41.0,0.1787,0,0,182,3551,0,231
-E1_coordination,Dispatcher | 2 fires,1005,53,3.0,True,19.0,34.0,9,40,53.0,0.0172,0,0,18,299,0,34
-E1_coordination,Dispatcher | 2 fires,1006,57,3.0,True,19.0,29.0,5,40,57.0,0.045,0,0,11,240,0,29
-E1_coordination,Dispatcher | 2 fires,1007,48,3.0,True,23.0,36.0,9,40,48.0,0.8743,1,0,22,314,0,36
-E1_coordination,Dispatcher | 2 fires,1008,228,3.0,True,21.0,228.0,128,40,47.0,0.0975,0,0,165,2442,0,228
-E1_coordination,Dispatcher | 2 fires,1009,45,3.0,True,18.0,30.0,11,40,45.0,0.1022,0,0,20,290,0,30
-E1_coordination,Dispatcher | 2 fires,1010,196,3.0,True,20.0,196.0,73,40,54.0,0.0371,0,0,153,2009,0,196
-E1_coordination,Dispatcher | 2 fires,1011,288,3.0,True,18.0,288.0,128,40,47.0,0.0405,0,0,236,3170,0,288
-E1_coordination,Dispatcher | 2 fires,1012,53,3.0,True,16.0,34.0,8,40,53.0,0.0367,0,0,20,288,0,34
-E1_coordination,Dispatcher | 2 fires,1013,102,22.0,True,0.0,102.0,24,40,67.0,0.0487,0,0,44,496,0,102
-E1_coordination,Dispatcher | 2 fires,1014,228,3.0,True,19.0,228.0,127,40,50.0,0.0695,0,0,142,2581,0,228
-E1_coordination,Dispatcher | 2 fires,1015,156,3.0,True,18.0,156.0,126,40,50.0,0.0794,0,0,129,1777,0,156
-E1_coordination,Dispatcher | 2 fires,1016,64,7.0,True,16.0,38.0,14,40,64.0,0.0612,0,0,29,393,0,38
-E1_coordination,Dispatcher | 2 fires,1017,132,3.0,True,18.0,132.0,31,40,46.0,0.0046,0,0,43,873,0,132
-E1_coordination,Dispatcher | 2 fires,1018,52,3.0,True,21.0,52.0,10,40,44.0,0.0073,0,0,17,277,0,52
-E1_coordination,Dispatcher | 2 fires,1019,49,3.0,True,19.0,49.0,18,40,49.0,0.1665,0,0,38,367,0,49
-E1_coordination,Dispatcher | 2 fires,1020,51,3.0,True,16.0,35.0,9,40,51.0,0.0133,0,0,20,299,0,35
-E1_coordination,Dispatcher | 2 fires,1021,51,3.0,True,20.0,40.0,12,40,51.0,0.0206,0,0,29,409,0,40
-E1_coordination,Dispatcher | 2 fires,1022,182,3.0,True,21.0,182.0,124,40,47.0,0.1216,0,0,144,1965,0,182
-E1_coordination,Dispatcher | 2 fires,1023,216,3.0,True,17.0,216.0,133,40,49.0,0.0115,0,0,171,2325,0,216
-E1_coordination,Dispatcher | 2 fires,1024,277,3.0,True,18.0,277.0,128,40,46.0,0.0378,0,0,207,3051,0,277
-E1_coordination,Dispatcher | 2 fires,1025,53,3.0,True,18.0,39.0,11,40,53.0,0.1022,0,0,24,298,0,39
-E1_coordination,Dispatcher | 2 fires,1026,218,3.0,True,21.0,218.0,154,40,46.0,0.0517,0,0,170,2919,0,218
-E1_coordination,Dispatcher | 2 fires,1027,200,3.0,True,22.0,200.0,129,40,47.0,0.0221,0,0,117,2182,0,200
-E1_coordination,Dispatcher | 2 fires,1028,48,3.0,True,22.0,46.0,8,40,48.0,0.0163,0,0,18,236,0,46
-E1_coordination,Dispatcher | 2 fires,1029,138,3.0,True,19.0,138.0,63,40,46.0,0.0587,0,0,84,1208,0,138
-E2_communication,Dispatcher | loss 0%,1000,53,8.0,True,21.0,43.0,10,40,53.0,0.0098,0,0,20,241,0,43
-E2_communication,Dispatcher | loss 0%,1001,47,3.0,True,20.0,39.0,14,40,47.0,0.049,0,0,27,304,0,39
-E2_communication,Dispatcher | loss 0%,1002,53,3.0,True,16.0,23.0,2,40,53.0,0.0991,0,0,5,171,0,23
-E2_communication,Dispatcher | loss 0%,1003,51,7.0,True,21.0,51.0,18,40,48.0,0.0404,0,0,35,265,0,51
-E2_communication,Dispatcher | loss 0%,1004,49,9.0,True,26.0,47.0,9,40,49.0,0.1006,0,0,16,224,0,47
-E2_communication,Dispatcher | loss 0%,1005,58,5.0,True,23.0,35.0,6,40,58.0,0.0076,0,0,10,239,0,35
-E2_communication,Dispatcher | loss 0%,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1003,0,0,5,102,0,27
-E2_communication,Dispatcher | loss 0%,1007,46,3.0,True,21.0,32.0,7,40,46.0,0.8656,1,0,16,254,0,32
-E2_communication,Dispatcher | loss 0%,1008,52,3.0,True,19.0,25.0,2,40,52.0,0.0175,0,0,4,155,0,25
-E2_communication,Dispatcher | loss 0%,1009,46,3.0,True,18.0,29.0,5,40,46.0,0.0793,0,0,10,206,0,29
-E2_communication,Dispatcher | loss 0%,1010,53,3.0,True,20.0,36.0,9,40,53.0,0.0137,0,0,21,301,0,36
-E2_communication,Dispatcher | loss 0%,1011,40,3.0,True,17.0,31.0,9,40,40.0,0.04,0,0,21,208,0,31
-E2_communication,Dispatcher | loss 0%,1012,54,10.0,True,9.0,34.0,7,40,54.0,0.0611,0,0,18,261,0,34
-E2_communication,Dispatcher | loss 0%,1013,73,22.0,True,22.0,59.0,12,40,73.0,0.0705,0,0,23,295,0,59
-E2_communication,Dispatcher | loss 0%,1014,54,3.0,True,19.0,33.0,5,40,54.0,0.2386,0,0,11,331,0,33
-E2_communication,Dispatcher | loss 0%,1015,81,3.0,True,22.0,81.0,21,40,50.0,0.088,0,0,43,628,0,81
-E2_communication,Dispatcher | loss 0%,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0293,0,0,18,245,0,37
-E2_communication,Dispatcher | loss 0%,1017,73,27.0,True,24.0,65.0,11,40,73.0,0.0638,0,0,26,248,0,65
-E2_communication,Dispatcher | loss 0%,1018,53,15.0,True,22.0,46.0,5,40,53.0,0.0196,0,0,11,193,0,46
-E2_communication,Dispatcher | loss 0%,1019,46,3.0,True,23.0,30.0,2,40,46.0,0.0176,0,0,5,155,0,30
-E2_communication,Dispatcher | loss 0%,1020,46,3.0,True,22.0,34.0,6,40,46.0,0.0084,0,0,12,225,0,34
-E2_communication,Dispatcher | loss 0%,1021,52,3.0,True,19.0,29.0,5,40,52.0,0.0045,0,0,10,228,0,29
-E2_communication,Dispatcher | loss 0%,1022,53,3.0,True,16.0,41.0,10,40,53.0,0.063,0,0,25,325,0,41
-E2_communication,Dispatcher | loss 0%,1023,62,15.0,True,20.0,62.0,17,40,58.0,0.0142,0,0,37,262,0,62
-E2_communication,Dispatcher | loss 0%,1024,48,3.0,True,20.0,43.0,14,40,48.0,0.0342,0,0,30,315,0,43
-E2_communication,Dispatcher | loss 0%,1025,43,3.0,True,18.0,31.0,6,40,43.0,0.0452,0,0,13,210,0,31
-E2_communication,Dispatcher | loss 0%,1026,49,3.0,True,20.0,38.0,10,40,49.0,0.0275,0,0,24,303,0,38
-E2_communication,Dispatcher | loss 0%,1027,48,3.0,True,21.0,34.0,9,40,48.0,0.0197,0,0,17,248,0,34
-E2_communication,Dispatcher | loss 0%,1028,63,11.0,True,22.0,43.0,6,40,63.0,0.01,0,0,13,240,0,43
-E2_communication,Dispatcher | loss 0%,1029,45,3.0,True,15.0,32.0,6,40,45.0,0.0008,0,0,17,274,0,32
-E2_communication,Dispatcher | loss 20%,1000,108,8.0,True,28.0,108.0,21,40,52.0,0.0088,0,0,48,650,126,108
-E2_communication,Dispatcher | loss 20%,1001,202,3.0,True,20.0,202.0,123,40,47.0,0.0488,0,0,147,2194,484,202
-E2_communication,Dispatcher | loss 20%,1002,54,3.0,True,21.0,31.0,5,40,54.0,0.0422,0,0,9,276,60,31
-E2_communication,Dispatcher | loss 20%,1003,99,7.0,True,21.0,99.0,26,40,54.0,0.0704,0,0,50,687,140,99
-E2_communication,Dispatcher | loss 20%,1004,50,9.0,True,21.0,44.0,9,40,50.0,0.109,0,0,19,227,49,44
-E2_communication,Dispatcher | loss 20%,1005,55,5.0,True,21.0,34.0,6,40,55.0,0.0097,0,0,11,228,43,34
-E2_communication,Dispatcher | loss 20%,1006,91,27.0,True,-3.0,27.0,2,40,91.0,0.1003,0,0,5,121,33,27
-E2_communication,Dispatcher | loss 20%,1007,49,3.0,True,23.0,37.0,7,40,49.0,0.0236,0,0,17,280,61,37
-E2_communication,Dispatcher | loss 20%,1008,51,3.0,True,22.0,28.0,2,40,51.0,0.0157,0,0,4,172,31,28
-E2_communication,Dispatcher | loss 20%,1009,50,3.0,True,18.0,30.0,5,40,50.0,0.1178,0,0,11,195,45,30
-E2_communication,Dispatcher | loss 20%,1010,52,3.0,True,23.0,36.0,9,40,52.0,0.0059,0,0,22,300,56,36
-E2_communication,Dispatcher | loss 20%,1011,48,3.0,True,16.0,35.0,11,40,48.0,0.0394,0,0,24,262,49,35
-E2_communication,Dispatcher | loss 20%,1012,61,10.0,True,8.0,37.0,7,40,61.0,0.0525,0,0,20,266,49,37
-E2_communication,Dispatcher | loss 20%,1013,73,22.0,True,22.0,67.0,14,40,73.0,0.0668,0,0,27,297,64,67
-E2_communication,Dispatcher | loss 20%,1014,51,3.0,True,20.0,29.0,5,40,51.0,0.1394,0,0,12,283,48,29
-E2_communication,Dispatcher | loss 20%,1015,184,3.0,True,22.0,184.0,126,40,50.0,0.0959,0,0,133,1987,408,184
-E2_communication,Dispatcher | loss 20%,1016,58,10.0,True,15.0,41.0,9,40,58.0,0.0309,0,0,18,226,51,41
-E2_communication,Dispatcher | loss 20%,1017,75,27.0,True,25.0,64.0,11,40,75.0,0.0587,0,0,23,274,47,64
-E2_communication,Dispatcher | loss 20%,1018,53,15.0,True,23.0,49.0,6,40,53.0,0.0192,0,0,11,177,33,49
-E2_communication,Dispatcher | loss 20%,1019,50,3.0,True,24.0,30.0,2,40,50.0,0.0238,0,0,5,180,37,30
-E2_communication,Dispatcher | loss 20%,1020,52,3.0,True,22.0,35.0,6,40,52.0,0.0073,0,0,13,258,58,35
-E2_communication,Dispatcher | loss 20%,1021,48,3.0,True,20.0,30.0,5,40,48.0,0.0105,0,0,10,248,48,30
-E2_communication,Dispatcher | loss 20%,1022,53,3.0,True,17.0,53.0,13,40,51.0,0.0647,0,0,36,335,69,53
-E2_communication,Dispatcher | loss 20%,1023,62,15.0,True,22.0,54.0,18,40,62.0,0.0238,0,0,37,294,55,54
-E2_communication,Dispatcher | loss 20%,1024,47,3.0,True,18.0,40.0,11,40,47.0,0.03,0,0,28,300,63,40
-E2_communication,Dispatcher | loss 20%,1025,50,3.0,True,15.0,24.0,4,40,50.0,0.0877,0,0,8,227,57,24
-E2_communication,Dispatcher | loss 20%,1026,49,3.0,True,24.0,43.0,12,40,49.0,0.0315,0,0,28,315,66,43
-E2_communication,Dispatcher | loss 20%,1027,231,3.0,True,19.0,231.0,125,40,46.0,0.0154,0,0,154,2431,447,231
-E2_communication,Dispatcher | loss 20%,1028,52,11.0,True,20.0,42.0,5,40,52.0,0.0105,0,0,14,186,33,42
-E2_communication,Dispatcher | loss 20%,1029,44,3.0,True,21.0,44.0,11,40,43.0,0.0007,0,0,26,279,55,44
-E2_communication,Dispatcher | loss 50%,1000,257,8.0,True,28.0,257.0,122,40,56.0,0.009,0,0,186,2458,1201,257
-E2_communication,Dispatcher | loss 50%,1001,227,3.0,True,20.0,227.0,123,40,47.0,0.0397,0,0,180,2375,1246,227
-E2_communication,Dispatcher | loss 50%,1002,49,3.0,True,17.0,23.0,2,40,49.0,0.0466,0,0,5,185,85,23
-E2_communication,Dispatcher | loss 50%,1003,55,7.0,True,21.0,55.0,19,40,54.0,0.0701,0,0,34,296,148,55
-E2_communication,Dispatcher | loss 50%,1004,51,9.0,True,25.0,51.0,9,40,49.0,0.1002,0,0,17,225,116,51
-E2_communication,Dispatcher | loss 50%,1005,58,5.0,True,22.0,34.0,6,40,58.0,0.0073,0,0,10,216,95,34
-E2_communication,Dispatcher | loss 50%,1006,92,27.0,True,-3.0,27.0,2,40,92.0,0.1005,0,0,5,122,63,27
-E2_communication,Dispatcher | loss 50%,1007,49,3.0,True,23.0,38.0,7,40,49.0,0.0225,0,0,17,239,135,38
-E2_communication,Dispatcher | loss 50%,1008,50,3.0,True,20.0,26.0,2,40,50.0,0.0151,0,0,4,143,70,26
-E2_communication,Dispatcher | loss 50%,1009,45,3.0,True,17.0,28.0,5,40,45.0,0.1054,0,0,10,182,98,28
-E2_communication,Dispatcher | loss 50%,1010,47,3.0,True,22.0,41.0,9,40,47.0,0.0056,0,0,23,276,134,41
-E2_communication,Dispatcher | loss 50%,1011,48,3.0,True,16.0,35.0,11,40,48.0,0.0391,0,0,24,247,110,35
-E2_communication,Dispatcher | loss 50%,1012,59,10.0,True,8.0,35.0,7,40,59.0,0.0483,0,0,20,258,132,35
-E2_communication,Dispatcher | loss 50%,1013,71,22.0,True,26.0,64.0,15,40,71.0,0.066,0,0,30,297,157,64
-E2_communication,Dispatcher | loss 50%,1014,51,3.0,True,19.0,32.0,5,40,51.0,0.1365,0,0,12,318,160,32
-E2_communication,Dispatcher | loss 50%,1015,212,3.0,True,22.0,212.0,124,40,49.0,0.1022,0,0,167,2251,1155,212
-E2_communication,Dispatcher | loss 50%,1016,61,10.0,True,12.0,41.0,9,40,61.0,0.0309,0,0,19,290,153,41
-E2_communication,Dispatcher | loss 50%,1017,74,27.0,True,25.0,65.0,11,40,74.0,0.0566,0,0,24,263,124,65
-E2_communication,Dispatcher | loss 50%,1018,53,15.0,True,23.0,46.0,5,40,53.0,0.0183,0,0,12,155,73,46
-E2_communication,Dispatcher | loss 50%,1019,49,3.0,True,24.0,30.0,2,40,49.0,0.0226,0,0,4,186,90,30
-E2_communication,Dispatcher | loss 50%,1020,51,3.0,True,31.0,48.0,10,40,51.0,0.0106,0,0,21,262,130,48
-E2_communication,Dispatcher | loss 50%,1021,46,3.0,True,23.0,46.0,6,40,46.0,0.0104,0,0,15,195,103,46
-E2_communication,Dispatcher | loss 50%,1022,215,3.0,True,22.0,215.0,125,40,47.0,0.108,0,0,172,2204,1081,215
-E2_communication,Dispatcher | loss 50%,1023,245,15.0,True,22.0,245.0,120,40,62.0,0.0244,0,0,181,2405,1191,245
-E2_communication,Dispatcher | loss 50%,1024,55,3.0,True,20.0,46.0,12,40,55.0,0.0475,0,0,30,319,165,46
-E2_communication,Dispatcher | loss 50%,1025,50,3.0,True,15.0,25.0,4,40,50.0,0.093,0,0,9,221,108,25
-E2_communication,Dispatcher | loss 50%,1026,48,3.0,True,23.0,46.0,14,40,48.0,0.032,0,0,30,301,154,46
-E2_communication,Dispatcher | loss 50%,1027,49,3.0,True,21.0,32.0,7,40,49.0,0.0168,0,0,14,245,114,32
-E2_communication,Dispatcher | loss 50%,1028,52,11.0,True,20.0,41.0,5,40,52.0,0.0103,0,0,15,156,84,41
-E2_communication,Dispatcher | loss 50%,1029,44,3.0,True,18.0,38.0,8,40,44.0,0.0007,0,0,18,231,119,38
-E3_resources,2 responders | delay 0,1000,300,8.0,False,24.0,,123,40,58.0,0.0191,0,0,130,2191,0,300
-E3_resources,2 responders | delay 0,1001,203,3.0,True,20.0,203.0,123,40,45.0,0.0482,0,0,85,1698,0,203
-E3_resources,2 responders | delay 0,1002,53,3.0,True,24.0,46.0,7,40,53.0,0.0069,0,0,15,216,0,46
-E3_resources,2 responders | delay 0,1003,234,7.0,True,20.0,234.0,126,40,51.0,0.1467,0,0,98,1856,0,234
-E3_resources,2 responders | delay 0,1004,54,9.0,True,22.0,46.0,9,40,54.0,0.0409,0,0,18,179,0,46
-E3_resources,2 responders | delay 0,1005,52,5.0,True,24.0,38.0,7,40,52.0,0.0102,0,0,11,159,0,38
-E3_resources,2 responders | delay 0,1006,76,26.0,True,-1.0,28.0,2,40,76.0,0.0657,0,0,5,63,0,28
-E3_resources,2 responders | delay 0,1007,55,3.0,True,22.0,35.0,7,40,55.0,0.0242,0,0,17,202,0,35
-E3_resources,2 responders | delay 0,1008,52,3.0,True,20.0,26.0,2,40,52.0,0.0134,0,0,4,105,0,26
-E3_resources,2 responders | delay 0,1009,42,3.0,True,17.0,25.0,4,40,42.0,0.0668,0,0,8,127,0,25
-E3_resources,2 responders | delay 0,1010,57,3.0,True,17.0,37.0,7,40,57.0,0.0303,0,0,20,219,0,37
-E3_resources,2 responders | delay 0,1011,80,3.0,True,17.0,80.0,11,40,48.0,0.167,0,0,23,285,0,80
-E3_resources,2 responders | delay 0,1012,58,10.0,True,8.0,33.0,7,40,58.0,0.0949,0,0,19,160,0,33
-E3_resources,2 responders | delay 0,1013,104,22.0,True,21.0,104.0,12,40,71.0,0.0315,0,0,23,275,0,104
-E3_resources,2 responders | delay 0,1014,49,3.0,True,28.0,48.0,7,40,49.0,0.1336,0,0,13,199,0,48
-E3_resources,2 responders | delay 0,1015,195,4.0,True,21.0,195.0,126,40,50.0,0.1098,0,0,73,1659,0,195
-E3_resources,2 responders | delay 0,1016,59,10.0,True,12.0,31.0,7,40,59.0,0.0292,0,0,15,168,0,31
-E3_resources,2 responders | delay 0,1017,118,28.0,True,21.0,118.0,21,40,72.0,0.0846,0,0,38,398,0,118
-E3_resources,2 responders | delay 0,1018,51,14.0,True,25.0,50.0,6,40,51.0,0.0449,0,0,13,119,0,50
-E3_resources,2 responders | delay 0,1019,50,4.0,True,25.0,35.0,4,40,50.0,0.0621,0,0,8,144,0,35
-E3_resources,2 responders | delay 0,1020,52,3.0,True,21.0,32.0,4,40,52.0,0.0098,0,0,10,154,0,32
-E3_resources,2 responders | delay 0,1021,45,3.0,True,22.0,31.0,6,40,45.0,0.0098,0,0,10,156,0,31
-E3_resources,2 responders | delay 0,1022,206,3.0,True,18.0,206.0,125,40,48.0,0.0894,0,0,90,1682,0,206
-E3_resources,2 responders | delay 0,1023,253,15.0,True,21.0,253.0,125,40,63.0,0.0248,0,0,100,1941,0,253
-E3_resources,2 responders | delay 0,1024,209,4.0,True,17.0,209.0,136,40,51.0,0.0567,0,0,99,1873,0,209
-E3_resources,2 responders | delay 0,1025,220,3.0,True,24.0,220.0,131,40,50.0,0.0617,0,0,84,1830,0,220
-E3_resources,2 responders | delay 0,1026,228,3.0,True,21.0,228.0,127,40,44.0,0.0501,0,0,96,1850,0,228
-E3_resources,2 responders | delay 0,1027,218,3.0,True,22.0,218.0,127,40,49.0,0.0189,0,0,85,1840,0,218
-E3_resources,2 responders | delay 0,1028,56,12.0,True,24.0,45.0,6,40,56.0,0.0088,0,0,14,150,0,45
-E3_resources,2 responders | delay 0,1029,46,3.0,True,18.0,33.0,7,40,46.0,0.0039,0,0,16,199,0,33
-E3_resources,4 responders | delay 0,1000,53,8.0,True,21.0,43.0,10,40,53.0,0.0098,0,0,20,241,0,43
-E3_resources,4 responders | delay 0,1001,47,3.0,True,20.0,39.0,14,40,47.0,0.049,0,0,27,304,0,39
-E3_resources,4 responders | delay 0,1002,53,3.0,True,16.0,23.0,2,40,53.0,0.0991,0,0,5,171,0,23
-E3_resources,4 responders | delay 0,1003,51,7.0,True,21.0,51.0,18,40,48.0,0.0404,0,0,35,265,0,51
-E3_resources,4 responders | delay 0,1004,49,9.0,True,26.0,47.0,9,40,49.0,0.1006,0,0,16,224,0,47
-E3_resources,4 responders | delay 0,1005,58,5.0,True,23.0,35.0,6,40,58.0,0.0076,0,0,10,239,0,35
-E3_resources,4 responders | delay 0,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1003,0,0,5,102,0,27
-E3_resources,4 responders | delay 0,1007,46,3.0,True,21.0,32.0,7,40,46.0,0.8656,1,0,16,254,0,32
-E3_resources,4 responders | delay 0,1008,52,3.0,True,19.0,25.0,2,40,52.0,0.0175,0,0,4,155,0,25
-E3_resources,4 responders | delay 0,1009,46,3.0,True,18.0,29.0,5,40,46.0,0.0793,0,0,10,206,0,29
-E3_resources,4 responders | delay 0,1010,53,3.0,True,20.0,36.0,9,40,53.0,0.0137,0,0,21,301,0,36
-E3_resources,4 responders | delay 0,1011,40,3.0,True,17.0,31.0,9,40,40.0,0.04,0,0,21,208,0,31
-E3_resources,4 responders | delay 0,1012,54,10.0,True,9.0,34.0,7,40,54.0,0.0611,0,0,18,261,0,34
-E3_resources,4 responders | delay 0,1013,73,22.0,True,22.0,59.0,12,40,73.0,0.0705,0,0,23,295,0,59
-E3_resources,4 responders | delay 0,1014,54,3.0,True,19.0,33.0,5,40,54.0,0.2386,0,0,11,331,0,33
-E3_resources,4 responders | delay 0,1015,81,3.0,True,22.0,81.0,21,40,50.0,0.088,0,0,43,628,0,81
-E3_resources,4 responders | delay 0,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0293,0,0,18,245,0,37
-E3_resources,4 responders | delay 0,1017,73,27.0,True,24.0,65.0,11,40,73.0,0.0638,0,0,26,248,0,65
-E3_resources,4 responders | delay 0,1018,53,15.0,True,22.0,46.0,5,40,53.0,0.0196,0,0,11,193,0,46
-E3_resources,4 responders | delay 0,1019,46,3.0,True,23.0,30.0,2,40,46.0,0.0176,0,0,5,155,0,30
-E3_resources,4 responders | delay 0,1020,46,3.0,True,22.0,34.0,6,40,46.0,0.0084,0,0,12,225,0,34
-E3_resources,4 responders | delay 0,1021,52,3.0,True,19.0,29.0,5,40,52.0,0.0045,0,0,10,228,0,29
-E3_resources,4 responders | delay 0,1022,53,3.0,True,16.0,41.0,10,40,53.0,0.063,0,0,25,325,0,41
-E3_resources,4 responders | delay 0,1023,62,15.0,True,20.0,62.0,17,40,58.0,0.0142,0,0,37,262,0,62
-E3_resources,4 responders | delay 0,1024,48,3.0,True,20.0,43.0,14,40,48.0,0.0342,0,0,30,315,0,43
-E3_resources,4 responders | delay 0,1025,43,3.0,True,18.0,31.0,6,40,43.0,0.0452,0,0,13,210,0,31
-E3_resources,4 responders | delay 0,1026,49,3.0,True,20.0,38.0,10,40,49.0,0.0275,0,0,24,303,0,38
-E3_resources,4 responders | delay 0,1027,48,3.0,True,21.0,34.0,9,40,48.0,0.0197,0,0,17,248,0,34
-E3_resources,4 responders | delay 0,1028,63,11.0,True,22.0,43.0,6,40,63.0,0.01,0,0,13,240,0,43
-E3_resources,4 responders | delay 0,1029,45,3.0,True,15.0,32.0,6,40,45.0,0.0008,0,0,17,274,0,32
-E3_resources,8 responders | delay 0,1000,53,8.0,True,19.0,43.0,10,40,53.0,0.0096,0,0,19,399,0,43
-E3_resources,8 responders | delay 0,1001,60,3.0,True,20.0,37.0,12,40,60.0,0.0488,0,0,23,627,0,37
-E3_resources,8 responders | delay 0,1002,49,3.0,True,16.0,23.0,2,40,49.0,0.006,0,0,5,257,0,23
-E3_resources,8 responders | delay 0,1003,54,7.0,True,22.0,54.0,21,40,47.0,0.0433,0,0,39,477,0,54
-E3_resources,8 responders | delay 0,1004,54,9.0,True,20.0,41.0,9,40,54.0,0.4074,1,0,21,416,0,41
-E3_resources,8 responders | delay 0,1005,52,5.0,True,20.0,34.0,5,40,52.0,0.0103,0,0,11,339,0,34
-E3_resources,8 responders | delay 0,1006,300,,True,,23.0,2,4,,0.1937,0,0,3,0,0,23
-E3_resources,8 responders | delay 0,1007,47,3.0,True,18.0,29.0,4,40,47.0,0.0196,0,0,11,331,0,29
-E3_resources,8 responders | delay 0,1008,54,3.0,True,20.0,28.0,2,40,54.0,0.0135,0,0,5,307,0,28
-E3_resources,8 responders | delay 0,1009,45,3.0,True,17.0,24.0,4,40,45.0,0.0562,0,0,8,306,0,24
-E3_resources,8 responders | delay 0,1010,56,3.0,True,14.0,29.0,6,40,56.0,0.0108,0,0,13,386,0,29
-E3_resources,8 responders | delay 0,1011,41,3.0,True,16.0,34.0,11,40,41.0,0.0996,0,0,24,410,0,34
-E3_resources,8 responders | delay 0,1012,59,10.0,True,7.0,29.0,6,40,59.0,0.059,0,0,15,426,0,29
-E3_resources,8 responders | delay 0,1013,72,22.0,True,20.0,55.0,11,40,72.0,0.0944,0,0,21,466,0,55
-E3_resources,8 responders | delay 0,1014,50,3.0,True,17.0,27.0,4,40,50.0,0.0212,0,0,10,359,0,27
-E3_resources,8 responders | delay 0,1015,48,3.0,True,21.0,37.0,18,40,48.0,0.1379,0,0,36,546,0,37
-E3_resources,8 responders | delay 0,1016,59,10.0,True,11.0,32.0,7,40,59.0,0.2554,0,0,15,409,0,32
-E3_resources,8 responders | delay 0,1017,73,28.0,True,22.0,62.0,11,40,73.0,0.0403,0,0,21,389,0,62
-E3_resources,8 responders | delay 0,1018,63,14.0,True,23.0,46.0,5,40,63.0,0.0376,0,0,11,354,0,46
-E3_resources,8 responders | delay 0,1019,51,3.0,True,23.0,29.0,2,40,51.0,0.0391,0,0,5,257,0,29
-E3_resources,8 responders | delay 0,1020,56,3.0,True,24.0,34.0,7,40,56.0,0.0098,0,0,14,481,0,34
-E3_resources,8 responders | delay 0,1021,49,3.0,True,21.0,31.0,6,40,49.0,0.0062,0,0,11,379,0,31
-E3_resources,8 responders | delay 0,1022,56,3.0,True,15.0,42.0,11,40,56.0,0.1244,0,0,25,559,0,42
-E3_resources,8 responders | delay 0,1023,60,15.0,True,22.0,50.0,14,40,60.0,0.0152,0,0,27,481,0,50
-E3_resources,8 responders | delay 0,1024,48,3.0,True,18.0,35.0,10,40,48.0,0.0328,0,0,24,522,0,35
-E3_resources,8 responders | delay 0,1025,49,3.0,True,17.0,28.0,4,40,49.0,0.0529,0,0,10,354,0,28
-E3_resources,8 responders | delay 0,1026,50,4.0,True,17.0,31.0,8,40,50.0,0.0608,0,0,18,510,0,31
-E3_resources,8 responders | delay 0,1027,51,3.0,True,21.0,30.0,9,40,51.0,0.015,0,0,17,460,0,30
-E3_resources,8 responders | delay 0,1028,53,11.0,True,22.0,43.0,5,40,53.0,0.0136,0,0,14,309,0,43
-E3_resources,8 responders | delay 0,1029,42,3.0,True,16.0,30.0,6,40,42.0,0.0018,0,0,16,348,0,30
-E3_resources,4 responders | delay 10,1000,68,18.0,True,22.0,68.0,20,40,67.0,0.0415,0,0,36,352,0,68
-E3_resources,4 responders | delay 10,1001,200,13.0,True,18.0,200.0,123,40,55.0,0.2759,0,0,154,2112,0,200
-E3_resources,4 responders | delay 10,1002,58,13.0,True,20.0,50.0,10,40,58.0,0.0386,0,0,21,319,0,50
-E3_resources,4 responders | delay 10,1003,122,17.0,True,19.0,122.0,36,40,55.0,0.2175,0,0,65,924,0,122
-E3_resources,4 responders | delay 10,1004,276,19.0,True,20.0,276.0,124,40,58.0,0.1121,0,0,206,2727,0,276
-E3_resources,4 responders | delay 10,1005,63,15.0,True,22.0,49.0,9,40,63.0,0.0783,0,0,16,288,0,49
-E3_resources,4 responders | delay 10,1006,84,37.0,True,-13.0,27.0,2,40,84.0,0.1017,0,0,5,80,0,27
-E3_resources,4 responders | delay 10,1007,56,13.0,True,23.0,45.0,10,40,56.0,0.0841,0,0,24,298,0,45
-E3_resources,4 responders | delay 10,1008,53,13.0,True,18.0,36.0,3,40,53.0,0.0539,0,0,7,170,0,36
-E3_resources,4 responders | delay 10,1009,55,13.0,True,19.0,55.0,10,40,54.0,0.2004,0,0,21,296,0,55
-E3_resources,4 responders | delay 10,1010,60,13.0,True,16.0,42.0,10,40,60.0,0.0642,0,0,24,319,0,42
-E3_resources,4 responders | delay 10,1011,55,13.0,True,8.0,37.0,11,40,55.0,0.0821,0,0,26,239,0,37
-E3_resources,4 responders | delay 10,1012,70,20.0,True,-2.0,34.0,7,40,70.0,0.1316,0,0,20,324,0,34
-E3_resources,4 responders | delay 10,1013,77,32.0,True,22.0,77.0,19,40,77.0,0.0854,0,0,33,330,0,77
-E3_resources,4 responders | delay 10,1014,59,13.0,True,17.0,38.0,6,40,59.0,0.0737,0,0,11,307,0,38
-E3_resources,4 responders | delay 10,1015,182,13.0,True,18.0,182.0,126,40,60.0,0.3865,0,0,133,1947,0,182
-E3_resources,4 responders | delay 10,1016,67,20.0,True,2.0,32.0,7,40,67.0,0.0407,0,0,15,272,0,32
-E3_resources,4 responders | delay 10,1017,120,37.0,True,23.0,120.0,25,40,82.0,0.0833,0,0,49,608,0,120
-E3_resources,4 responders | delay 10,1018,63,25.0,True,19.0,58.0,7,40,63.0,0.0664,0,0,12,217,0,58
-E3_resources,4 responders | delay 10,1019,59,13.0,True,21.0,41.0,4,40,59.0,0.0885,0,0,10,217,0,41
-E3_resources,4 responders | delay 10,1020,63,13.0,True,21.0,45.0,11,40,63.0,0.0376,0,0,25,326,0,45
-E3_resources,4 responders | delay 10,1021,62,13.0,True,17.0,43.0,8,40,62.0,0.0496,0,0,17,330,0,43
-E3_resources,4 responders | delay 10,1022,216,13.0,True,17.0,216.0,125,40,63.0,0.2729,0,0,150,2240,0,216
-E3_resources,4 responders | delay 10,1023,178,25.0,True,22.0,178.0,62,40,71.0,0.0844,0,0,107,1568,0,178
-E3_resources,4 responders | delay 10,1024,218,13.0,True,17.0,218.0,125,40,55.0,0.1057,0,0,167,2249,0,218
-E3_resources,4 responders | delay 10,1025,204,13.0,True,16.0,204.0,123,40,58.0,0.1682,0,0,157,2075,0,204
-E3_resources,4 responders | delay 10,1026,234,13.0,True,21.0,234.0,124,40,58.0,0.1458,0,0,162,2458,0,234
-E3_resources,4 responders | delay 10,1027,203,13.0,True,22.0,203.0,125,40,61.0,0.0969,0,0,147,2075,0,203
-E3_resources,4 responders | delay 10,1028,64,21.0,True,24.0,58.0,9,40,64.0,0.0202,0,0,16,232,0,58
-E3_resources,4 responders | delay 10,1029,52,13.0,True,19.0,49.0,14,40,52.0,0.0024,0,0,30,289,0,49
-E3_resources,4 responders | delay 20,1000,180,28.0,True,20.0,180.0,75,40,81.0,0.1258,0,0,113,1678,0,180
-E3_resources,4 responders | delay 20,1001,200,23.0,True,18.0,200.0,124,40,65.0,0.6008,0,0,128,2100,0,200
-E3_resources,4 responders | delay 20,1002,67,23.0,True,19.0,58.0,11,40,67.0,0.0365,0,0,28,332,0,58
-E3_resources,4 responders | delay 20,1003,255,27.0,True,14.0,255.0,124,40,72.0,0.233,0,0,194,2616,0,255
-E3_resources,4 responders | delay 20,1004,88,29.0,True,16.0,88.0,23,40,68.0,0.138,0,0,37,477,0,88
-E3_resources,4 responders | delay 20,1005,70,25.0,True,27.0,66.0,15,40,70.0,0.1827,0,0,25,308,0,66
-E3_resources,4 responders | delay 20,1006,96,47.0,True,-23.0,27.0,2,40,96.0,0.1015,0,0,5,76,0,27
-E3_resources,4 responders | delay 20,1007,69,23.0,True,22.0,69.0,18,40,64.0,0.1496,0,0,36,408,0,69
-E3_resources,4 responders | delay 20,1008,67,23.0,True,17.0,50.0,6,40,67.0,0.0745,0,0,13,306,0,50
-E3_resources,4 responders | delay 20,1009,70,23.0,True,15.0,60.0,14,40,70.0,0.5093,0,0,28,388,0,60
-E3_resources,4 responders | delay 20,1010,68,23.0,True,20.0,68.0,21,40,65.0,0.1294,0,0,31,393,0,68
-E3_resources,4 responders | delay 20,1011,64,23.0,True,-3.0,35.0,11,40,64.0,0.1137,0,0,23,267,0,35
-E3_resources,4 responders | delay 20,1012,73,30.0,True,-12.0,39.0,7,40,73.0,0.3262,0,0,19,292,0,39
-E3_resources,4 responders | delay 20,1013,89,42.0,True,10.0,76.0,17,40,89.0,0.1152,0,0,35,374,0,76
-E3_resources,4 responders | delay 20,1014,69,23.0,True,16.0,55.0,7,40,69.0,0.0765,0,0,11,371,0,55
-E3_resources,4 responders | delay 20,1015,185,23.0,True,19.0,185.0,126,40,71.0,0.6664,0,0,137,1953,0,185
-E3_resources,4 responders | delay 20,1016,80,30.0,True,-8.0,33.0,7,40,80.0,0.0573,0,0,15,278,0,33
-E3_resources,4 responders | delay 20,1017,129,47.0,True,17.0,129.0,28,40,94.0,0.2165,0,0,58,711,0,129
-E3_resources,4 responders | delay 20,1018,117,35.0,True,21.0,117.0,21,40,74.0,0.1013,0,0,43,596,0,117
-E3_resources,4 responders | delay 20,1019,68,23.0,True,20.0,51.0,8,40,68.0,0.1225,0,0,15,317,0,51
-E3_resources,4 responders | delay 20,1020,224,23.0,True,21.0,224.0,123,40,72.0,0.1148,0,0,160,2216,0,224
-E3_resources,4 responders | delay 20,1021,66,23.0,True,19.0,60.0,13,40,66.0,0.0768,0,0,26,342,0,60
-E3_resources,4 responders | delay 20,1022,215,23.0,True,16.0,215.0,123,40,74.0,0.7907,0,0,158,2214,0,215
-E3_resources,4 responders | delay 20,1023,81,35.0,True,11.0,68.0,25,40,81.0,0.1878,0,0,39,390,0,68
-E3_resources,4 responders | delay 20,1024,212,23.0,True,21.0,212.0,126,40,73.0,0.409,0,0,143,2164,0,212
-E3_resources,4 responders | delay 20,1025,209,23.0,True,14.0,209.0,122,40,73.0,0.3748,0,0,151,2139,0,209
-E3_resources,4 responders | delay 20,1026,220,23.0,True,18.0,220.0,126,40,66.0,0.3217,0,0,164,2275,0,220
-E3_resources,4 responders | delay 20,1027,300,23.0,False,15.0,,115,40,73.0,0.2445,0,0,216,3160,0,300
-E3_resources,4 responders | delay 20,1028,77,31.0,True,21.0,65.0,10,40,77.0,0.0423,0,0,15,314,0,65
-E3_resources,4 responders | delay 20,1029,286,23.0,True,18.0,286.0,123,40,63.0,0.0104,0,0,255,2952,0,286
-E3_resources,4 responders | delay 30,1000,131,38.0,True,21.0,131.0,46,40,89.0,0.3776,0,0,58,1035,0,131
-E3_resources,4 responders | delay 30,1001,228,33.0,True,13.0,228.0,122,40,73.0,1.0851,0,0,143,2386,0,228
-E3_resources,4 responders | delay 30,1002,73,33.0,True,18.0,65.0,14,40,73.0,0.0373,0,0,22,374,0,65
-E3_resources,4 responders | delay 30,1003,259,37.0,True,5.0,259.0,126,40,80.0,0.278,0,0,198,2621,0,259
-E3_resources,4 responders | delay 30,1004,262,39.0,True,19.0,262.0,125,40,84.0,0.2505,0,0,183,2634,0,262
-E3_resources,4 responders | delay 30,1005,84,35.0,True,23.0,84.0,22,40,82.0,0.304,0,0,33,411,0,84
-E3_resources,4 responders | delay 30,1006,110,57.0,True,-33.0,27.0,2,40,110.0,0.1006,0,0,5,80,0,27
-E3_resources,4 responders | delay 30,1007,235,33.0,True,17.0,235.0,142,40,74.0,0.2762,0,0,160,2500,0,235
-E3_resources,4 responders | delay 30,1008,77,33.0,True,19.0,69.0,15,40,77.0,0.099,0,0,30,383,0,69
-E3_resources,4 responders | delay 30,1009,282,33.0,True,14.0,282.0,113,40,74.0,0.9066,0,0,176,2873,0,282
-E3_resources,4 responders | delay 30,1010,77,33.0,True,15.0,77.0,26,40,69.0,0.1152,0,0,37,440,0,77
-E3_resources,4 responders | delay 30,1011,72,33.0,True,-13.0,33.0,9,40,72.0,0.2281,0,0,21,247,0,33
-E3_resources,4 responders | delay 30,1012,89,40.0,True,-22.0,39.0,7,40,89.0,0.416,0,0,19,330,0,39
-E3_resources,4 responders | delay 30,1013,99,52.0,True,1.0,73.0,19,40,99.0,0.1661,0,0,33,408,0,73
-E3_resources,4 responders | delay 30,1014,74,33.0,True,15.0,61.0,11,40,74.0,0.0903,0,0,16,420,0,61
-E3_resources,4 responders | delay 30,1015,185,33.0,True,12.0,185.0,124,40,77.0,1.1188,0,0,127,1905,0,185
-E3_resources,4 responders | delay 30,1016,90,40.0,True,-18.0,33.0,7,40,90.0,0.0821,0,0,15,261,0,33
-E3_resources,4 responders | delay 30,1017,120,57.0,True,6.0,120.0,20,40,103.0,0.2706,0,0,43,515,0,120
-E3_resources,4 responders | delay 30,1018,300,45.0,False,18.0,,125,40,88.0,0.1928,0,0,205,2870,0,300
-E3_resources,4 responders | delay 30,1019,216,33.0,True,18.0,216.0,120,40,74.0,0.208,0,0,149,2078,0,216
-E3_resources,4 responders | delay 30,1020,218,33.0,True,18.0,218.0,126,40,82.0,0.272,0,0,143,2184,0,218
-E3_resources,4 responders | delay 30,1021,106,33.0,True,17.0,106.0,26,40,77.0,0.0761,0,0,47,625,0,106
-E3_resources,4 responders | delay 30,1022,211,33.0,True,11.0,211.0,125,40,77.0,1.3886,0,0,152,2150,0,211
-E3_resources,4 responders | delay 30,1023,102,45.0,True,1.0,102.0,27,40,95.0,0.2247,0,0,44,565,0,102
-E3_resources,4 responders | delay 30,1024,230,33.0,True,14.0,230.0,124,40,81.0,0.7098,0,0,158,2381,0,230
-E3_resources,4 responders | delay 30,1025,209,33.0,True,12.0,209.0,122,40,84.0,0.6906,0,0,137,2099,0,209
-E3_resources,4 responders | delay 30,1026,182,33.0,True,15.0,182.0,126,40,78.0,0.4517,0,0,120,1847,0,182
-E3_resources,4 responders | delay 30,1027,223,33.0,True,15.0,223.0,126,40,84.0,0.6243,0,0,123,2294,0,223
-E3_resources,4 responders | delay 30,1028,87,41.0,True,22.0,75.0,14,40,87.0,0.12,0,0,17,399,0,75
-E3_resources,4 responders | delay 30,1029,111,33.0,True,14.0,111.0,40,40,72.0,0.0501,0,0,54,766,0,111
+experiment,config,seed,steps,alarm_step,contained,response_time,contained_step,burned_area,evacuated,evacuation_time,exposure,injured,incapacitated,shots,messages,messages_dropped,contain_time,all_out_step,queueing,peak_queueing,all_out_time_capped
+E1_coordination,No dispatcher | 1 fire,1000,215,8.0,True,48.0,215.0,76,40,54.0,0.0099,0,0,146,0,0,215,,,,
+E1_coordination,No dispatcher | 1 fire,1001,200,3.0,True,30.0,200.0,125,40,47.0,0.0617,0,0,130,0,0,200,,,,
+E1_coordination,No dispatcher | 1 fire,1002,114,3.0,True,48.0,114.0,22,40,53.0,0.135,0,0,37,0,0,114,,,,
+E1_coordination,No dispatcher | 1 fire,1003,240,7.0,True,33.0,240.0,126,40,47.0,0.0421,0,0,153,0,0,240,,,,
+E1_coordination,No dispatcher | 1 fire,1004,137,9.0,True,40.0,137.0,47,40,49.0,0.1124,0,0,59,0,0,137,,,,
+E1_coordination,No dispatcher | 1 fire,1005,58,5.0,True,33.0,49.0,9,40,58.0,0.0076,0,0,13,0,0,49,,,,
+E1_coordination,No dispatcher | 1 fire,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1002,0,0,5,0,0,27,,,,
+E1_coordination,No dispatcher | 1 fire,1007,242,3.0,True,46.0,242.0,145,40,46.0,0.8648,1,0,152,0,0,242,,,,
+E1_coordination,No dispatcher | 1 fire,1008,119,3.0,True,45.0,119.0,23,40,47.0,0.0159,0,0,50,0,0,119,,,,
+E1_coordination,No dispatcher | 1 fire,1009,52,3.0,True,26.0,49.0,7,40,52.0,0.0931,0,0,17,0,0,49,,,,
+E1_coordination,No dispatcher | 1 fire,1010,289,3.0,True,41.0,289.0,130,40,51.0,0.0136,0,0,199,0,0,289,,,,
+E1_coordination,No dispatcher | 1 fire,1011,41,3.0,True,17.0,31.0,9,40,41.0,0.04,0,0,21,0,0,31,,,,
+E1_coordination,No dispatcher | 1 fire,1012,53,10.0,True,9.0,34.0,7,40,53.0,0.0597,0,0,18,0,0,34,,,,
+E1_coordination,No dispatcher | 1 fire,1013,74,22.0,True,29.0,74.0,16,40,73.0,0.0694,0,0,36,0,0,74,,,,
+E1_coordination,No dispatcher | 1 fire,1014,65,3.0,True,42.0,65.0,11,40,56.0,0.2396,0,0,18,0,0,65,,,,
+E1_coordination,No dispatcher | 1 fire,1015,178,3.0,True,52.0,178.0,127,40,50.0,0.1261,0,0,84,0,0,178,,,,
+E1_coordination,No dispatcher | 1 fire,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0295,0,0,18,0,0,37,,,,
+E1_coordination,No dispatcher | 1 fire,1017,284,27.0,True,38.0,284.0,125,40,75.0,0.0639,0,0,153,0,0,284,,,,
+E1_coordination,No dispatcher | 1 fire,1018,122,15.0,True,31.0,122.0,25,40,53.0,0.0168,0,0,40,0,0,122,,,,
+E1_coordination,No dispatcher | 1 fire,1019,63,3.0,True,45.0,63.0,11,40,48.0,0.0185,0,0,19,0,0,63,,,,
+E1_coordination,No dispatcher | 1 fire,1020,188,3.0,True,44.0,188.0,125,40,46.0,0.01,0,0,93,0,0,188,,,,
+E1_coordination,No dispatcher | 1 fire,1021,298,3.0,True,51.0,298.0,123,40,52.0,0.0037,0,0,223,0,0,298,,,,
+E1_coordination,No dispatcher | 1 fire,1022,198,3.0,True,25.0,198.0,123,40,50.0,0.0793,0,0,108,0,0,198,,,,
+E1_coordination,No dispatcher | 1 fire,1023,205,15.0,True,31.0,205.0,63,40,58.0,0.0152,0,0,139,0,0,205,,,,
+E1_coordination,No dispatcher | 1 fire,1024,209,3.0,True,61.0,209.0,125,40,49.0,0.0372,0,0,119,0,0,209,,,,
+E1_coordination,No dispatcher | 1 fire,1025,200,3.0,True,45.0,200.0,126,40,45.0,0.0641,0,0,115,0,0,200,,,,
+E1_coordination,No dispatcher | 1 fire,1026,223,3.0,True,36.0,223.0,125,40,50.0,0.035,0,0,130,0,0,223,,,,
+E1_coordination,No dispatcher | 1 fire,1027,210,3.0,True,52.0,210.0,124,40,50.0,0.0267,0,0,119,0,0,210,,,,
+E1_coordination,No dispatcher | 1 fire,1028,65,11.0,True,32.0,65.0,9,40,63.0,0.0108,0,0,15,0,0,65,,,,
+E1_coordination,No dispatcher | 1 fire,1029,108,3.0,True,25.0,108.0,29,40,44.0,0.0008,0,0,53,0,0,108,,,,
+E1_coordination,Dispatcher | 1 fire,1000,53,8.0,True,21.0,43.0,10,40,53.0,0.0098,0,0,20,241,0,43,,,,
+E1_coordination,Dispatcher | 1 fire,1001,47,3.0,True,20.0,39.0,14,40,47.0,0.049,0,0,27,304,0,39,,,,
+E1_coordination,Dispatcher | 1 fire,1002,53,3.0,True,16.0,23.0,2,40,53.0,0.0991,0,0,5,171,0,23,,,,
+E1_coordination,Dispatcher | 1 fire,1003,51,7.0,True,21.0,51.0,18,40,48.0,0.0404,0,0,35,265,0,51,,,,
+E1_coordination,Dispatcher | 1 fire,1004,49,9.0,True,26.0,47.0,9,40,49.0,0.1006,0,0,16,224,0,47,,,,
+E1_coordination,Dispatcher | 1 fire,1005,58,5.0,True,23.0,35.0,6,40,58.0,0.0076,0,0,10,239,0,35,,,,
+E1_coordination,Dispatcher | 1 fire,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1003,0,0,5,102,0,27,,,,
+E1_coordination,Dispatcher | 1 fire,1007,46,3.0,True,21.0,32.0,7,40,46.0,0.8656,1,0,16,254,0,32,,,,
+E1_coordination,Dispatcher | 1 fire,1008,52,3.0,True,19.0,25.0,2,40,52.0,0.0175,0,0,4,155,0,25,,,,
+E1_coordination,Dispatcher | 1 fire,1009,46,3.0,True,18.0,29.0,5,40,46.0,0.0793,0,0,10,206,0,29,,,,
+E1_coordination,Dispatcher | 1 fire,1010,53,3.0,True,20.0,36.0,9,40,53.0,0.0137,0,0,21,301,0,36,,,,
+E1_coordination,Dispatcher | 1 fire,1011,40,3.0,True,17.0,31.0,9,40,40.0,0.04,0,0,21,208,0,31,,,,
+E1_coordination,Dispatcher | 1 fire,1012,54,10.0,True,9.0,34.0,7,40,54.0,0.0611,0,0,18,261,0,34,,,,
+E1_coordination,Dispatcher | 1 fire,1013,73,22.0,True,22.0,59.0,12,40,73.0,0.0705,0,0,23,295,0,59,,,,
+E1_coordination,Dispatcher | 1 fire,1014,54,3.0,True,19.0,33.0,5,40,54.0,0.2386,0,0,11,331,0,33,,,,
+E1_coordination,Dispatcher | 1 fire,1015,81,3.0,True,22.0,81.0,21,40,50.0,0.088,0,0,43,628,0,81,,,,
+E1_coordination,Dispatcher | 1 fire,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0293,0,0,18,245,0,37,,,,
+E1_coordination,Dispatcher | 1 fire,1017,73,27.0,True,24.0,65.0,11,40,73.0,0.0638,0,0,26,248,0,65,,,,
+E1_coordination,Dispatcher | 1 fire,1018,53,15.0,True,22.0,46.0,5,40,53.0,0.0196,0,0,11,193,0,46,,,,
+E1_coordination,Dispatcher | 1 fire,1019,46,3.0,True,23.0,30.0,2,40,46.0,0.0176,0,0,5,155,0,30,,,,
+E1_coordination,Dispatcher | 1 fire,1020,46,3.0,True,22.0,34.0,6,40,46.0,0.0084,0,0,12,225,0,34,,,,
+E1_coordination,Dispatcher | 1 fire,1021,52,3.0,True,19.0,29.0,5,40,52.0,0.0045,0,0,10,228,0,29,,,,
+E1_coordination,Dispatcher | 1 fire,1022,53,3.0,True,16.0,41.0,10,40,53.0,0.063,0,0,25,325,0,41,,,,
+E1_coordination,Dispatcher | 1 fire,1023,62,15.0,True,20.0,62.0,17,40,58.0,0.0142,0,0,37,262,0,62,,,,
+E1_coordination,Dispatcher | 1 fire,1024,48,3.0,True,20.0,43.0,14,40,48.0,0.0342,0,0,30,315,0,43,,,,
+E1_coordination,Dispatcher | 1 fire,1025,43,3.0,True,18.0,31.0,6,40,43.0,0.0452,0,0,13,210,0,31,,,,
+E1_coordination,Dispatcher | 1 fire,1026,49,3.0,True,20.0,38.0,10,40,49.0,0.0275,0,0,24,303,0,38,,,,
+E1_coordination,Dispatcher | 1 fire,1027,48,3.0,True,21.0,34.0,9,40,48.0,0.0197,0,0,17,248,0,34,,,,
+E1_coordination,Dispatcher | 1 fire,1028,63,11.0,True,22.0,43.0,6,40,63.0,0.01,0,0,13,240,0,43,,,,
+E1_coordination,Dispatcher | 1 fire,1029,45,3.0,True,15.0,32.0,6,40,45.0,0.0008,0,0,17,274,0,32,,,,
+E1_coordination,No dispatcher | 2 fires,1000,233,3.0,True,36.0,233.0,272,40,49.0,0.0889,0,0,150,0,0,233,,,,
+E1_coordination,No dispatcher | 2 fires,1001,202,3.0,True,25.0,202.0,129,40,48.0,0.1372,0,0,131,0,0,202,,,,
+E1_coordination,No dispatcher | 2 fires,1002,300,3.0,False,40.0,,265,40,48.0,0.0095,0,0,252,0,0,300,,,,
+E1_coordination,No dispatcher | 2 fires,1003,289,3.0,True,31.0,289.0,187,40,45.0,0.0421,0,0,118,0,0,289,,,,
+E1_coordination,No dispatcher | 2 fires,1004,232,3.0,True,34.0,232.0,256,40,41.0,0.1609,0,0,142,0,0,232,,,,
+E1_coordination,No dispatcher | 2 fires,1005,229,3.0,True,38.0,229.0,74,40,52.0,0.0164,0,0,159,0,0,229,,,,
+E1_coordination,No dispatcher | 2 fires,1006,227,3.0,True,20.0,227.0,127,40,57.0,0.0502,0,0,140,0,0,227,,,,
+E1_coordination,No dispatcher | 2 fires,1007,245,3.0,True,36.0,245.0,131,40,48.0,0.869,1,0,149,0,0,245,,,,
+E1_coordination,No dispatcher | 2 fires,1008,300,3.0,False,34.0,,292,40,49.0,0.1082,0,0,179,0,0,300,,,,
+E1_coordination,No dispatcher | 2 fires,1009,254,3.0,True,22.0,254.0,251,40,45.0,0.0943,0,0,159,0,0,254,,,,
+E1_coordination,No dispatcher | 2 fires,1010,284,3.0,True,30.0,284.0,274,40,52.0,0.036,0,0,284,0,0,284,,,,
+E1_coordination,No dispatcher | 2 fires,1011,257,3.0,True,18.0,257.0,143,40,47.0,0.0405,0,0,107,0,0,257,,,,
+E1_coordination,No dispatcher | 2 fires,1012,195,3.0,True,18.0,195.0,138,40,50.0,0.0421,0,0,85,0,0,195,,,,
+E1_coordination,No dispatcher | 2 fires,1013,236,22.0,True,0.0,236.0,125,40,66.0,0.0497,0,0,112,0,0,236,,,,
+E1_coordination,No dispatcher | 2 fires,1014,271,3.0,True,27.0,271.0,254,40,50.0,0.0654,0,0,208,0,0,271,,,,
+E1_coordination,No dispatcher | 2 fires,1015,155,3.0,True,18.0,155.0,125,40,50.0,0.0736,0,0,118,0,0,155,,,,
+E1_coordination,No dispatcher | 2 fires,1016,224,7.0,True,22.0,224.0,132,40,59.0,0.0582,0,0,111,0,0,224,,,,
+E1_coordination,No dispatcher | 2 fires,1017,268,3.0,True,43.0,268.0,133,40,46.0,0.0054,0,0,161,0,0,268,,,,
+E1_coordination,No dispatcher | 2 fires,1018,271,3.0,True,39.0,271.0,257,40,44.0,0.0055,0,0,207,0,0,271,,,,
+E1_coordination,No dispatcher | 2 fires,1019,233,3.0,True,16.0,233.0,119,40,50.0,0.1666,0,0,163,0,0,233,,,,
+E1_coordination,No dispatcher | 2 fires,1020,300,3.0,False,44.0,,347,40,49.0,0.0183,0,0,201,0,0,300,,,,
+E1_coordination,No dispatcher | 2 fires,1021,252,3.0,True,34.0,252.0,264,40,51.0,0.0207,0,0,216,0,0,252,,,,
+E1_coordination,No dispatcher | 2 fires,1022,173,3.0,True,27.0,173.0,127,40,45.0,0.1224,0,0,113,0,0,173,,,,
+E1_coordination,No dispatcher | 2 fires,1023,300,3.0,False,30.0,,282,40,55.0,0.0117,0,0,254,0,0,300,,,,
+E1_coordination,No dispatcher | 2 fires,1024,257,3.0,True,38.0,257.0,253,40,47.0,0.0424,0,0,133,0,0,257,,,,
+E1_coordination,No dispatcher | 2 fires,1025,296,3.0,True,25.0,296.0,253,40,53.0,0.1125,0,0,155,0,0,296,,,,
+E1_coordination,No dispatcher | 2 fires,1026,199,3.0,True,40.0,199.0,256,40,49.0,0.0544,0,0,150,0,0,199,,,,
+E1_coordination,No dispatcher | 2 fires,1027,215,3.0,True,42.0,215.0,138,40,49.0,0.032,0,0,68,0,0,215,,,,
+E1_coordination,No dispatcher | 2 fires,1028,272,3.0,True,46.0,272.0,130,40,51.0,0.0171,0,0,116,0,0,272,,,,
+E1_coordination,No dispatcher | 2 fires,1029,211,3.0,True,21.0,211.0,153,40,47.0,0.0562,0,0,40,0,0,211,,,,
+E1_coordination,Dispatcher | 2 fires,1000,47,3.0,True,24.0,39.0,17,40,47.0,0.0816,0,0,28,351,0,39,,,,
+E1_coordination,Dispatcher | 2 fires,1001,197,3.0,True,17.0,197.0,124,40,47.0,0.1181,0,0,155,2201,0,197,,,,
+E1_coordination,Dispatcher | 2 fires,1002,46,3.0,True,20.0,34.0,5,40,46.0,0.0098,0,0,12,254,0,34,,,,
+E1_coordination,Dispatcher | 2 fires,1003,246,3.0,True,18.0,246.0,126,40,44.0,0.0445,0,0,189,2630,0,246,,,,
+E1_coordination,Dispatcher | 2 fires,1004,231,3.0,True,21.0,231.0,251,40,41.0,0.1787,0,0,182,3551,0,231,,,,
+E1_coordination,Dispatcher | 2 fires,1005,53,3.0,True,19.0,34.0,9,40,53.0,0.0172,0,0,18,299,0,34,,,,
+E1_coordination,Dispatcher | 2 fires,1006,57,3.0,True,19.0,29.0,5,40,57.0,0.045,0,0,11,240,0,29,,,,
+E1_coordination,Dispatcher | 2 fires,1007,48,3.0,True,23.0,36.0,9,40,48.0,0.8743,1,0,22,314,0,36,,,,
+E1_coordination,Dispatcher | 2 fires,1008,228,3.0,True,21.0,228.0,128,40,47.0,0.0975,0,0,165,2442,0,228,,,,
+E1_coordination,Dispatcher | 2 fires,1009,45,3.0,True,18.0,30.0,11,40,45.0,0.1022,0,0,20,290,0,30,,,,
+E1_coordination,Dispatcher | 2 fires,1010,196,3.0,True,20.0,196.0,73,40,54.0,0.0371,0,0,153,2009,0,196,,,,
+E1_coordination,Dispatcher | 2 fires,1011,288,3.0,True,18.0,288.0,128,40,47.0,0.0405,0,0,236,3170,0,288,,,,
+E1_coordination,Dispatcher | 2 fires,1012,53,3.0,True,16.0,34.0,8,40,53.0,0.0367,0,0,20,288,0,34,,,,
+E1_coordination,Dispatcher | 2 fires,1013,102,22.0,True,0.0,102.0,24,40,67.0,0.0487,0,0,44,496,0,102,,,,
+E1_coordination,Dispatcher | 2 fires,1014,228,3.0,True,19.0,228.0,127,40,50.0,0.0695,0,0,142,2581,0,228,,,,
+E1_coordination,Dispatcher | 2 fires,1015,156,3.0,True,18.0,156.0,126,40,50.0,0.0794,0,0,129,1777,0,156,,,,
+E1_coordination,Dispatcher | 2 fires,1016,64,7.0,True,16.0,38.0,14,40,64.0,0.0612,0,0,29,393,0,38,,,,
+E1_coordination,Dispatcher | 2 fires,1017,132,3.0,True,18.0,132.0,31,40,46.0,0.0046,0,0,43,873,0,132,,,,
+E1_coordination,Dispatcher | 2 fires,1018,52,3.0,True,21.0,52.0,10,40,44.0,0.0073,0,0,17,277,0,52,,,,
+E1_coordination,Dispatcher | 2 fires,1019,49,3.0,True,19.0,49.0,18,40,49.0,0.1665,0,0,38,367,0,49,,,,
+E1_coordination,Dispatcher | 2 fires,1020,51,3.0,True,16.0,35.0,9,40,51.0,0.0133,0,0,20,299,0,35,,,,
+E1_coordination,Dispatcher | 2 fires,1021,51,3.0,True,20.0,40.0,12,40,51.0,0.0206,0,0,29,409,0,40,,,,
+E1_coordination,Dispatcher | 2 fires,1022,182,3.0,True,21.0,182.0,124,40,47.0,0.1216,0,0,144,1965,0,182,,,,
+E1_coordination,Dispatcher | 2 fires,1023,216,3.0,True,17.0,216.0,133,40,49.0,0.0115,0,0,171,2325,0,216,,,,
+E1_coordination,Dispatcher | 2 fires,1024,277,3.0,True,18.0,277.0,128,40,46.0,0.0378,0,0,207,3051,0,277,,,,
+E1_coordination,Dispatcher | 2 fires,1025,53,3.0,True,18.0,39.0,11,40,53.0,0.1022,0,0,24,298,0,39,,,,
+E1_coordination,Dispatcher | 2 fires,1026,218,3.0,True,21.0,218.0,154,40,46.0,0.0517,0,0,170,2919,0,218,,,,
+E1_coordination,Dispatcher | 2 fires,1027,200,3.0,True,22.0,200.0,129,40,47.0,0.0221,0,0,117,2182,0,200,,,,
+E1_coordination,Dispatcher | 2 fires,1028,48,3.0,True,22.0,46.0,8,40,48.0,0.0163,0,0,18,236,0,46,,,,
+E1_coordination,Dispatcher | 2 fires,1029,138,3.0,True,19.0,138.0,63,40,46.0,0.0587,0,0,84,1208,0,138,,,,
+E2_communication,Dispatcher | loss 0%,1000,53,8.0,True,21.0,43.0,10,40,53.0,0.0098,0,0,20,241,0,43,,,,
+E2_communication,Dispatcher | loss 0%,1001,47,3.0,True,20.0,39.0,14,40,47.0,0.049,0,0,27,304,0,39,,,,
+E2_communication,Dispatcher | loss 0%,1002,53,3.0,True,16.0,23.0,2,40,53.0,0.0991,0,0,5,171,0,23,,,,
+E2_communication,Dispatcher | loss 0%,1003,51,7.0,True,21.0,51.0,18,40,48.0,0.0404,0,0,35,265,0,51,,,,
+E2_communication,Dispatcher | loss 0%,1004,49,9.0,True,26.0,47.0,9,40,49.0,0.1006,0,0,16,224,0,47,,,,
+E2_communication,Dispatcher | loss 0%,1005,58,5.0,True,23.0,35.0,6,40,58.0,0.0076,0,0,10,239,0,35,,,,
+E2_communication,Dispatcher | loss 0%,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1003,0,0,5,102,0,27,,,,
+E2_communication,Dispatcher | loss 0%,1007,46,3.0,True,21.0,32.0,7,40,46.0,0.8656,1,0,16,254,0,32,,,,
+E2_communication,Dispatcher | loss 0%,1008,52,3.0,True,19.0,25.0,2,40,52.0,0.0175,0,0,4,155,0,25,,,,
+E2_communication,Dispatcher | loss 0%,1009,46,3.0,True,18.0,29.0,5,40,46.0,0.0793,0,0,10,206,0,29,,,,
+E2_communication,Dispatcher | loss 0%,1010,53,3.0,True,20.0,36.0,9,40,53.0,0.0137,0,0,21,301,0,36,,,,
+E2_communication,Dispatcher | loss 0%,1011,40,3.0,True,17.0,31.0,9,40,40.0,0.04,0,0,21,208,0,31,,,,
+E2_communication,Dispatcher | loss 0%,1012,54,10.0,True,9.0,34.0,7,40,54.0,0.0611,0,0,18,261,0,34,,,,
+E2_communication,Dispatcher | loss 0%,1013,73,22.0,True,22.0,59.0,12,40,73.0,0.0705,0,0,23,295,0,59,,,,
+E2_communication,Dispatcher | loss 0%,1014,54,3.0,True,19.0,33.0,5,40,54.0,0.2386,0,0,11,331,0,33,,,,
+E2_communication,Dispatcher | loss 0%,1015,81,3.0,True,22.0,81.0,21,40,50.0,0.088,0,0,43,628,0,81,,,,
+E2_communication,Dispatcher | loss 0%,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0293,0,0,18,245,0,37,,,,
+E2_communication,Dispatcher | loss 0%,1017,73,27.0,True,24.0,65.0,11,40,73.0,0.0638,0,0,26,248,0,65,,,,
+E2_communication,Dispatcher | loss 0%,1018,53,15.0,True,22.0,46.0,5,40,53.0,0.0196,0,0,11,193,0,46,,,,
+E2_communication,Dispatcher | loss 0%,1019,46,3.0,True,23.0,30.0,2,40,46.0,0.0176,0,0,5,155,0,30,,,,
+E2_communication,Dispatcher | loss 0%,1020,46,3.0,True,22.0,34.0,6,40,46.0,0.0084,0,0,12,225,0,34,,,,
+E2_communication,Dispatcher | loss 0%,1021,52,3.0,True,19.0,29.0,5,40,52.0,0.0045,0,0,10,228,0,29,,,,
+E2_communication,Dispatcher | loss 0%,1022,53,3.0,True,16.0,41.0,10,40,53.0,0.063,0,0,25,325,0,41,,,,
+E2_communication,Dispatcher | loss 0%,1023,62,15.0,True,20.0,62.0,17,40,58.0,0.0142,0,0,37,262,0,62,,,,
+E2_communication,Dispatcher | loss 0%,1024,48,3.0,True,20.0,43.0,14,40,48.0,0.0342,0,0,30,315,0,43,,,,
+E2_communication,Dispatcher | loss 0%,1025,43,3.0,True,18.0,31.0,6,40,43.0,0.0452,0,0,13,210,0,31,,,,
+E2_communication,Dispatcher | loss 0%,1026,49,3.0,True,20.0,38.0,10,40,49.0,0.0275,0,0,24,303,0,38,,,,
+E2_communication,Dispatcher | loss 0%,1027,48,3.0,True,21.0,34.0,9,40,48.0,0.0197,0,0,17,248,0,34,,,,
+E2_communication,Dispatcher | loss 0%,1028,63,11.0,True,22.0,43.0,6,40,63.0,0.01,0,0,13,240,0,43,,,,
+E2_communication,Dispatcher | loss 0%,1029,45,3.0,True,15.0,32.0,6,40,45.0,0.0008,0,0,17,274,0,32,,,,
+E2_communication,Dispatcher | loss 20%,1000,108,8.0,True,28.0,108.0,21,40,52.0,0.0088,0,0,48,650,126,108,,,,
+E2_communication,Dispatcher | loss 20%,1001,202,3.0,True,20.0,202.0,123,40,47.0,0.0488,0,0,147,2194,484,202,,,,
+E2_communication,Dispatcher | loss 20%,1002,54,3.0,True,21.0,31.0,5,40,54.0,0.0422,0,0,9,276,60,31,,,,
+E2_communication,Dispatcher | loss 20%,1003,99,7.0,True,21.0,99.0,26,40,54.0,0.0704,0,0,50,687,140,99,,,,
+E2_communication,Dispatcher | loss 20%,1004,50,9.0,True,21.0,44.0,9,40,50.0,0.109,0,0,19,227,49,44,,,,
+E2_communication,Dispatcher | loss 20%,1005,55,5.0,True,21.0,34.0,6,40,55.0,0.0097,0,0,11,228,43,34,,,,
+E2_communication,Dispatcher | loss 20%,1006,91,27.0,True,-3.0,27.0,2,40,91.0,0.1003,0,0,5,121,33,27,,,,
+E2_communication,Dispatcher | loss 20%,1007,49,3.0,True,23.0,37.0,7,40,49.0,0.0236,0,0,17,280,61,37,,,,
+E2_communication,Dispatcher | loss 20%,1008,51,3.0,True,22.0,28.0,2,40,51.0,0.0157,0,0,4,172,31,28,,,,
+E2_communication,Dispatcher | loss 20%,1009,50,3.0,True,18.0,30.0,5,40,50.0,0.1178,0,0,11,195,45,30,,,,
+E2_communication,Dispatcher | loss 20%,1010,52,3.0,True,23.0,36.0,9,40,52.0,0.0059,0,0,22,300,56,36,,,,
+E2_communication,Dispatcher | loss 20%,1011,48,3.0,True,16.0,35.0,11,40,48.0,0.0394,0,0,24,262,49,35,,,,
+E2_communication,Dispatcher | loss 20%,1012,61,10.0,True,8.0,37.0,7,40,61.0,0.0525,0,0,20,266,49,37,,,,
+E2_communication,Dispatcher | loss 20%,1013,73,22.0,True,22.0,67.0,14,40,73.0,0.0668,0,0,27,297,64,67,,,,
+E2_communication,Dispatcher | loss 20%,1014,51,3.0,True,20.0,29.0,5,40,51.0,0.1394,0,0,12,283,48,29,,,,
+E2_communication,Dispatcher | loss 20%,1015,184,3.0,True,22.0,184.0,126,40,50.0,0.0959,0,0,133,1987,408,184,,,,
+E2_communication,Dispatcher | loss 20%,1016,58,10.0,True,15.0,41.0,9,40,58.0,0.0309,0,0,18,226,51,41,,,,
+E2_communication,Dispatcher | loss 20%,1017,75,27.0,True,25.0,64.0,11,40,75.0,0.0587,0,0,23,274,47,64,,,,
+E2_communication,Dispatcher | loss 20%,1018,53,15.0,True,23.0,49.0,6,40,53.0,0.0192,0,0,11,177,33,49,,,,
+E2_communication,Dispatcher | loss 20%,1019,50,3.0,True,24.0,30.0,2,40,50.0,0.0238,0,0,5,180,37,30,,,,
+E2_communication,Dispatcher | loss 20%,1020,52,3.0,True,22.0,35.0,6,40,52.0,0.0073,0,0,13,258,58,35,,,,
+E2_communication,Dispatcher | loss 20%,1021,48,3.0,True,20.0,30.0,5,40,48.0,0.0105,0,0,10,248,48,30,,,,
+E2_communication,Dispatcher | loss 20%,1022,53,3.0,True,17.0,53.0,13,40,51.0,0.0647,0,0,36,335,69,53,,,,
+E2_communication,Dispatcher | loss 20%,1023,62,15.0,True,22.0,54.0,18,40,62.0,0.0238,0,0,37,294,55,54,,,,
+E2_communication,Dispatcher | loss 20%,1024,47,3.0,True,18.0,40.0,11,40,47.0,0.03,0,0,28,300,63,40,,,,
+E2_communication,Dispatcher | loss 20%,1025,50,3.0,True,15.0,24.0,4,40,50.0,0.0877,0,0,8,227,57,24,,,,
+E2_communication,Dispatcher | loss 20%,1026,49,3.0,True,24.0,43.0,12,40,49.0,0.0315,0,0,28,315,66,43,,,,
+E2_communication,Dispatcher | loss 20%,1027,231,3.0,True,19.0,231.0,125,40,46.0,0.0154,0,0,154,2431,447,231,,,,
+E2_communication,Dispatcher | loss 20%,1028,52,11.0,True,20.0,42.0,5,40,52.0,0.0105,0,0,14,186,33,42,,,,
+E2_communication,Dispatcher | loss 20%,1029,44,3.0,True,21.0,44.0,11,40,43.0,0.0007,0,0,26,279,55,44,,,,
+E2_communication,Dispatcher | loss 50%,1000,257,8.0,True,28.0,257.0,122,40,56.0,0.009,0,0,186,2458,1201,257,,,,
+E2_communication,Dispatcher | loss 50%,1001,227,3.0,True,20.0,227.0,123,40,47.0,0.0397,0,0,180,2375,1246,227,,,,
+E2_communication,Dispatcher | loss 50%,1002,49,3.0,True,17.0,23.0,2,40,49.0,0.0466,0,0,5,185,85,23,,,,
+E2_communication,Dispatcher | loss 50%,1003,55,7.0,True,21.0,55.0,19,40,54.0,0.0701,0,0,34,296,148,55,,,,
+E2_communication,Dispatcher | loss 50%,1004,51,9.0,True,25.0,51.0,9,40,49.0,0.1002,0,0,17,225,116,51,,,,
+E2_communication,Dispatcher | loss 50%,1005,58,5.0,True,22.0,34.0,6,40,58.0,0.0073,0,0,10,216,95,34,,,,
+E2_communication,Dispatcher | loss 50%,1006,92,27.0,True,-3.0,27.0,2,40,92.0,0.1005,0,0,5,122,63,27,,,,
+E2_communication,Dispatcher | loss 50%,1007,49,3.0,True,23.0,38.0,7,40,49.0,0.0225,0,0,17,239,135,38,,,,
+E2_communication,Dispatcher | loss 50%,1008,50,3.0,True,20.0,26.0,2,40,50.0,0.0151,0,0,4,143,70,26,,,,
+E2_communication,Dispatcher | loss 50%,1009,45,3.0,True,17.0,28.0,5,40,45.0,0.1054,0,0,10,182,98,28,,,,
+E2_communication,Dispatcher | loss 50%,1010,47,3.0,True,22.0,41.0,9,40,47.0,0.0056,0,0,23,276,134,41,,,,
+E2_communication,Dispatcher | loss 50%,1011,48,3.0,True,16.0,35.0,11,40,48.0,0.0391,0,0,24,247,110,35,,,,
+E2_communication,Dispatcher | loss 50%,1012,59,10.0,True,8.0,35.0,7,40,59.0,0.0483,0,0,20,258,132,35,,,,
+E2_communication,Dispatcher | loss 50%,1013,71,22.0,True,26.0,64.0,15,40,71.0,0.066,0,0,30,297,157,64,,,,
+E2_communication,Dispatcher | loss 50%,1014,51,3.0,True,19.0,32.0,5,40,51.0,0.1365,0,0,12,318,160,32,,,,
+E2_communication,Dispatcher | loss 50%,1015,212,3.0,True,22.0,212.0,124,40,49.0,0.1022,0,0,167,2251,1155,212,,,,
+E2_communication,Dispatcher | loss 50%,1016,61,10.0,True,12.0,41.0,9,40,61.0,0.0309,0,0,19,290,153,41,,,,
+E2_communication,Dispatcher | loss 50%,1017,74,27.0,True,25.0,65.0,11,40,74.0,0.0566,0,0,24,263,124,65,,,,
+E2_communication,Dispatcher | loss 50%,1018,53,15.0,True,23.0,46.0,5,40,53.0,0.0183,0,0,12,155,73,46,,,,
+E2_communication,Dispatcher | loss 50%,1019,49,3.0,True,24.0,30.0,2,40,49.0,0.0226,0,0,4,186,90,30,,,,
+E2_communication,Dispatcher | loss 50%,1020,51,3.0,True,31.0,48.0,10,40,51.0,0.0106,0,0,21,262,130,48,,,,
+E2_communication,Dispatcher | loss 50%,1021,46,3.0,True,23.0,46.0,6,40,46.0,0.0104,0,0,15,195,103,46,,,,
+E2_communication,Dispatcher | loss 50%,1022,215,3.0,True,22.0,215.0,125,40,47.0,0.108,0,0,172,2204,1081,215,,,,
+E2_communication,Dispatcher | loss 50%,1023,245,15.0,True,22.0,245.0,120,40,62.0,0.0244,0,0,181,2405,1191,245,,,,
+E2_communication,Dispatcher | loss 50%,1024,55,3.0,True,20.0,46.0,12,40,55.0,0.0475,0,0,30,319,165,46,,,,
+E2_communication,Dispatcher | loss 50%,1025,50,3.0,True,15.0,25.0,4,40,50.0,0.093,0,0,9,221,108,25,,,,
+E2_communication,Dispatcher | loss 50%,1026,48,3.0,True,23.0,46.0,14,40,48.0,0.032,0,0,30,301,154,46,,,,
+E2_communication,Dispatcher | loss 50%,1027,49,3.0,True,21.0,32.0,7,40,49.0,0.0168,0,0,14,245,114,32,,,,
+E2_communication,Dispatcher | loss 50%,1028,52,11.0,True,20.0,41.0,5,40,52.0,0.0103,0,0,15,156,84,41,,,,
+E2_communication,Dispatcher | loss 50%,1029,44,3.0,True,18.0,38.0,8,40,44.0,0.0007,0,0,18,231,119,38,,,,
+E3_resources,2 responders | delay 0,1000,300,8.0,False,24.0,,123,40,58.0,0.0191,0,0,130,2191,0,300,,,,
+E3_resources,2 responders | delay 0,1001,203,3.0,True,20.0,203.0,123,40,45.0,0.0482,0,0,85,1698,0,203,,,,
+E3_resources,2 responders | delay 0,1002,53,3.0,True,24.0,46.0,7,40,53.0,0.0069,0,0,15,216,0,46,,,,
+E3_resources,2 responders | delay 0,1003,234,7.0,True,20.0,234.0,126,40,51.0,0.1467,0,0,98,1856,0,234,,,,
+E3_resources,2 responders | delay 0,1004,54,9.0,True,22.0,46.0,9,40,54.0,0.0409,0,0,18,179,0,46,,,,
+E3_resources,2 responders | delay 0,1005,52,5.0,True,24.0,38.0,7,40,52.0,0.0102,0,0,11,159,0,38,,,,
+E3_resources,2 responders | delay 0,1006,76,26.0,True,-1.0,28.0,2,40,76.0,0.0657,0,0,5,63,0,28,,,,
+E3_resources,2 responders | delay 0,1007,55,3.0,True,22.0,35.0,7,40,55.0,0.0242,0,0,17,202,0,35,,,,
+E3_resources,2 responders | delay 0,1008,52,3.0,True,20.0,26.0,2,40,52.0,0.0134,0,0,4,105,0,26,,,,
+E3_resources,2 responders | delay 0,1009,42,3.0,True,17.0,25.0,4,40,42.0,0.0668,0,0,8,127,0,25,,,,
+E3_resources,2 responders | delay 0,1010,57,3.0,True,17.0,37.0,7,40,57.0,0.0303,0,0,20,219,0,37,,,,
+E3_resources,2 responders | delay 0,1011,80,3.0,True,17.0,80.0,11,40,48.0,0.167,0,0,23,285,0,80,,,,
+E3_resources,2 responders | delay 0,1012,58,10.0,True,8.0,33.0,7,40,58.0,0.0949,0,0,19,160,0,33,,,,
+E3_resources,2 responders | delay 0,1013,104,22.0,True,21.0,104.0,12,40,71.0,0.0315,0,0,23,275,0,104,,,,
+E3_resources,2 responders | delay 0,1014,49,3.0,True,28.0,48.0,7,40,49.0,0.1336,0,0,13,199,0,48,,,,
+E3_resources,2 responders | delay 0,1015,195,4.0,True,21.0,195.0,126,40,50.0,0.1098,0,0,73,1659,0,195,,,,
+E3_resources,2 responders | delay 0,1016,59,10.0,True,12.0,31.0,7,40,59.0,0.0292,0,0,15,168,0,31,,,,
+E3_resources,2 responders | delay 0,1017,118,28.0,True,21.0,118.0,21,40,72.0,0.0846,0,0,38,398,0,118,,,,
+E3_resources,2 responders | delay 0,1018,51,14.0,True,25.0,50.0,6,40,51.0,0.0449,0,0,13,119,0,50,,,,
+E3_resources,2 responders | delay 0,1019,50,4.0,True,25.0,35.0,4,40,50.0,0.0621,0,0,8,144,0,35,,,,
+E3_resources,2 responders | delay 0,1020,52,3.0,True,21.0,32.0,4,40,52.0,0.0098,0,0,10,154,0,32,,,,
+E3_resources,2 responders | delay 0,1021,45,3.0,True,22.0,31.0,6,40,45.0,0.0098,0,0,10,156,0,31,,,,
+E3_resources,2 responders | delay 0,1022,206,3.0,True,18.0,206.0,125,40,48.0,0.0894,0,0,90,1682,0,206,,,,
+E3_resources,2 responders | delay 0,1023,253,15.0,True,21.0,253.0,125,40,63.0,0.0248,0,0,100,1941,0,253,,,,
+E3_resources,2 responders | delay 0,1024,209,4.0,True,17.0,209.0,136,40,51.0,0.0567,0,0,99,1873,0,209,,,,
+E3_resources,2 responders | delay 0,1025,220,3.0,True,24.0,220.0,131,40,50.0,0.0617,0,0,84,1830,0,220,,,,
+E3_resources,2 responders | delay 0,1026,228,3.0,True,21.0,228.0,127,40,44.0,0.0501,0,0,96,1850,0,228,,,,
+E3_resources,2 responders | delay 0,1027,218,3.0,True,22.0,218.0,127,40,49.0,0.0189,0,0,85,1840,0,218,,,,
+E3_resources,2 responders | delay 0,1028,56,12.0,True,24.0,45.0,6,40,56.0,0.0088,0,0,14,150,0,45,,,,
+E3_resources,2 responders | delay 0,1029,46,3.0,True,18.0,33.0,7,40,46.0,0.0039,0,0,16,199,0,33,,,,
+E3_resources,4 responders | delay 0,1000,53,8.0,True,21.0,43.0,10,40,53.0,0.0098,0,0,20,241,0,43,,,,
+E3_resources,4 responders | delay 0,1001,47,3.0,True,20.0,39.0,14,40,47.0,0.049,0,0,27,304,0,39,,,,
+E3_resources,4 responders | delay 0,1002,53,3.0,True,16.0,23.0,2,40,53.0,0.0991,0,0,5,171,0,23,,,,
+E3_resources,4 responders | delay 0,1003,51,7.0,True,21.0,51.0,18,40,48.0,0.0404,0,0,35,265,0,51,,,,
+E3_resources,4 responders | delay 0,1004,49,9.0,True,26.0,47.0,9,40,49.0,0.1006,0,0,16,224,0,47,,,,
+E3_resources,4 responders | delay 0,1005,58,5.0,True,23.0,35.0,6,40,58.0,0.0076,0,0,10,239,0,35,,,,
+E3_resources,4 responders | delay 0,1006,79,27.0,True,-3.0,27.0,2,40,79.0,0.1003,0,0,5,102,0,27,,,,
+E3_resources,4 responders | delay 0,1007,46,3.0,True,21.0,32.0,7,40,46.0,0.8656,1,0,16,254,0,32,,,,
+E3_resources,4 responders | delay 0,1008,52,3.0,True,19.0,25.0,2,40,52.0,0.0175,0,0,4,155,0,25,,,,
+E3_resources,4 responders | delay 0,1009,46,3.0,True,18.0,29.0,5,40,46.0,0.0793,0,0,10,206,0,29,,,,
+E3_resources,4 responders | delay 0,1010,53,3.0,True,20.0,36.0,9,40,53.0,0.0137,0,0,21,301,0,36,,,,
+E3_resources,4 responders | delay 0,1011,40,3.0,True,17.0,31.0,9,40,40.0,0.04,0,0,21,208,0,31,,,,
+E3_resources,4 responders | delay 0,1012,54,10.0,True,9.0,34.0,7,40,54.0,0.0611,0,0,18,261,0,34,,,,
+E3_resources,4 responders | delay 0,1013,73,22.0,True,22.0,59.0,12,40,73.0,0.0705,0,0,23,295,0,59,,,,
+E3_resources,4 responders | delay 0,1014,54,3.0,True,19.0,33.0,5,40,54.0,0.2386,0,0,11,331,0,33,,,,
+E3_resources,4 responders | delay 0,1015,81,3.0,True,22.0,81.0,21,40,50.0,0.088,0,0,43,628,0,81,,,,
+E3_resources,4 responders | delay 0,1016,61,10.0,True,13.0,37.0,7,40,61.0,0.0293,0,0,18,245,0,37,,,,
+E3_resources,4 responders | delay 0,1017,73,27.0,True,24.0,65.0,11,40,73.0,0.0638,0,0,26,248,0,65,,,,
+E3_resources,4 responders | delay 0,1018,53,15.0,True,22.0,46.0,5,40,53.0,0.0196,0,0,11,193,0,46,,,,
+E3_resources,4 responders | delay 0,1019,46,3.0,True,23.0,30.0,2,40,46.0,0.0176,0,0,5,155,0,30,,,,
+E3_resources,4 responders | delay 0,1020,46,3.0,True,22.0,34.0,6,40,46.0,0.0084,0,0,12,225,0,34,,,,
+E3_resources,4 responders | delay 0,1021,52,3.0,True,19.0,29.0,5,40,52.0,0.0045,0,0,10,228,0,29,,,,
+E3_resources,4 responders | delay 0,1022,53,3.0,True,16.0,41.0,10,40,53.0,0.063,0,0,25,325,0,41,,,,
+E3_resources,4 responders | delay 0,1023,62,15.0,True,20.0,62.0,17,40,58.0,0.0142,0,0,37,262,0,62,,,,
+E3_resources,4 responders | delay 0,1024,48,3.0,True,20.0,43.0,14,40,48.0,0.0342,0,0,30,315,0,43,,,,
+E3_resources,4 responders | delay 0,1025,43,3.0,True,18.0,31.0,6,40,43.0,0.0452,0,0,13,210,0,31,,,,
+E3_resources,4 responders | delay 0,1026,49,3.0,True,20.0,38.0,10,40,49.0,0.0275,0,0,24,303,0,38,,,,
+E3_resources,4 responders | delay 0,1027,48,3.0,True,21.0,34.0,9,40,48.0,0.0197,0,0,17,248,0,34,,,,
+E3_resources,4 responders | delay 0,1028,63,11.0,True,22.0,43.0,6,40,63.0,0.01,0,0,13,240,0,43,,,,
+E3_resources,4 responders | delay 0,1029,45,3.0,True,15.0,32.0,6,40,45.0,0.0008,0,0,17,274,0,32,,,,
+E3_resources,8 responders | delay 0,1000,53,8.0,True,19.0,43.0,10,40,53.0,0.0096,0,0,19,399,0,43,,,,
+E3_resources,8 responders | delay 0,1001,60,3.0,True,20.0,37.0,12,40,60.0,0.0488,0,0,23,627,0,37,,,,
+E3_resources,8 responders | delay 0,1002,49,3.0,True,16.0,23.0,2,40,49.0,0.006,0,0,5,257,0,23,,,,
+E3_resources,8 responders | delay 0,1003,54,7.0,True,22.0,54.0,21,40,47.0,0.0433,0,0,39,477,0,54,,,,
+E3_resources,8 responders | delay 0,1004,54,9.0,True,20.0,41.0,9,40,54.0,0.4074,1,0,21,416,0,41,,,,
+E3_resources,8 responders | delay 0,1005,52,5.0,True,20.0,34.0,5,40,52.0,0.0103,0,0,11,339,0,34,,,,
+E3_resources,8 responders | delay 0,1006,300,,True,,23.0,2,4,,0.1937,0,0,3,0,0,23,,,,
+E3_resources,8 responders | delay 0,1007,47,3.0,True,18.0,29.0,4,40,47.0,0.0196,0,0,11,331,0,29,,,,
+E3_resources,8 responders | delay 0,1008,54,3.0,True,20.0,28.0,2,40,54.0,0.0135,0,0,5,307,0,28,,,,
+E3_resources,8 responders | delay 0,1009,45,3.0,True,17.0,24.0,4,40,45.0,0.0562,0,0,8,306,0,24,,,,
+E3_resources,8 responders | delay 0,1010,56,3.0,True,14.0,29.0,6,40,56.0,0.0108,0,0,13,386,0,29,,,,
+E3_resources,8 responders | delay 0,1011,41,3.0,True,16.0,34.0,11,40,41.0,0.0996,0,0,24,410,0,34,,,,
+E3_resources,8 responders | delay 0,1012,59,10.0,True,7.0,29.0,6,40,59.0,0.059,0,0,15,426,0,29,,,,
+E3_resources,8 responders | delay 0,1013,72,22.0,True,20.0,55.0,11,40,72.0,0.0944,0,0,21,466,0,55,,,,
+E3_resources,8 responders | delay 0,1014,50,3.0,True,17.0,27.0,4,40,50.0,0.0212,0,0,10,359,0,27,,,,
+E3_resources,8 responders | delay 0,1015,48,3.0,True,21.0,37.0,18,40,48.0,0.1379,0,0,36,546,0,37,,,,
+E3_resources,8 responders | delay 0,1016,59,10.0,True,11.0,32.0,7,40,59.0,0.2554,0,0,15,409,0,32,,,,
+E3_resources,8 responders | delay 0,1017,73,28.0,True,22.0,62.0,11,40,73.0,0.0403,0,0,21,389,0,62,,,,
+E3_resources,8 responders | delay 0,1018,63,14.0,True,23.0,46.0,5,40,63.0,0.0376,0,0,11,354,0,46,,,,
+E3_resources,8 responders | delay 0,1019,51,3.0,True,23.0,29.0,2,40,51.0,0.0391,0,0,5,257,0,29,,,,
+E3_resources,8 responders | delay 0,1020,56,3.0,True,24.0,34.0,7,40,56.0,0.0098,0,0,14,481,0,34,,,,
+E3_resources,8 responders | delay 0,1021,49,3.0,True,21.0,31.0,6,40,49.0,0.0062,0,0,11,379,0,31,,,,
+E3_resources,8 responders | delay 0,1022,56,3.0,True,15.0,42.0,11,40,56.0,0.1244,0,0,25,559,0,42,,,,
+E3_resources,8 responders | delay 0,1023,60,15.0,True,22.0,50.0,14,40,60.0,0.0152,0,0,27,481,0,50,,,,
+E3_resources,8 responders | delay 0,1024,48,3.0,True,18.0,35.0,10,40,48.0,0.0328,0,0,24,522,0,35,,,,
+E3_resources,8 responders | delay 0,1025,49,3.0,True,17.0,28.0,4,40,49.0,0.0529,0,0,10,354,0,28,,,,
+E3_resources,8 responders | delay 0,1026,50,4.0,True,17.0,31.0,8,40,50.0,0.0608,0,0,18,510,0,31,,,,
+E3_resources,8 responders | delay 0,1027,51,3.0,True,21.0,30.0,9,40,51.0,0.015,0,0,17,460,0,30,,,,
+E3_resources,8 responders | delay 0,1028,53,11.0,True,22.0,43.0,5,40,53.0,0.0136,0,0,14,309,0,43,,,,
+E3_resources,8 responders | delay 0,1029,42,3.0,True,16.0,30.0,6,40,42.0,0.0018,0,0,16,348,0,30,,,,
+E3_resources,4 responders | delay 10,1000,68,18.0,True,22.0,68.0,20,40,67.0,0.0415,0,0,36,352,0,68,,,,
+E3_resources,4 responders | delay 10,1001,200,13.0,True,18.0,200.0,123,40,55.0,0.2759,0,0,154,2112,0,200,,,,
+E3_resources,4 responders | delay 10,1002,58,13.0,True,20.0,50.0,10,40,58.0,0.0386,0,0,21,319,0,50,,,,
+E3_resources,4 responders | delay 10,1003,122,17.0,True,19.0,122.0,36,40,55.0,0.2175,0,0,65,924,0,122,,,,
+E3_resources,4 responders | delay 10,1004,276,19.0,True,20.0,276.0,124,40,58.0,0.1121,0,0,206,2727,0,276,,,,
+E3_resources,4 responders | delay 10,1005,63,15.0,True,22.0,49.0,9,40,63.0,0.0783,0,0,16,288,0,49,,,,
+E3_resources,4 responders | delay 10,1006,84,37.0,True,-13.0,27.0,2,40,84.0,0.1017,0,0,5,80,0,27,,,,
+E3_resources,4 responders | delay 10,1007,56,13.0,True,23.0,45.0,10,40,56.0,0.0841,0,0,24,298,0,45,,,,
+E3_resources,4 responders | delay 10,1008,53,13.0,True,18.0,36.0,3,40,53.0,0.0539,0,0,7,170,0,36,,,,
+E3_resources,4 responders | delay 10,1009,55,13.0,True,19.0,55.0,10,40,54.0,0.2004,0,0,21,296,0,55,,,,
+E3_resources,4 responders | delay 10,1010,60,13.0,True,16.0,42.0,10,40,60.0,0.0642,0,0,24,319,0,42,,,,
+E3_resources,4 responders | delay 10,1011,55,13.0,True,8.0,37.0,11,40,55.0,0.0821,0,0,26,239,0,37,,,,
+E3_resources,4 responders | delay 10,1012,70,20.0,True,-2.0,34.0,7,40,70.0,0.1316,0,0,20,324,0,34,,,,
+E3_resources,4 responders | delay 10,1013,77,32.0,True,22.0,77.0,19,40,77.0,0.0854,0,0,33,330,0,77,,,,
+E3_resources,4 responders | delay 10,1014,59,13.0,True,17.0,38.0,6,40,59.0,0.0737,0,0,11,307,0,38,,,,
+E3_resources,4 responders | delay 10,1015,182,13.0,True,18.0,182.0,126,40,60.0,0.3865,0,0,133,1947,0,182,,,,
+E3_resources,4 responders | delay 10,1016,67,20.0,True,2.0,32.0,7,40,67.0,0.0407,0,0,15,272,0,32,,,,
+E3_resources,4 responders | delay 10,1017,120,37.0,True,23.0,120.0,25,40,82.0,0.0833,0,0,49,608,0,120,,,,
+E3_resources,4 responders | delay 10,1018,63,25.0,True,19.0,58.0,7,40,63.0,0.0664,0,0,12,217,0,58,,,,
+E3_resources,4 responders | delay 10,1019,59,13.0,True,21.0,41.0,4,40,59.0,0.0885,0,0,10,217,0,41,,,,
+E3_resources,4 responders | delay 10,1020,63,13.0,True,21.0,45.0,11,40,63.0,0.0376,0,0,25,326,0,45,,,,
+E3_resources,4 responders | delay 10,1021,62,13.0,True,17.0,43.0,8,40,62.0,0.0496,0,0,17,330,0,43,,,,
+E3_resources,4 responders | delay 10,1022,216,13.0,True,17.0,216.0,125,40,63.0,0.2729,0,0,150,2240,0,216,,,,
+E3_resources,4 responders | delay 10,1023,178,25.0,True,22.0,178.0,62,40,71.0,0.0844,0,0,107,1568,0,178,,,,
+E3_resources,4 responders | delay 10,1024,218,13.0,True,17.0,218.0,125,40,55.0,0.1057,0,0,167,2249,0,218,,,,
+E3_resources,4 responders | delay 10,1025,204,13.0,True,16.0,204.0,123,40,58.0,0.1682,0,0,157,2075,0,204,,,,
+E3_resources,4 responders | delay 10,1026,234,13.0,True,21.0,234.0,124,40,58.0,0.1458,0,0,162,2458,0,234,,,,
+E3_resources,4 responders | delay 10,1027,203,13.0,True,22.0,203.0,125,40,61.0,0.0969,0,0,147,2075,0,203,,,,
+E3_resources,4 responders | delay 10,1028,64,21.0,True,24.0,58.0,9,40,64.0,0.0202,0,0,16,232,0,58,,,,
+E3_resources,4 responders | delay 10,1029,52,13.0,True,19.0,49.0,14,40,52.0,0.0024,0,0,30,289,0,49,,,,
+E3_resources,4 responders | delay 20,1000,180,28.0,True,20.0,180.0,75,40,81.0,0.1258,0,0,113,1678,0,180,,,,
+E3_resources,4 responders | delay 20,1001,200,23.0,True,18.0,200.0,124,40,65.0,0.6008,0,0,128,2100,0,200,,,,
+E3_resources,4 responders | delay 20,1002,67,23.0,True,19.0,58.0,11,40,67.0,0.0365,0,0,28,332,0,58,,,,
+E3_resources,4 responders | delay 20,1003,255,27.0,True,14.0,255.0,124,40,72.0,0.233,0,0,194,2616,0,255,,,,
+E3_resources,4 responders | delay 20,1004,88,29.0,True,16.0,88.0,23,40,68.0,0.138,0,0,37,477,0,88,,,,
+E3_resources,4 responders | delay 20,1005,70,25.0,True,27.0,66.0,15,40,70.0,0.1827,0,0,25,308,0,66,,,,
+E3_resources,4 responders | delay 20,1006,96,47.0,True,-23.0,27.0,2,40,96.0,0.1015,0,0,5,76,0,27,,,,
+E3_resources,4 responders | delay 20,1007,69,23.0,True,22.0,69.0,18,40,64.0,0.1496,0,0,36,408,0,69,,,,
+E3_resources,4 responders | delay 20,1008,67,23.0,True,17.0,50.0,6,40,67.0,0.0745,0,0,13,306,0,50,,,,
+E3_resources,4 responders | delay 20,1009,70,23.0,True,15.0,60.0,14,40,70.0,0.5093,0,0,28,388,0,60,,,,
+E3_resources,4 responders | delay 20,1010,68,23.0,True,20.0,68.0,21,40,65.0,0.1294,0,0,31,393,0,68,,,,
+E3_resources,4 responders | delay 20,1011,64,23.0,True,-3.0,35.0,11,40,64.0,0.1137,0,0,23,267,0,35,,,,
+E3_resources,4 responders | delay 20,1012,73,30.0,True,-12.0,39.0,7,40,73.0,0.3262,0,0,19,292,0,39,,,,
+E3_resources,4 responders | delay 20,1013,89,42.0,True,10.0,76.0,17,40,89.0,0.1152,0,0,35,374,0,76,,,,
+E3_resources,4 responders | delay 20,1014,69,23.0,True,16.0,55.0,7,40,69.0,0.0765,0,0,11,371,0,55,,,,
+E3_resources,4 responders | delay 20,1015,185,23.0,True,19.0,185.0,126,40,71.0,0.6664,0,0,137,1953,0,185,,,,
+E3_resources,4 responders | delay 20,1016,80,30.0,True,-8.0,33.0,7,40,80.0,0.0573,0,0,15,278,0,33,,,,
+E3_resources,4 responders | delay 20,1017,129,47.0,True,17.0,129.0,28,40,94.0,0.2165,0,0,58,711,0,129,,,,
+E3_resources,4 responders | delay 20,1018,117,35.0,True,21.0,117.0,21,40,74.0,0.1013,0,0,43,596,0,117,,,,
+E3_resources,4 responders | delay 20,1019,68,23.0,True,20.0,51.0,8,40,68.0,0.1225,0,0,15,317,0,51,,,,
+E3_resources,4 responders | delay 20,1020,224,23.0,True,21.0,224.0,123,40,72.0,0.1148,0,0,160,2216,0,224,,,,
+E3_resources,4 responders | delay 20,1021,66,23.0,True,19.0,60.0,13,40,66.0,0.0768,0,0,26,342,0,60,,,,
+E3_resources,4 responders | delay 20,1022,215,23.0,True,16.0,215.0,123,40,74.0,0.7907,0,0,158,2214,0,215,,,,
+E3_resources,4 responders | delay 20,1023,81,35.0,True,11.0,68.0,25,40,81.0,0.1878,0,0,39,390,0,68,,,,
+E3_resources,4 responders | delay 20,1024,212,23.0,True,21.0,212.0,126,40,73.0,0.409,0,0,143,2164,0,212,,,,
+E3_resources,4 responders | delay 20,1025,209,23.0,True,14.0,209.0,122,40,73.0,0.3748,0,0,151,2139,0,209,,,,
+E3_resources,4 responders | delay 20,1026,220,23.0,True,18.0,220.0,126,40,66.0,0.3217,0,0,164,2275,0,220,,,,
+E3_resources,4 responders | delay 20,1027,300,23.0,False,15.0,,115,40,73.0,0.2445,0,0,216,3160,0,300,,,,
+E3_resources,4 responders | delay 20,1028,77,31.0,True,21.0,65.0,10,40,77.0,0.0423,0,0,15,314,0,65,,,,
+E3_resources,4 responders | delay 20,1029,286,23.0,True,18.0,286.0,123,40,63.0,0.0104,0,0,255,2952,0,286,,,,
+E3_resources,4 responders | delay 30,1000,131,38.0,True,21.0,131.0,46,40,89.0,0.3776,0,0,58,1035,0,131,,,,
+E3_resources,4 responders | delay 30,1001,228,33.0,True,13.0,228.0,122,40,73.0,1.0851,0,0,143,2386,0,228,,,,
+E3_resources,4 responders | delay 30,1002,73,33.0,True,18.0,65.0,14,40,73.0,0.0373,0,0,22,374,0,65,,,,
+E3_resources,4 responders | delay 30,1003,259,37.0,True,5.0,259.0,126,40,80.0,0.278,0,0,198,2621,0,259,,,,
+E3_resources,4 responders | delay 30,1004,262,39.0,True,19.0,262.0,125,40,84.0,0.2505,0,0,183,2634,0,262,,,,
+E3_resources,4 responders | delay 30,1005,84,35.0,True,23.0,84.0,22,40,82.0,0.304,0,0,33,411,0,84,,,,
+E3_resources,4 responders | delay 30,1006,110,57.0,True,-33.0,27.0,2,40,110.0,0.1006,0,0,5,80,0,27,,,,
+E3_resources,4 responders | delay 30,1007,235,33.0,True,17.0,235.0,142,40,74.0,0.2762,0,0,160,2500,0,235,,,,
+E3_resources,4 responders | delay 30,1008,77,33.0,True,19.0,69.0,15,40,77.0,0.099,0,0,30,383,0,69,,,,
+E3_resources,4 responders | delay 30,1009,282,33.0,True,14.0,282.0,113,40,74.0,0.9066,0,0,176,2873,0,282,,,,
+E3_resources,4 responders | delay 30,1010,77,33.0,True,15.0,77.0,26,40,69.0,0.1152,0,0,37,440,0,77,,,,
+E3_resources,4 responders | delay 30,1011,72,33.0,True,-13.0,33.0,9,40,72.0,0.2281,0,0,21,247,0,33,,,,
+E3_resources,4 responders | delay 30,1012,89,40.0,True,-22.0,39.0,7,40,89.0,0.416,0,0,19,330,0,39,,,,
+E3_resources,4 responders | delay 30,1013,99,52.0,True,1.0,73.0,19,40,99.0,0.1661,0,0,33,408,0,73,,,,
+E3_resources,4 responders | delay 30,1014,74,33.0,True,15.0,61.0,11,40,74.0,0.0903,0,0,16,420,0,61,,,,
+E3_resources,4 responders | delay 30,1015,185,33.0,True,12.0,185.0,124,40,77.0,1.1188,0,0,127,1905,0,185,,,,
+E3_resources,4 responders | delay 30,1016,90,40.0,True,-18.0,33.0,7,40,90.0,0.0821,0,0,15,261,0,33,,,,
+E3_resources,4 responders | delay 30,1017,120,57.0,True,6.0,120.0,20,40,103.0,0.2706,0,0,43,515,0,120,,,,
+E3_resources,4 responders | delay 30,1018,300,45.0,False,18.0,,125,40,88.0,0.1928,0,0,205,2870,0,300,,,,
+E3_resources,4 responders | delay 30,1019,216,33.0,True,18.0,216.0,120,40,74.0,0.208,0,0,149,2078,0,216,,,,
+E3_resources,4 responders | delay 30,1020,218,33.0,True,18.0,218.0,126,40,82.0,0.272,0,0,143,2184,0,218,,,,
+E3_resources,4 responders | delay 30,1021,106,33.0,True,17.0,106.0,26,40,77.0,0.0761,0,0,47,625,0,106,,,,
+E3_resources,4 responders | delay 30,1022,211,33.0,True,11.0,211.0,125,40,77.0,1.3886,0,0,152,2150,0,211,,,,
+E3_resources,4 responders | delay 30,1023,102,45.0,True,1.0,102.0,27,40,95.0,0.2247,0,0,44,565,0,102,,,,
+E3_resources,4 responders | delay 30,1024,230,33.0,True,14.0,230.0,124,40,81.0,0.7098,0,0,158,2381,0,230,,,,
+E3_resources,4 responders | delay 30,1025,209,33.0,True,12.0,209.0,122,40,84.0,0.6906,0,0,137,2099,0,209,,,,
+E3_resources,4 responders | delay 30,1026,182,33.0,True,15.0,182.0,126,40,78.0,0.4517,0,0,120,1847,0,182,,,,
+E3_resources,4 responders | delay 30,1027,223,33.0,True,15.0,223.0,126,40,84.0,0.6243,0,0,123,2294,0,223,,,,
+E3_resources,4 responders | delay 30,1028,87,41.0,True,22.0,75.0,14,40,87.0,0.12,0,0,17,399,0,75,,,,
+E3_resources,4 responders | delay 30,1029,111,33.0,True,14.0,111.0,40,40,72.0,0.0501,0,0,54,766,0,111,,,,
+E4_robot_guidance,Local observations,1000,50,3.0,True,24.0,46.0,10,40,50.0,0.008,0,0,18,236,0,46,50.0,0.0,15.0,50.0
+E4_robot_guidance,Local observations,1001,202,3.0,True,20.0,202.0,123,40,48.0,0.1117,0,0,133,2138,0,202,48.0,0.0,17.0,48.0
+E4_robot_guidance,Local observations,1002,51,3.0,True,16.0,24.0,2,40,51.0,0.004,0,0,5,172,0,24,51.0,0.0,13.0,51.0
+E4_robot_guidance,Local observations,1003,90,3.0,True,20.0,90.0,21,40,48.0,0.037,0,0,43,553,0,90,48.0,0.0,15.0,48.0
+E4_robot_guidance,Local observations,1004,57,3.0,True,21.0,38.0,7,40,57.0,0.0171,0,0,13,280,0,38,57.0,0.0,15.0,57.0
+E4_robot_guidance,Local observations,1005,49,3.0,True,22.0,34.0,5,40,49.0,0.0096,0,0,9,227,0,34,49.0,0.0,11.0,49.0
+E4_robot_guidance,Local observations,1006,51,3.0,True,16.0,22.0,2,40,51.0,0.0313,0,0,4,125,0,22,51.0,0.0,16.0,51.0
+E4_robot_guidance,Local observations,1007,52,3.0,True,22.0,40.0,7,40,52.0,0.0401,0,0,18,293,0,40,52.0,0.0,13.0,52.0
+E4_robot_guidance,Local observations,1008,52,3.0,True,17.0,23.0,2,40,52.0,0.0009,0,0,4,147,0,23,52.0,0.0,17.0,52.0
+E4_robot_guidance,Local observations,1009,54,3.0,True,17.0,29.0,4,40,54.0,0.0365,0,0,9,225,0,29,54.0,0.0,13.0,54.0
+E4_robot_guidance,Local observations,1010,51,3.0,True,18.0,33.0,7,40,51.0,0.0117,0,0,15,279,0,33,51.0,0.0,13.0,51.0
+E4_robot_guidance,Local observations,1011,49,3.0,True,16.0,38.0,12,40,49.0,0.0715,0,0,26,272,0,38,49.0,0.0,16.0,49.0
+E4_robot_guidance,Local observations,1012,46,3.0,True,18.0,32.0,7,40,46.0,0.0464,0,0,18,237,0,32,46.0,0.0,16.0,46.0
+E4_robot_guidance,Local observations,1013,52,3.0,True,35.0,49.0,9,40,52.0,0.056,0,0,15,235,0,49,52.0,0.0,11.0,52.0
+E4_robot_guidance,Local observations,1014,47,3.0,True,23.0,33.0,6,40,47.0,0.0896,0,0,11,262,0,33,47.0,0.0,13.0,47.0
+E4_robot_guidance,Local observations,1015,256,3.0,True,19.0,256.0,129,40,48.0,0.0872,0,0,175,2838,0,256,48.0,0.0,17.0,48.0
+E4_robot_guidance,Local observations,1016,51,3.0,True,18.0,34.0,7,40,51.0,0.3602,1,0,15,243,0,34,51.0,0.0,12.0,51.0
+E4_robot_guidance,Local observations,1017,70,3.0,True,47.0,70.0,12,40,55.0,0.0032,0,0,22,281,0,70,55.0,0.0,14.0,55.0
+E4_robot_guidance,Local observations,1018,53,3.0,True,38.0,53.0,6,40,51.0,0.037,0,0,11,194,0,53,51.0,0.0,14.0,51.0
+E4_robot_guidance,Local observations,1019,48,3.0,True,20.0,27.0,2,40,48.0,0.012,0,0,5,152,0,27,48.0,0.0,10.0,48.0
+E4_robot_guidance,Local observations,1020,50,3.0,True,21.0,34.0,6,40,50.0,0.0355,0,0,11,230,0,34,50.0,0.0,13.0,50.0
+E4_robot_guidance,Local observations,1021,53,3.0,True,18.0,28.0,5,40,53.0,0.0101,0,0,9,225,0,28,53.0,0.0,20.0,53.0
+E4_robot_guidance,Local observations,1022,49,3.0,True,16.0,49.0,12,40,49.0,0.147,0,0,31,304,0,49,49.0,0.0,14.0,49.0
+E4_robot_guidance,Local observations,1023,62,3.0,True,41.0,62.0,20,40,52.0,0.0036,0,0,31,326,0,62,52.0,0.0,17.0,52.0
+E4_robot_guidance,Local observations,1024,274,3.0,True,19.0,274.0,124,40,49.0,0.0617,0,0,179,2794,0,274,49.0,0.0,15.0,49.0
+E4_robot_guidance,Local observations,1025,56,3.0,True,15.0,29.0,5,40,56.0,0.1014,0,0,11,248,0,29,56.0,0.0,17.0,56.0
+E4_robot_guidance,Local observations,1026,217,3.0,True,19.0,217.0,125,40,50.0,0.0237,0,0,157,2190,0,217,50.0,0.0,15.0,50.0
+E4_robot_guidance,Local observations,1027,297,3.0,True,20.0,297.0,124,40,53.0,0.0254,0,0,204,2929,0,297,53.0,0.0,19.0,53.0
+E4_robot_guidance,Local observations,1028,62,3.0,True,41.0,52.0,9,40,62.0,0.0065,0,0,15,274,0,52,62.0,0.0,16.0,62.0
+E4_robot_guidance,Local observations,1029,53,3.0,True,16.0,30.0,6,40,53.0,0.0221,0,0,16,328,0,30,53.0,0.0,15.0,53.0
+E4_robot_guidance,Shared counts,1000,48,3.0,True,24.0,46.0,10,40,48.0,0.0064,0,0,19,238,0,46,48.0,0.0,15.0,48.0
+E4_robot_guidance,Shared counts,1001,56,3.0,True,21.0,56.0,16,40,47.0,0.0989,0,0,34,372,0,56,47.0,0.0,17.0,47.0
+E4_robot_guidance,Shared counts,1002,51,3.0,True,16.0,24.0,2,40,51.0,0.004,0,0,5,172,0,24,51.0,0.0,13.0,51.0
+E4_robot_guidance,Shared counts,1003,245,3.0,True,20.0,245.0,113,40,48.0,0.0354,0,0,174,2580,0,245,48.0,0.0,15.0,48.0
+E4_robot_guidance,Shared counts,1004,57,3.0,True,21.0,40.0,7,40,57.0,0.0163,0,0,13,300,0,40,57.0,0.0,15.0,57.0
+E4_robot_guidance,Shared counts,1005,49,3.0,True,22.0,34.0,5,40,49.0,0.0096,0,0,9,227,0,34,49.0,0.0,11.0,49.0
+E4_robot_guidance,Shared counts,1006,54,3.0,True,16.0,22.0,2,40,54.0,0.0334,0,0,4,137,0,22,54.0,0.0,16.0,54.0
+E4_robot_guidance,Shared counts,1007,49,3.0,True,22.0,39.0,7,40,49.0,0.0343,0,0,18,261,0,39,49.0,0.0,13.0,49.0
+E4_robot_guidance,Shared counts,1008,52,3.0,True,17.0,23.0,2,40,52.0,0.0009,0,0,4,147,0,23,52.0,0.0,17.0,52.0
+E4_robot_guidance,Shared counts,1009,54,3.0,True,17.0,29.0,4,40,54.0,0.0411,0,0,9,206,0,29,54.0,0.0,13.0,54.0
+E4_robot_guidance,Shared counts,1010,54,3.0,True,18.0,32.0,7,40,54.0,0.0116,0,0,15,330,0,32,54.0,0.0,13.0,54.0
+E4_robot_guidance,Shared counts,1011,49,3.0,True,16.0,38.0,12,40,49.0,0.0715,0,0,26,272,0,38,49.0,0.0,16.0,49.0
+E4_robot_guidance,Shared counts,1012,46,3.0,True,18.0,32.0,7,40,46.0,0.0464,0,0,18,237,0,32,46.0,0.0,16.0,46.0
+E4_robot_guidance,Shared counts,1013,56,3.0,True,35.0,50.0,9,40,56.0,0.0579,0,0,16,243,0,50,56.0,0.0,15.0,56.0
+E4_robot_guidance,Shared counts,1014,47,3.0,True,23.0,33.0,6,40,47.0,0.0896,0,0,11,262,0,33,47.0,0.0,13.0,47.0
+E4_robot_guidance,Shared counts,1015,179,3.0,True,19.0,179.0,128,40,47.0,0.0754,0,0,124,1926,0,179,47.0,0.0,17.0,47.0
+E4_robot_guidance,Shared counts,1016,55,3.0,True,18.0,37.0,7,40,55.0,0.362,1,0,17,270,0,37,55.0,0.0,12.0,55.0
+E4_robot_guidance,Shared counts,1017,70,3.0,True,47.0,70.0,12,40,55.0,0.0032,0,0,22,281,0,70,55.0,0.0,14.0,55.0
+E4_robot_guidance,Shared counts,1018,64,3.0,True,43.0,64.0,10,40,51.0,0.0371,0,0,15,274,0,64,51.0,0.0,14.0,51.0
+E4_robot_guidance,Shared counts,1019,46,3.0,True,20.0,27.0,2,40,46.0,0.0117,0,0,5,148,0,27,46.0,0.0,10.0,46.0
+E4_robot_guidance,Shared counts,1020,50,3.0,True,21.0,39.0,7,40,50.0,0.0349,0,0,13,231,0,39,50.0,0.0,13.0,50.0
+E4_robot_guidance,Shared counts,1021,53,3.0,True,18.0,28.0,5,40,53.0,0.0102,0,0,9,233,0,28,53.0,0.0,15.0,53.0
+E4_robot_guidance,Shared counts,1022,49,3.0,True,16.0,49.0,12,40,49.0,0.147,0,0,31,304,0,49,49.0,0.0,14.0,49.0
+E4_robot_guidance,Shared counts,1023,60,3.0,True,40.0,60.0,19,40,57.0,0.0056,0,0,34,344,0,60,57.0,0.0,17.0,57.0
+E4_robot_guidance,Shared counts,1024,240,3.0,True,19.0,240.0,125,40,51.0,0.075,0,0,162,2460,0,240,51.0,0.0,15.0,51.0
+E4_robot_guidance,Shared counts,1025,62,3.0,True,15.0,30.0,5,40,62.0,0.1006,0,0,11,253,0,30,62.0,0.0,17.0,62.0
+E4_robot_guidance,Shared counts,1026,217,3.0,True,19.0,217.0,128,40,55.0,0.03,0,0,149,2230,0,217,55.0,0.0,15.0,55.0
+E4_robot_guidance,Shared counts,1027,297,3.0,True,20.0,297.0,124,40,53.0,0.0254,0,0,204,2929,0,297,53.0,0.0,19.0,53.0
+E4_robot_guidance,Shared counts,1028,62,3.0,True,41.0,52.0,9,40,62.0,0.0083,0,0,15,279,0,52,62.0,0.0,16.0,62.0
+E4_robot_guidance,Shared counts,1029,53,3.0,True,16.0,30.0,6,40,53.0,0.0221,0,0,16,328,0,30,53.0,0.0,15.0,53.0

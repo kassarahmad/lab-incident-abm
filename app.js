@@ -7,6 +7,7 @@ const PERF = { "cfp": "#ffd60a", "propose": "#90e0ef", "accept-proposal": "#2ec4
                "refuse": "#8b98a5", "inform": "#adb5bd", "inform-done": "#2ec4b6", "failure": "#ff3b5c", "request": "#ffd60a" };
 
 let plan = [], session = null, state = null, playing = false, busy = false, timer = null;
+let resetVersion = 0;
 
 async function api(path, body) {
   const r = await fetch(path, body ? { method: "POST", headers: { "Content-Type": "application/json" },
@@ -35,23 +36,39 @@ async function init() {
 
 async function reset() {
   setPlaying(false);
+  const version = ++resetVersion;
+  session = null;
   try {
-    state = await api("/api/reset", { preset: $("preset").value, seed: Number($("seed").value) || 0 });
+    const next = await api("/api/reset", { preset: $("preset").value, seed: Number($("seed").value) || 0 });
+    if (version !== resetVersion) return;
+    state = next;
+    plan = state.floorPlan;
     session = state.session;
     $("error").textContent = "";
     draw();
-  } catch (e) { $("error").textContent = e.message; }
+  } catch (e) {
+    if (version === resetVersion) $("error").textContent = e.message;
+  }
 }
 
 async function advance(n) {
   if (busy || !session) return;
+  const activeSession = session;
   busy = true;
   try {
-    state = await api("/api/step", { session, n });
+    const next = await api("/api/step", { session: activeSession, n });
+    if (activeSession !== session) return;
+    state = next;
     draw();
     if (!state.running) setPlaying(false);
-  } catch (e) { $("error").textContent = e.message; setPlaying(false); }
-  busy = false;
+  } catch (e) {
+    if (activeSession === session) {
+      $("error").textContent = e.message;
+      setPlaying(false);
+    }
+  } finally {
+    busy = false;
+  }
 }
 
 function schedule() {
@@ -80,6 +97,24 @@ function draw() {
       ctx.fillStyle = `hsla(${45 - f * 0.4}, 100%, ${45 + f * 0.15}%, ${0.55 + f / 250})`;
       ctx.fillRect(x * CELL + 1, y * CELL + 1, CELL - 2, CELL - 2);
     }
+    const wait = state.queueWait[x][y];
+    if (wait > 0) {
+      ctx.fillStyle = `rgba(199, 224, 116, ${Math.min(0.84, 0.12 + 0.21 * Math.log1p(wait))})`;
+      ctx.fillRect(x * CELL + 1, y * CELL + 1, CELL - 2, CELL - 2);
+    }
+  }
+  ctx.strokeStyle = "#f4f0d3";
+  ctx.lineWidth = 2;
+  for (const [x, y] of state.closedCells) {
+    const left = x * CELL, top = y * CELL;
+    ctx.fillStyle = "rgba(83, 87, 98, 0.65)";
+    ctx.fillRect(left, top, CELL, CELL);
+    ctx.beginPath();
+    ctx.moveTo(left + 3, top + 3);
+    ctx.lineTo(left + CELL - 3, top + CELL - 3);
+    ctx.moveTo(left + CELL - 3, top + 3);
+    ctx.lineTo(left + 3, top + CELL - 3);
+    ctx.stroke();
   }
   for (const d of state.detectors) {
     ctx.fillStyle = d.on ? "#ff4fa3" : "#6c757d";
@@ -87,6 +122,10 @@ function draw() {
   }
   ctx.strokeStyle = "#ffd60a"; ctx.lineWidth = 2;
   for (const c of Object.values(state.contracts)) ctx.strokeRect(c[0] * CELL + 2, c[1] * CELL + 2, CELL - 4, CELL - 4);
+  ctx.strokeStyle = "#a99bff";
+  for (const robot of state.robots) {
+    ctx.strokeRect(robot.x * CELL + 2, robot.y * CELL + 2, CELL - 4, CELL - 4);
+  }
   for (const p of state.people) {
     const cx = p.x * CELL + CELL / 2, cy = p.y * CELL + CELL / 2;
     ctx.beginPath();
@@ -106,11 +145,18 @@ function draw() {
   $("alarmLabel").textContent = state.alarm ? "ALARM" : "no alarm";
   $("alarmLabel").className = "pill" + (state.alarm ? " alarm" : "");
   $("alarmDot").className = "dot" + (state.alarm ? " on" : "");
-  $("modeLabel").textContent = state.coordination;
+  $("modeLabel").textContent = state.robotGuidance ? `robot guides · ${state.robotGuidance}` : state.coordination;
   $("kBurning").textContent = h.Burning.at(-1);
   $("kBurned").textContent = sm.burned_area;
   $("kEvac").textContent = sm.evacuated;
   $("kMsg").textContent = sm.messages;
+  $("kQueue").textContent = `${sm.queueing} / ${sm.peak_queueing}`;
+  $("kAllOut").textContent = sm.all_out_step ?? (state.running ? "–" : "Incomplete");
+  $("guideLegend").hidden = state.robots.length === 0;
+  $("guideCounts").hidden = state.robots.length === 0;
+  $("guides").tBodies[0].innerHTML = state.robots
+    .map((r, i) => `<tr><td>${i === 0 ? "West junction" : "East junction"}</td><td>${r.west}</td><td>${r.east}</td></tr>`)
+    .join("");
 
   chart($("chartFire"), [[h.Burning, "#ffb703"], [h.BurnedArea, "#8d6e63"]]);
   chart($("chartEvac"), [[h.Evacuated, "#4cc9f0"], [h.Exposure.map((v) => v * 100), "#ff3b5c"]]);

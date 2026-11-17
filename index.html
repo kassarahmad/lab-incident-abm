@@ -42,6 +42,9 @@
       <span><i class="sw burnt"></i>Burned</span>
       <span><i class="sw det"></i>Detector (pink = triggered)</span>
       <span><i class="sw task"></i>Dispatcher target</span>
+      <span><i class="sw closed"></i>Closed corridor</span>
+      <span><i class="sw wait"></i>Queue waits (brighter = more)</span>
+      <span id="guideLegend" hidden><i class="sw guide"></i>Robot guide</span>
     </div>
   </section>
 
@@ -51,11 +54,17 @@
       <div class="card"><b id="kBurned">0</b><span>burned area</span></div>
       <div class="card"><b id="kEvac">0</b><span>evacuated</span></div>
       <div class="card"><b id="kMsg">0</b><span>messages</span></div>
+      <div class="card"><b id="kQueue">0 / 0</b><span>people waiting now / peak</span></div>
+      <div class="card"><b id="kAllOut">–</b><span>all occupants out (step)</span></div>
     </div>
     <h2>Fire over time</h2>
     <canvas id="chartFire" width="360" height="120"></canvas>
     <h2>Evacuation &amp; exposure</h2>
     <canvas id="chartEvac" width="360" height="120"></canvas>
+    <div id="guideCounts" hidden>
+      <h2>People directed and still inside</h2>
+      <table id="guides"><thead><tr><th>Guide</th><th>West exit</th><th>East exit</th></tr></thead><tbody></tbody></table>
+    </div>
     <h2>Responders</h2>
     <table id="responders"><thead><tr><th>id</th><th>charges</th><th>intention</th><th>task</th></tr></thead><tbody></tbody></table>
     <h2>Message bus</h2>

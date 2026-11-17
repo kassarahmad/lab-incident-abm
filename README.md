@@ -7,6 +7,8 @@ start the alarm and inform a **dispatcher**; **responders** with limited
 extinguishers fight the fire using what they have seen or been told by
 **radio messages** (which can be late or lost); **occupants** evacuate.
 Full model description in [ODD.md](ODD.md) (ODD protocol).
+The [full presentation](presentation.pptx) covers the robot guidance scenario
+and the paired evacuation experiment.
 
 ![run](plots/run_two_fires.gif)
 
@@ -32,9 +34,9 @@ Then:
 
 ```bash
 python run_gui.py                                  # live simulator → http://127.0.0.1:8090
-python run_experiments.py --runs 30 --jobs 4       # E1–E3, statistics, plots  (~3 min)
+python run_experiments.py --runs 30 --jobs 4       # E1–E4, statistics and plots
 python render_run.py --preset two_fires            # GIF of one run
-python -m unittest -v                              # 12 tests
+python -m unittest -v
 ```
 
 ## Files
@@ -46,7 +48,7 @@ python -m unittest -v                              # 12 tests
 | `agents.py` | `SmokeDetector`, `Dispatcher`, `Responder`, `Occupant` |
 | `options.py` | What a responder does when no reflex applies |
 | `model.py` | `LabIncidentModel`: step order, stopping rule, data collection |
-| `simulation_config.py` | GUI scenarios and the experiments E1–E3 |
+| `simulation_config.py` | GUI scenarios and the experiments E1–E4 |
 | `run_experiments.py` | 30 paired runs per condition, Wilcoxon test, plots |
 | `run_gui.py`, `index.html`, `app.js`, `style.css` | Browser simulator; all rules run in Python |
 | `render_run.py` | GIF of a single run |
@@ -113,6 +115,40 @@ does not change (≈ 54 steps).
 
 Four responders are enough here. A late alarm is what puts people in danger:
 30 steps of delay multiply the smoke they breathe by 5 (p < 0.001).
+
+### E4 – Robot-guided fire evacuation
+
+A fire closes the middle of the lab corridor and triggers the evacuation
+alarm at ignition. A bypass keeps the east and west exits reachable from
+both junctions. Occupants go to the nearest guide and follow the exit it
+recommends to their group.
+
+Does sharing how many people have been directed to each exit change the
+time it takes everyone to get out? The guides minimize estimated walking
+time plus waiting time. In **Robot guides (local observations)**, each
+guide estimates demand from people it sees within five cells. In **Robot
+guides (shared counts)**, both guides use the combined counts of people
+already directed and still evacuating. Both runs use the same map and seed.
+
+Brighter cells on the map accumulated more waits behind other people.
+The simulator shows the step at which everyone reached an exit. The batch
+comparison uses the 300-step limit for runs with people still inside.
+
+```bash
+python run_experiments.py --only E4_robot_guidance --runs 30 --jobs 4
+```
+
+All 40 occupants reached an exit in each of the 60 recorded runs.
+
+| Guidance mode | Mean evacuation steps | Mean peak occupants waiting |
+|---|---:|---:|
+| Local observations | 51.23 | 14.73 |
+| Shared counts | 52.00 | 14.70 |
+
+The mean paired difference was +0.77 steps for shared counts, with a 95%
+bootstrap interval from 0.00 to 1.57 steps. Shared counts were faster in
+5 pairs, tied in 17 and slower in 8. [Run data](results/runs.csv),
+[paired statistics](results/stats.csv), [comparison chart](plots/E4_robot_guidance.png).
 
 ## Limitations
 

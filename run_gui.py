@@ -43,9 +43,15 @@ def snapshot(m):
     hist = m.datacollector.get_model_vars_dataframe()
     return {
         "step": m.steps, "running": m.running, "alarm": m.alarm_on,
+        "floorPlan": env.floor_plan,
         "fire": [[int(v * 100) for v in col] for col in env.fire],
         "smoke": [[int(v * 100) for v in col] for col in env.smoke],
         "burned": [[int(v) for v in col] for col in env.ever_burned],
+        "closedCells": m.closed_cells,
+        "queueWait": m.queue_wait.tolist(),
+        "robotGuidance": m.robot_guidance,
+        "robots": [{"x": r.location[0], "y": r.location[1],
+                    "west": r.assigned["west"], "east": r.assigned["east"]} for r in m.robots],
         "people": people,
         "detectors": [{"x": d.location[0], "y": d.location[1], "on": d.triggered} for d in m.detectors],
         "messages": [{"step": s, "p": p, "from": a, "to": b} for s, p, a, b in m.bus.log[-14:]],

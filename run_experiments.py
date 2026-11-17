@@ -33,6 +33,7 @@ OUTCOMES = {"burned_area": "Burned area (cells)",
             "exposure": "Occupant smoke exposure (dose)",
             "response_time": "Alarm to first extinguisher shot (steps)",
             "messages": "Messages sent"}
+DEFAULT_PLOTS = {outcome: OUTCOMES[outcome] for outcome in ("burned_area", "contain_time", "exposure")}
 
 
 def run(job):
@@ -42,6 +43,7 @@ def run(job):
         m.step()
     s = m.summary()
     s["contain_time"] = s["contained_step"] if s["contained"] else m.max_steps
+    s["all_out_time_capped"] = m.max_steps if s["all_out_step"] is None else s["all_out_step"]
     return {"experiment": exp, "config": label, "seed": seed, **s}
 
 
@@ -76,7 +78,7 @@ def analyse(runs):
         d = runs[runs.experiment == exp]
         if d.empty:
             continue
-        for outcome in OUTCOMES:
+        for outcome in spec.get("outcomes", OUTCOMES):
             block = []
             for ref, label in spec["comparisons"]:
                 base = d[d.config == ref].set_index("seed")[outcome].astype(float)
@@ -106,7 +108,7 @@ def plot(runs):
         labels = list(spec["configs"])
         refs = {ref for ref, _ in spec["comparisons"]}
         fig, axes = plt.subplots(1, 3, figsize=(15, 4.8))
-        for ax, outcome in zip(axes, ["burned_area", "contain_time", "exposure"]):
+        for ax, (outcome, title) in zip(axes, spec.get("outcomes", DEFAULT_PLOTS).items()):
             data = [d[d.config == l][outcome].astype(float).to_numpy() for l in labels]
             bp = ax.boxplot(data, orientation="horizontal", patch_artist=True, widths=0.6,
                             medianprops={"color": "black"}, flierprops={"markersize": 3})
@@ -116,7 +118,7 @@ def plot(runs):
                        color="#E63946", zorder=3, label="mean")
             ax.set_yticks(range(1, len(labels) + 1))
             ax.set_yticklabels(labels if ax is axes[0] else [], fontsize=8)
-            ax.set_title(OUTCOMES[outcome], fontsize=9)
+            ax.set_title(title, fontsize=9)
             ax.spines[["top", "right"]].set_visible(False)
         axes[0].legend(frameon=False, fontsize=8, loc="lower right")
         fig.suptitle(f"{exp}: {spec['question']}  (yellow = reference of a comparison)", fontsize=10)
@@ -149,7 +151,7 @@ def main():
 
     stats_df = analyse(runs)
     stats_df.to_csv(ROOT / "results" / "stats.csv", index=False)
-    plot(runs)
+    plot(runs[runs.experiment.isin(args.only)] if args.only else runs)
 
     summary = runs.groupby(["experiment", "config"], sort=False)[
         ["contained", "burned_area", "contain_time", "response_time", "evacuation_time", "exposure", "messages"]].mean().round(2)
@@ -157,6 +159,10 @@ def main():
         print(summary)
         print(stats_df[stats_df.outcome == "burned_area"][
             ["experiment", "config", "mean_diff", "diff_ci_low", "diff_ci_high", "rank_biserial", "p_holm"]])
+        guidance = runs[runs.experiment == "E4_robot_guidance"]
+        if not guidance.empty:
+            print(guidance.groupby("config", sort=False)[
+                ["peak_queueing", "all_out_time_capped", "evacuated"]].mean().round(2))
 
 
 if __name__ == "__main__":

@@ -15,6 +15,9 @@ PRESETS = {
     "lossy": {"name": "Dispatcher, 50% messages lost", "params": {"coordination": "dispatcher", "comm_loss": 0.5}},
     "late_alarm": {"name": "Alarm delayed 20 steps", "params": {"coordination": "dispatcher", "alarm_delay": 20}},
     "no_response": {"name": "No responders (control)", "params": {"n_responders": 0}},
+    "blocked_corridor": {"name": "East corridor blocked", "params": {"block_corridor": True}},
+    "local_guides": {"name": "Robot guides (local observations)", "params": {"robot_guidance": "local"}},
+    "shared_guides": {"name": "Robot guides (shared counts)", "params": {"robot_guidance": "shared"}},
 }
 
 
@@ -45,5 +48,14 @@ EXPERIMENTS = {
         "comparisons": [("4 responders | delay 0", x) for x in
                         ("2 responders | delay 0", "8 responders | delay 0", "4 responders | delay 10",
                          "4 responders | delay 20", "4 responders | delay 30")],
+    },
+    "E4_robot_guidance": {
+        "question": "Does sharing how many people were sent to each exit change evacuation time?",
+        "configs": {"Local observations": PRESETS["local_guides"]["params"],
+                    "Shared counts": PRESETS["shared_guides"]["params"]},
+        "comparisons": [("Local observations", "Shared counts")],
+        "outcomes": {"peak_queueing": "Peak occupants waiting",
+                     "all_out_time_capped": "Steps to everyone out (300 if incomplete)",
+                     "evacuated": "People evacuated"},
     },
 }

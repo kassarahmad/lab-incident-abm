@@ -38,6 +38,9 @@ canvas#grid { width: 100%; height: auto; image-rendering: pixelated; border-radi
 .sw.occ { background: var(--occ); border-radius: 50%; } .sw.resp { background: var(--resp); }
 .sw.fire { background: #ffb703; } .sw.smoke { background: #6c757d; } .sw.burnt { background: #3d2b1f; }
 .sw.det { background: #adb5bd; } .sw.task { border: 2px solid #ffd60a; }
+.sw.closed { background: #535762; border: 2px solid #f4f0d3; }
+.sw.wait { background: #c7e074; }
+.sw.guide { border: 2px solid #a99bff; }
 aside { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
 aside h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 16px 0 6px; }
 .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }

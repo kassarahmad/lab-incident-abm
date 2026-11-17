@@ -44,3 +44,6 @@ E3_resources,messages,4 responders | delay 0,8 responders | delay 0,255.2,395.46
 E3_resources,messages,4 responders | delay 0,4 responders | delay 10,255.2,872.9333,617.7333,331.6858,930.3275,0.9462,0.0,0.0,True
 E3_resources,messages,4 responders | delay 0,4 responders | delay 20,255.2,1080.2333,825.0333,500.0642,1169.3733,0.9957,0.0,0.0,True
 E3_resources,messages,4 responders | delay 0,4 responders | delay 30,255.2,1336.0333,1080.8333,748.3608,1446.4083,0.9914,0.0,0.0,True
+E4_robot_guidance,peak_queueing,Local observations,Shared counts,14.7333,14.7,-0.0333,-0.5,0.4,-0.3333,0.6547,0.6547,False
+E4_robot_guidance,all_out_time_capped,Local observations,Shared counts,51.2333,52.0,0.7667,0.0,1.5667,0.6044,0.0538,0.0538,False
+E4_robot_guidance,evacuated,Local observations,Shared counts,40.0,40.0,0.0,0.0,0.0,0.0,1.0,1.0,False
