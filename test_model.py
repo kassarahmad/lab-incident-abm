@@ -4,10 +4,10 @@ import unittest
 import numpy as np
 
 from agents import Occupant, Responder
-from environment import FLOOR_PLAN, Environment, fire_clusters
+from environment import FLOOR_PLAN, Environment
 from messaging import INFORM, BeliefMap, MessageBus
 from model import COORDINATION_MODES, LabIncidentModel
-from policies import QLearningPolicy, RulePolicy
+from options import EXPLORE, FOLLOW_TASK, NEAREST, choose_option
 from run_experiments import holm, rank_biserial
 
 
@@ -40,9 +40,6 @@ class EnvironmentTests(unittest.TestCase):
         for _ in range(30):
             env.update(rng)
         self.assertEqual(int((env.fire > 0).sum()), 0)
-
-    def test_clusters(self):
-        self.assertEqual(len(fire_clusters([(1, 1), (2, 2), (10, 10)])), 2)
 
 
 class MessagingTests(unittest.TestCase):
@@ -92,36 +89,23 @@ class ModelTests(unittest.TestCase):
         alone = sum(run(seed=s, n_responders=0).summary()["burned_area"] for s in seeds)
         self.assertLess(team, alone)
 
-    def test_contract_net_one_task_per_responder(self):
-        m = LabIncidentModel(seed=11, coordination="contract_net", n_ignitions=2)
-        for _ in range(80):
+    def test_dispatcher_only_knows_reported_positions(self):
+        m = LabIncidentModel(seed=11, coordination="dispatcher", n_ignitions=2)
+        for _ in range(60):
             m.step()
-            self.assertLessEqual(len(m.coordinator.contracts), len(m.responder_list))
-            self.assertTrue(set(m.coordinator.contracts) <= set(m.responder_ids))
+            self.assertTrue(set(m.dispatcher.status) <= set(m.responder_ids))
+        self.assertIsNone(LabIncidentModel(seed=11, coordination="none").dispatcher)
 
     def test_invalid_coordination(self):
         with self.assertRaises(ValueError):
             LabIncidentModel(coordination="chaos")
 
 
-class LearningAndStatsTests(unittest.TestCase):
-    def test_q_update(self):
-        p = QLearningPolicy(alpha=0.5, gamma=0.9)
-        s, s2 = (1, 1, 1, 0, 0), (1, 1, 0, 0, 0)
-        p.q[s2][2] = 10
-        p.update(s, 1, reward=-2.0, tau=2, s_next=s2, valid_next=[1, 2], terminal=False)
-        # first visit: step size max(alpha, 1/1^0.6) = 1
-        self.assertAlmostEqual(p.q[s][1], -2.0 + 0.81 * 10)
-        p.update(s, 1, reward=-2.0, tau=2, s_next=s2, valid_next=[1, 2], terminal=False)
-        self.assertAlmostEqual(p.q[s][1], 6.1)  # same target, stays put
-
-    def test_greedy_policy_does_not_learn(self):
-        g = QLearningPolicy().greedy()
-        g.update((0, 0, 0, 0, 0), 0, 5.0, 1, (0, 0, 0, 0, 0), [0], True)
-        self.assertEqual(g.q.sum(), 0)
-
-    def test_rule_policy_prefers_task(self):
-        self.assertEqual(RulePolicy().choose((3, 1, 1, 1, 0), [0, 1, 2, 3], random.Random(0)), 0)
+class DecisionAndStatsTests(unittest.TestCase):
+    def test_decision_rule(self):
+        self.assertEqual(choose_option([FOLLOW_TASK, NEAREST, EXPLORE]), FOLLOW_TASK)
+        self.assertEqual(choose_option([NEAREST, EXPLORE]), NEAREST)
+        self.assertEqual(choose_option([EXPLORE]), EXPLORE)
 
     def test_holm_and_effect_size(self):
         np.testing.assert_allclose(holm(np.array([0.01, 0.04, 0.03])), [0.03, 0.06, 0.06])

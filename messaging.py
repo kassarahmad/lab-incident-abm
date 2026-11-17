@@ -9,16 +9,11 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from typing import Any
 
-# FIPA-ACL performatives used in the model
-INFORM = "inform"            # observations of burning / extinguished cells
-CFP = "cfp"                  # Contract Net: call for proposals (tasks)
-PROPOSE = "propose"          # bid: cost per task
-REFUSE = "refuse"            # cannot bid (no charges, refilling)
-ACCEPT = "accept-proposal"   # contract awarded
-REJECT = "reject-proposal"
-DONE = "inform-done"         # contractor finished its task
-FAILURE = "failure"          # contractor gives up (e.g. out of charges)
-REQUEST = "request"          # direct order (greedy central dispatcher)
+# Message types (FIPA-style names)
+INFORM = "inform"            # observations of burning / extinguished cells, radio check-in
+REQUEST = "request"          # order from the dispatcher: go to this cell
+DONE = "inform-done"         # responder finished its task
+FAILURE = "failure"          # responder gives up the task (out of charges)
 
 
 @dataclass

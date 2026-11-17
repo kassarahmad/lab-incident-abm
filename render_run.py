@@ -48,7 +48,7 @@ def draw(ax, m, title):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--preset", default="contract_net", choices=PRESETS)
+    ap.add_argument("--preset", default="dispatcher", choices=PRESETS)
     ap.add_argument("--seed", type=int, default=1000)
     ap.add_argument("--steps", type=int, default=150)
     args = ap.parse_args()

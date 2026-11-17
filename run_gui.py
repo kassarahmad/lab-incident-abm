@@ -19,7 +19,7 @@ from pathlib import Path
 from agents import Occupant, Responder
 from environment import FLOOR_PLAN
 from model import LabIncidentModel
-from policies import OPTION_NAMES
+from options import OPTION_NAMES
 from simulation_config import DEFAULT_SEED, PRESETS
 
 ROOT = Path(__file__).resolve().parent
@@ -49,10 +49,10 @@ def snapshot(m):
         "people": people,
         "detectors": [{"x": d.location[0], "y": d.location[1], "on": d.triggered} for d in m.detectors],
         "messages": [{"step": s, "p": p, "from": a, "to": b} for s, p, a, b in m.bus.log[-14:]],
-        "contracts": {str(k): v[0] for k, v in m.coordinator.contracts.items()} if m.coordinator else {},
+        "contracts": {str(r.unique_id): r.task for r in m.responder_list if r.task is not None},
         "history": {k: hist[k].tolist() for k in ("Burning", "BurnedArea", "Evacuated", "Exposure", "Messages")},
         "summary": m.summary(),
-        "coordination": m.coordination, "policy": m.policy.name,
+        "coordination": m.coordination,
     }
 
 
@@ -118,7 +118,7 @@ class Handler(BaseHTTPRequestHandler):
                 raise ValueError("bad request size")
             body = json.loads(self.rfile.read(size))
             if self.path == "/api/reset":
-                sid, model = self.server.store.reset(body.get("preset", "contract_net"),
+                sid, model = self.server.store.reset(body.get("preset", "dispatcher"),
                                                      body.get("seed", DEFAULT_SEED))
             elif self.path == "/api/step":
                 sid = body["session"]
@@ -130,8 +130,6 @@ class Handler(BaseHTTPRequestHandler):
             self.reply(200, state)
         except KeyError:
             self.reply(410, {"error": "Session expired: press Reset."})
-        except FileNotFoundError:
-            self.reply(400, {"error": "No trained Q-table: run train_qlearning.py first."})
         except (ValueError, TypeError) as e:
             self.reply(400, {"error": str(e)})
 

@@ -139,12 +139,6 @@ class Environment:
     def burning_cells(self):
         return [tuple(map(int, c)) for c in np.argwhere(self.fire > 0)]
 
-    def spread_risk(self, cell):
-        """Unburned fuel next to a burning cell: how much the fire can still grow there."""
-        x, y = cell
-        return sum(self.fuel[x + dx, y + dy] for dx, dy in VON_NEUMANN
-                   if self.in_bounds(x + dx, y + dy) and self.fire[x + dx, y + dy] == 0)
-
     # ------------------------------------------------------------ path planning
     def distance_field(self, sources, avoid_fire=False):
         """Multi-source BFS over walkable cells (8-neighbour). Sources may be
@@ -176,23 +170,3 @@ class Environment:
                     dist[nx, ny] = d
                     q.append((nx, ny))
         return dist
-
-
-def fire_clusters(cells):
-    """Connected components (8-neighbour) of a set of burning cells -> list of lists."""
-    remaining = set(cells)
-    clusters = []
-    while remaining:
-        start = remaining.pop()
-        comp, q = [start], deque([start])
-        while q:
-            x, y = q.popleft()
-            for dx, dy in MOORE:
-                c = (x + dx, y + dy)
-                if c in remaining:
-                    remaining.remove(c)
-                    comp.append(c)
-                    q.append(c)
-        clusters.append(sorted(comp))
-    clusters.sort(key=lambda c: (-len(c), c[0]))
-    return clusters

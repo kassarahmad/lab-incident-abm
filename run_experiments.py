@@ -141,6 +141,10 @@ def main():
         rows = pool.map(run, jobs, chunksize=4)
     runs = pd.DataFrame(rows)
     (ROOT / "results").mkdir(exist_ok=True)
+    old = ROOT / "results" / "runs.csv"
+    if args.only and old.exists():   # keep the other experiments' runs
+        prev = pd.read_csv(old)
+        runs = pd.concat([prev[~prev.experiment.isin(args.only)], runs], ignore_index=True)
     runs.to_csv(ROOT / "results" / "runs.csv", index=False)
 
     stats_df = analyse(runs)

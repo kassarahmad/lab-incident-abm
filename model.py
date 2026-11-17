@@ -1,36 +1,26 @@
 """
-Lab Incident Response - Adaptive Multi-Agent Model (Mesa 3.x)
+Lab Incident Response - Multi-Agent Model (Mesa 3.x)
 
 A fire starts at a chemical cabinet on a university lab floor. Detectors feed
-an alarm panel and a coordinator; responders with limited extinguishers fight
-the fire using beliefs built from their own vision and from messages sent over
-an unreliable channel; heterogeneous occupants evacuate.
+an alarm panel and (optionally) a dispatcher; responders with limited
+extinguishers fight the fire using beliefs built from their own vision and
+from messages sent over an unreliable radio; occupants evacuate.
 
 Coordination modes
-    none            responders use only their own perception
-    peer            responders share observations with each other (no coordinator)
-    central_greedy  a coordinator dispatches the nearest free responder
-    contract_net    a coordinator auctions fire clusters with the Contract Net Protocol
-
-Policies
-    rule            hand-written option choice
-    learned         SMDP Q-learning over options (train_qlearning.py)
+    none        no dispatcher: responders use only their own eyes
+    dispatcher  a control room sends each free responder to the nearest known fire
 """
 
-from collections import Counter
-from pathlib import Path
 from typing import Optional
 
 import mesa
 import numpy as np
 
-from agents import Coordinator, Occupant, Responder, SmokeDetector
+from agents import Dispatcher, Occupant, Responder, SmokeDetector
 from environment import CORRIDOR_ROWS, MOORE, Environment
 from messaging import MessageBus
-from policies import QLearningPolicy, RulePolicy
 
-COORDINATION_MODES = ("none", "peer", "central_greedy", "contract_net")
-DEFAULT_Q_TABLE = Path(__file__).resolve().parent / "policies" / "q_table.json"
+COORDINATION_MODES = ("none", "dispatcher")
 
 
 class LabIncidentModel(mesa.Model):
@@ -39,8 +29,7 @@ class LabIncidentModel(mesa.Model):
         self,
         n_responders: int = 4,
         n_occupants: int = 40,
-        coordination: str = "contract_net",
-        policy="rule",                      # "rule", "learned" or a policy object
+        coordination: str = "dispatcher",
         alarm_delay: int = 0,
         n_ignitions: int = 1,
         comm_latency: int = 1,
@@ -51,7 +40,6 @@ class LabIncidentModel(mesa.Model):
         refill_time: int = 3,
         p_spread: float = 0.25,
         familiarity: float = 0.6,
-        full_deployment: bool = True,
         ignition_step: int = 3,
         max_steps: int = 300,
         seed: Optional[int] = None,
@@ -66,26 +54,17 @@ class LabIncidentModel(mesa.Model):
         self.extinguisher_charges = extinguisher_charges
         self.refill_time = refill_time
         self.familiarity = familiarity
-        self.full_deployment = full_deployment
         self.ignition_step = ignition_step
         self.max_steps = max_steps
         # fixed behavioural constants (see ODD.md)
         self.smoke_threshold = 0.04
         self.extinguish_power = 0.5
-        self.shot_reward = 2.0               # learning: individual reward per unit of fire removed
         self.smoke_damage = 0.05
         self.fire_damage = 0.25
         self.vision = 5
-        self.status_period = 3              # radio check-in of responders (central modes)
-        self.contract_timeout = 12          # Contract Net: drop silent contractors
-        self.commit = 4                      # max steps an option is kept
+        self.status_period = 3              # radio check-in of responders
+        self.commit = 4                     # max steps an option is kept
         self.premovement_mu, self.premovement_sigma = 1.2, 0.6  # median ~3.3 steps
-
-        if policy == "rule":
-            policy = RulePolicy()
-        elif policy == "learned":
-            policy = QLearningPolicy.load(DEFAULT_Q_TABLE)
-        self.policy = policy
 
         self.env = Environment(p_spread=p_spread)
         self.bus = MessageBus(self.random, latency=comm_latency, loss=comm_loss)
@@ -106,11 +85,9 @@ class LabIncidentModel(mesa.Model):
         self.total_shots = 0
         self.first_shot_step = None
         self.total_dose = 0.0
-        self.option_counts = Counter()
-        self.reward_total = 0.0
 
         # fixed agents
-        self.coordinator = Coordinator(self) if coordination in ("central_greedy", "contract_net") else None
+        self.dispatcher = Dispatcher(self) if coordination == "dispatcher" else None
         self.detectors = []
         for x in range(2, env.width - 1, detector_spacing):
             for y in range(2, env.height - 1, 3):
@@ -123,12 +100,12 @@ class LabIncidentModel(mesa.Model):
                       key=lambda c: (abs(c[0] - sx) + abs(c[1] - sy), c))
         self.responder_list = []
         for c in base[:n_responders]:
-            r = Responder(self, self.policy)
+            r = Responder(self)
             self.grid.place_agent(r, c)
             self.responder_list.append(r)
         self.responder_ids = [r.unique_id for r in self.responder_list]
-        if self.coordinator is not None:   # the roster: starting positions are known
-            self.coordinator.status = {r.unique_id: (r.pos, r.charges, False, 0) for r in self.responder_list}
+        if self.dispatcher is not None:   # the roster: starting positions are known
+            self.dispatcher.status = {r.unique_id: (r.pos, r.charges, False, 0) for r in self.responder_list}
 
         # occupants in the labs
         lab_cells = [tuple(map(int, c)) for c in np.argwhere(env.tiles == ".")
@@ -224,8 +201,6 @@ class LabIncidentModel(mesa.Model):
     # ------------------------------------------------------------- step
     def step(self):
         env = self.env
-        burning_before = int((env.fire > 0).sum())
-        burned_before = int(env.ever_burned.sum())
 
         # 1. environment (synchronous)
         if self.steps == self.ignition_step:
@@ -235,27 +210,20 @@ class LabIncidentModel(mesa.Model):
         self.update_exit_fields()
         self.bus.deliver(self.steps)
 
-        # 2. sensing, alarm panel, coordination
+        # 2. sensing, alarm panel, dispatcher
         for d in self.detectors:
             d.step()
         if self.first_detection is not None and not self.alarm_on \
                 and self.steps - self.first_detection >= self.alarm_delay:
             self.alarm_on, self.alarm_step = True, self.steps
-        if self.coordinator is not None:
-            self.coordinator.step()
+        if self.dispatcher is not None:
+            self.dispatcher.step()
 
         # 3. people act in random order
         self.agents.select(lambda a: isinstance(a, (Responder, Occupant))).shuffle_do("step")
 
-        # 4. team reward for learning responders: new fire is bad, burning fire is bad
-        new_burned = int(env.ever_burned.sum()) - burned_before
+        # 4. record and stop
         burning = int((env.fire > 0).sum())
-        reward = -1.0 * new_burned - 0.05 * burning
-        self.reward_total += reward
-        for r in self.responder_list:
-            r.add_reward(reward)
-
-        # 5. record and stop
         self.datacollector.collect(self)
         fire_out = self.steps > self.ignition_step and burning == 0
         if fire_out and self.contained_step is None:
@@ -264,8 +232,6 @@ class LabIncidentModel(mesa.Model):
             self.evacuation_done_step = self.steps
         if (fire_out and self.evacuation_done_step is not None) or self.steps >= self.max_steps:
             self.running = False
-            for r in self.responder_list:
-                r.end_option(terminal=fire_out)
 
     def summary(self):
         return {
@@ -284,5 +250,4 @@ class LabIncidentModel(mesa.Model):
             "shots": self.total_shots,
             "messages": self.bus.total_sent,
             "messages_dropped": sum(self.bus.dropped.values()),
-            "team_reward": round(self.reward_total, 2),
         }

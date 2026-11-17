@@ -106,7 +106,7 @@ function draw() {
   $("alarmLabel").textContent = state.alarm ? "ALARM" : "no alarm";
   $("alarmLabel").className = "pill" + (state.alarm ? " alarm" : "");
   $("alarmDot").className = "dot" + (state.alarm ? " on" : "");
-  $("modeLabel").textContent = `${state.coordination} · ${state.policy} policy`;
+  $("modeLabel").textContent = state.coordination;
   $("kBurning").textContent = h.Burning.at(-1);
   $("kBurned").textContent = sm.burned_area;
   $("kEvac").textContent = sm.evacuated;
